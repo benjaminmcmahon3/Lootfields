@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://b87dlgu0iwm3d"]
 
-[ext_resource type="Texture2D" uid="uid://o3p1okh5uulu" path="res://assets/Ghostpixxells_pixelfood/92_sandwich.png" id="1_fds0w"]
+[ext_resource type="Texture2D" uid="uid://b1t1p8tvowepp" path="res://assets/Ghostpixxells_pixelfood/01_dish.png" id="1_3kgxb"]
 [ext_resource type="Texture2D" uid="uid://c6rdil6u1ky46" path="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/32x32/sword_03c.png" id="2_sal42"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_um5kv"]
@@ -26,7 +26,7 @@ shape = SubResource("RectangleShape2D_um5kv")
 [node name="07Bread" type="Sprite2D" parent="."]
 position = Vector2(576, 304)
 scale = Vector2(6.75, 6.75)
-texture = ExtResource("1_fds0w")
+texture = ExtResource("1_3kgxb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(289, 292)
