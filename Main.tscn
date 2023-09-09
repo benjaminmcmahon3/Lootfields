@@ -1,34 +1,27 @@
 [gd_scene load_steps=4 format=3 uid="uid://b87dlgu0iwm3d"]
 
-[ext_resource type="Texture2D" uid="uid://b1t1p8tvowepp" path="res://assets/Ghostpixxells_pixelfood/01_dish.png" id="1_3kgxb"]
-[ext_resource type="Texture2D" uid="uid://c6rdil6u1ky46" path="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/32x32/sword_03c.png" id="2_sal42"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_um5kv"]
-size = Vector2(1157, 649)
+[ext_resource type="PackedScene" uid="uid://ma78yrw6r63n" path="res://Map.tscn" id="1_mnac8"]
+[ext_resource type="PackedScene" uid="uid://dd8jcisbxo10x" path="res://Player.tscn" id="2_om4y0"]
+[ext_resource type="PackedScene" uid="uid://cjdk1gl0je131" path="res://Food.tscn" id="3_3y7gn"]
 
 [node name="Main" type="Node"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-size_flags_horizontal = 3
-color = Color(0.619608, 0.501961, 0.458824, 1)
+[node name="Map" parent="." instance=ExtResource("1_mnac8")]
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Player" parent="." instance=ExtResource("2_om4y0")]
+scale = Vector2(0.25, 0.25)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(573.5, 323.5)
-shape = SubResource("RectangleShape2D_um5kv")
+[node name="Food" parent="." instance=ExtResource("3_3y7gn")]
+position = Vector2(528, 504)
 
-[node name="07Bread" type="Sprite2D" parent="."]
-position = Vector2(576, 304)
-scale = Vector2(6.75, 6.75)
-texture = ExtResource("1_3kgxb")
+[node name="Food2" parent="." instance=ExtResource("3_3y7gn")]
+position = Vector2(736, 320)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(289, 292)
-scale = Vector2(12.5938, 10.75)
-texture = ExtResource("2_sal42")
+[node name="Food3" parent="." instance=ExtResource("3_3y7gn")]
+position = Vector2(104, 352)
+
+[node name="Food4" parent="." instance=ExtResource("3_3y7gn")]
+position = Vector2(320, 112)
+
+[node name="Food5" parent="." instance=ExtResource("3_3y7gn")]
+position = Vector2(720, 152)
