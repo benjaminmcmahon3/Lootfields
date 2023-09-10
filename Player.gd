@@ -34,6 +34,7 @@ func _process(delta):
 func _enter_tree():
 	emit_signal("player_tree_entered", self)
 
-func _on_loot_area_entered(loot):
+func _on_loot_taken(loot):
 	emit_signal("player_picked_up_item", loot)
 	loot.visible = false;
+	pass

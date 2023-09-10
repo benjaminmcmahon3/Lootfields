@@ -1,6 +1,8 @@
 extends Area2D
 
 signal loot_area_entered(loot_scene)
+signal loot_area_exited(loot_scene)
+signal loot_taken(loot)
 
 var item_name
 var texture_path
@@ -12,11 +14,17 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	pass
-	
-func _on_area_entered(body):
-	if (body.name == "Player"):
+
+func _on_area_entered(area):
+	if (area.name == "Player"):
 		emit_signal("loot_area_entered", self)
-		
+	pass
+	
+func _on_area_exited(area):
+	if (area.name == "Player"):
+		emit_signal("loot_area_exited", self)
+	pass
+
 func _to_string():
 	return "{Loot: %s}" % [item_name]
 
@@ -33,4 +41,6 @@ func offload_state():
 		"texture_path": texture_path
 	}
 
-
+func _on_loot_button_pressed():
+	emit_signal("loot_taken", self)
+	pass # Replace with function body.

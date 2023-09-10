@@ -35,6 +35,6 @@ static func generate(parent_node: Node, player_node, coords: Vector2):
 			var new_y = randi() % int(coords.y)
 			loot_instance.position = Vector2(new_x, new_y)
 
-			loot_instance.connect("loot_area_entered", Callable(player_node, "_on_loot_area_entered"))
+			loot_instance.connect("loot_taken", Callable(player_node, "_on_loot_taken"))
 
 			parent_node.add_child(loot_instance)
