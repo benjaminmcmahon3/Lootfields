@@ -6,8 +6,8 @@ var player_ref
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	var x = $Forest/CollisionShape2D.position.x * 2
-	var y = $Forest/CollisionShape2D.position.y * 2
+	var x = $CollisionShape2D.position.x * 2
+	var y = $CollisionShape2D.position.y * 2
 	loot_generator.generate(self, player_ref, Vector2(x, y))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

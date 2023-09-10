@@ -1,15 +1,15 @@
 [gd_scene load_steps=3 format=3 uid="uid://b87dlgu0iwm3d"]
 
-[ext_resource type="PackedScene" uid="uid://ma78yrw6r63n" path="res://Worldspace.tscn" id="1_mnac8"]
+[ext_resource type="PackedScene" uid="uid://ma78yrw6r63n" path="res://Forest.tscn" id="1_mnac8"]
 [ext_resource type="PackedScene" uid="uid://dd8jcisbxo10x" path="res://Player.tscn" id="2_om4y0"]
 
 [node name="Main" type="Node"]
 
-[node name="Worldspace" parent="." instance=ExtResource("1_mnac8")]
+[node name="Forest" parent="." instance=ExtResource("1_mnac8")]
 position = Vector2(2.08165e-12, 2.08165e-12)
 
 [node name="Player" parent="." instance=ExtResource("2_om4y0")]
 position = Vector2(54, 20)
 scale = Vector2(0.04, 0.04)
 
-[connection signal="player_tree_entered" from="Player" to="Worldspace" method="_on_player_tree_entered"]
+[connection signal="player_tree_entered" from="Player" to="Forest" method="_on_player_tree_entered"]
