@@ -9,6 +9,6 @@
 position = Vector2(2.08165e-12, 2.08165e-12)
 
 [node name="Player" parent="." instance=ExtResource("2_om4y0")]
-position = Vector2(54, 20)
+position = Vector2(88, 74)
 
 [connection signal="player_tree_entered" from="Player" to="Forest" method="_on_player_tree_entered"]
