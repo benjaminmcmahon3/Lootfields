@@ -5,7 +5,7 @@ const loot_generator = preload("res://scripts/loot_generate.gd")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var loot = loot_generator.new()
-	loot.generate(self, $Node2D/CollisionShape2D.position)
+	loot.generate(self, $Forest/CollisionShape2D.position)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
