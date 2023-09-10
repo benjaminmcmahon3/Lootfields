@@ -1,13 +1,15 @@
 extends Area2D
 
+class_name PlayerScene
+
+signal player_tree_entered(player_scene)
+
 @export var speed = 400
 var screen_size # Size of the game window.
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
-	pass # Replace with function body.
-
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -28,9 +30,9 @@ func _process(delta):
 	position.x = clamp(position.x, 15, 3985)
 	position.y = clamp(position.y, 15, 3985)
 
+func _enter_tree():
+	emit_signal("player_tree_entered", self)
 
-func _on_food_area_entered(area: Area2D):
-	print("area : ", area.monitoring)
-	
-	print("Player in food area")
-
+func _on_loot_area_entered(loot):
+	print("Player in loot area: ", loot)
+	loot.queue_free()

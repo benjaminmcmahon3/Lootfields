@@ -7,10 +7,10 @@
 radius = 253.018
 
 [node name="Player" type="Area2D"]
+z_index = 5
 position = Vector2(2.08165e-12, 2.08165e-12)
 scale = Vector2(0.05, 0.05)
 script = ExtResource("1_bi8p7")
-speed = 200
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

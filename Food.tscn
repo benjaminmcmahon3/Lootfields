@@ -6,8 +6,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_lx1hv"]
 radius = 24.0
 
-[node name="Area2D" type="Area2D"]
-monitorable = false
+[node name="Area2D" type="Area2D" groups=["loot"]]
 script = ExtResource("1_qru8o")
 metadata/_edit_group_ = true
 
@@ -17,3 +16,5 @@ shape = SubResource("CircleShape2D_lx1hv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_8fu2i")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
