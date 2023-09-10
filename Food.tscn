@@ -1,6 +1,5 @@
-[gd_scene load_steps=4 format=3 uid="uid://cjdk1gl0je131"]
+[gd_scene load_steps=3 format=3 uid="uid://cjdk1gl0je131"]
 
-[ext_resource type="Texture2D" uid="uid://cvae7rfaty17u" path="res://assets/Ghostpixxells_pixelfood/07_bread.png" id="1_8fu2i"]
 [ext_resource type="Script" path="res://Food.gd" id="1_qru8o"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lx1hv"]
@@ -15,6 +14,5 @@ rotation = 1.5708
 shape = SubResource("CircleShape2D_lx1hv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_8fu2i")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]

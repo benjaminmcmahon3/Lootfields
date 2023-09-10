@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dd8jcisbxo10x"]
+[gd_scene load_steps=5 format=3 uid="uid://dd8jcisbxo10x"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_bi8p7"]
-[ext_resource type="Texture2D" uid="uid://cg8fq0boe3ay2" path="res://circle.png" id="2_64me1"]
+[ext_resource type="Texture2D" uid="uid://cg8fq0boe3ay2" path="res://assets/circle.png" id="2_iscur"]
+[ext_resource type="PackedScene" uid="uid://cv6tmq18f2jpw" path="res://PlayerInventory.tscn" id="3_cblyl"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4sqhf"]
 radius = 253.018
@@ -18,7 +19,11 @@ shape = SubResource("CircleShape2D_4sqhf")
 debug_color = Color(0.305882, 0.768627, 0.819608, 0.419608)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_64me1")
+texture = ExtResource("2_iscur")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
+
+[node name="PlayerInventory" parent="." instance=ExtResource("3_cblyl")]
+
+[connection signal="player_picked_up_item" from="." to="PlayerInventory" method="_on_player_player_picked_up_item"]

@@ -1,6 +1,6 @@
 extends Node2D
 
-const loot_generator = preload("res://scripts/loot_generate.gd")
+const loot_generator = preload("res://scripts/LootGenerate.gd")
 
 var player_ref
 

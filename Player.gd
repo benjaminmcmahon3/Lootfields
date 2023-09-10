@@ -3,6 +3,7 @@ extends Area2D
 class_name PlayerScene
 
 signal player_tree_entered(player_scene)
+signal player_picked_up_item(item)
 
 @export var speed = 400
 var screen_size # Size of the game window.
@@ -34,5 +35,5 @@ func _enter_tree():
 	emit_signal("player_tree_entered", self)
 
 func _on_loot_area_entered(loot):
-	print("Player in loot area: ", loot)
-	loot.queue_free()
+	emit_signal("player_picked_up_item", loot)
+	loot.visible = false;
