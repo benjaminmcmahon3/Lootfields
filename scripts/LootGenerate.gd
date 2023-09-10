@@ -1,29 +1,12 @@
-const loot: Dictionary = {
-	"bread": {
-		"type": "Food",
-		"name": "bread",
-		"path": "res://assets/Ghostpixxells_pixelfood/07_bread.png",
-		"count": 250
-	},
-	"apple_pie": {
-		"type": "Food",
-		"name": "apple_pie",
-		"path": "res://assets/Ghostpixxells_pixelfood/05_apple_pie.png",
-		"count": 200
-	},
-	"roasted_chicken": {
-		"type": "Food",
-		"name": "roasted_chicken",
-		"path": "res://assets/Ghostpixxells_pixelfood/85_roastedchicken.png",
-		"count": 50
-	}
-}
+const json_loader = preload("res://scripts/JsonLoader.gd")
 
 static var food_scene: PackedScene = preload("res://Food.tscn")
 
-static func generate(parent_node: Node, player_node, coords: Vector2):
-	for loot_key in loot.keys():
-		var loot_item = loot[loot_key]
+static func generate(parent_node: Node, player_node, coords: Vector2, loot_file_path):
+	var loot_config: Dictionary = json_loader._loadJson(loot_file_path)
+	
+	for loot_key in loot_config.keys():
+		var loot_item = loot_config[loot_key]
 		var item_quantity = loot_item.count
 
 		for i in range(item_quantity):
