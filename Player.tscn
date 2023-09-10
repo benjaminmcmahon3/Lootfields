@@ -8,8 +8,9 @@ radius = 253.018
 
 [node name="Player" type="Area2D"]
 position = Vector2(-2, -2)
-scale = Vector2(0.1, 0.1)
+scale = Vector2(0.05, 0.05)
 script = ExtResource("1_bi8p7")
+speed = 200
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -21,3 +22,4 @@ debug_color = Color(0.305882, 0.768627, 0.819608, 0.419608)
 texture = ExtResource("2_64me1")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(3, 3)
