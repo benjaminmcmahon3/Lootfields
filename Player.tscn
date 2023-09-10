@@ -7,14 +7,13 @@
 radius = 253.018
 
 [node name="Player" type="Area2D"]
-position = Vector2(-2, -2)
+position = Vector2(2.08165e-12, 2.08165e-12)
 scale = Vector2(0.05, 0.05)
 script = ExtResource("1_bi8p7")
 speed = 200
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-rotation = -0.0593412
 shape = SubResource("CircleShape2D_4sqhf")
 debug_color = Color(0.305882, 0.768627, 0.819608, 0.419608)
 
