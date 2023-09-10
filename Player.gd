@@ -17,12 +17,19 @@ func _process(delta):
 	var velocity = Vector2.ZERO # The pawlayer's movement vector.
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
+		$AnimatedSprite2D.play("walk_right")
 	if Input.is_action_pressed("move_left"):
 		velocity.x -= 1
+		$AnimatedSprite2D.play("walk_left")
 	if Input.is_action_pressed("move_down"):
 		velocity.y += 1
+		$AnimatedSprite2D.play("walk_down")
 	if Input.is_action_pressed("move_up"):
 		velocity.y -= 1
+		$AnimatedSprite2D.play("walk_up")
+
+	if velocity.x == 0 && velocity.y ==0:
+		$AnimatedSprite2D.play("idle")
 
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed
