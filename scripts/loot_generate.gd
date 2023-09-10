@@ -6,9 +6,9 @@ const loot: Dictionary = {
 	}
 }
 
-var food_scene: PackedScene = preload("res://Food.tscn")
+static var food_scene: PackedScene = preload("res://Food.tscn")
 
-func generate(parent_node: Node, player_node, coords: Vector2):
+static func generate(parent_node: Node, player_node, coords: Vector2):
 	for loot_key in loot.keys():
 		var loot_item = loot[loot_key]
 		var item_quantity = loot_item.count
