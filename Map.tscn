@@ -1,9 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://ma78yrw6r63n"]
+[gd_scene load_steps=3 format=3 uid="uid://ma78yrw6r63n"]
+
+[ext_resource type="Script" path="res://Map.gd" id="1_otwm3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_drfa0"]
 size = Vector2(7481, 5006)
 
 [node name="Map" type="Node2D"]
+script = ExtResource("1_otwm3")
 
 [node name="Node2D" type="Area2D" parent="."]
 metadata/_edit_lock_ = true

@@ -855,18 +855,4 @@ layer_1/tile_data = PackedInt32Array()
 
 [node name="Player" parent="." instance=ExtResource("2_om4y0")]
 position = Vector2(54, 20)
-
-[node name="Food" parent="." instance=ExtResource("3_3y7gn")]
-position = Vector2(528, 504)
-
-[node name="Food2" parent="." instance=ExtResource("3_3y7gn")]
-position = Vector2(736, 320)
-
-[node name="Food3" parent="." instance=ExtResource("3_3y7gn")]
-position = Vector2(104, 352)
-
-[node name="Food4" parent="." instance=ExtResource("3_3y7gn")]
-position = Vector2(320, 112)
-
-[node name="Food5" parent="." instance=ExtResource("3_3y7gn")]
-position = Vector2(720, 152)
+scale = Vector2(0.04, 0.04)

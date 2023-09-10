@@ -6,16 +6,14 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_lx1hv"]
 radius = 24.0
 
-[node name="Food" type="Node2D"]
-scale = Vector2(2, 2)
-
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D"]
+monitorable = false
 script = ExtResource("1_qru8o")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
 shape = SubResource("CircleShape2D_lx1hv")
 
-[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+[node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_8fu2i")
