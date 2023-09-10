@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://ma78yrw6r63n"]
+[gd_scene load_steps=24 format=3 uid="uid://ma78yrw6r63n"]
 
 [ext_resource type="Script" path="res://Forest.gd" id="1_2rn4r"]
 [ext_resource type="Texture2D" uid="uid://dthupmmr2fl5s" path="res://assets/tilesets/TX Struct.png" id="1_j1og1"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://ck8pqd6u1wkqa" path="res://assets/tilesets/TX Props.png" id="7_vre5r"]
 [ext_resource type="Texture2D" uid="uid://dq5my0oryvkgd" path="res://assets/tilesets/TX Shadow Plant.png" id="8_6y1uw"]
 [ext_resource type="Texture2D" uid="uid://bsanwsu2pc3j0" path="res://assets/tilesets/TX Shadow.png" id="9_vecan"]
+[ext_resource type="PackedScene" uid="uid://csxhhsn6almrr" path="res://ScenePortal/ScenePortal.tscn" id="11_65yks"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h0385"]
 
@@ -859,3 +860,6 @@ layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 1
 layer_1/tile_data = PackedInt32Array()
+
+[node name="ScenePortal" parent="." instance=ExtResource("11_65yks")]
+position = Vector2(368, 285)
