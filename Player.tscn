@@ -9,6 +9,7 @@ radius = 253.018
 [node name="Player" type="Area2D"]
 position = Vector2(-2, -2)
 scale = Vector2(0.1, 0.1)
+monitorable = false
 script = ExtResource("1_bi8p7")
 metadata/_edit_group_ = true
 
