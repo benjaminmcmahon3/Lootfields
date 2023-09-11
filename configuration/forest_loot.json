@@ -2,18 +2,21 @@
 	"bread": {
 		"type": "Food",
 		"name": "bread",
+		"display_name": "Bread",
 		"path": "res://assets/Ghostpixxells_pixelfood/07_bread.png",
 		"count": 250
 	},
 	"apple_pie": {
 		"type": "Food",
 		"name": "apple_pie",
+		"display_name": "Apple Pie",
 		"path": "res://assets/Ghostpixxells_pixelfood/05_apple_pie.png",
 		"count": 200
 	},
 	"roasted_chicken": {
 		"type": "Food",
 		"name": "roasted_chicken",
+		"display_name": "Roasted Chicken",
 		"path": "res://assets/Ghostpixxells_pixelfood/85_roastedchicken.png",
 		"count": 50
 	}

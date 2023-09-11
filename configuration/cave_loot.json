@@ -2,12 +2,14 @@
 	"jam": {
 		"type": "Food",
 		"name": "jam",
+		"display_name": "Jam",
 		"path": "res://assets/Ghostpixxells_pixelfood/61_jam.png",
 		"count": 5
 	},
 	"jelly": {
 		"type": "Food",
 		"name": "jelly",
+		"display_name": "Jelly",
 		"path": "res://assets/Ghostpixxells_pixelfood/59_jelly.png",
 		"count": 5
 	}

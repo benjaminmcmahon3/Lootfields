@@ -12,6 +12,7 @@ static func generate(parent_node: Node, player_node, coords: Vector2, loot_file_
 		for i in range(item_quantity):
 			var loot_instance = food_scene.instantiate()
 			loot_instance.set_item_name(loot_item.name)
+			loot_instance.set_item_display_name(loot_item.display_name)
 			loot_instance.set_texture(loot_item.path)
 
 			var new_x = randi() % int(coords.x)
