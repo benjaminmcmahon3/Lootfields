@@ -14,7 +14,6 @@ var interactable = false;
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	emit_signal("loot_item_ready", self)
-	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -26,13 +25,11 @@ func _on_area_entered(area):
 	if (area.name == "Player"):
 		interactable = true
 		emit_signal("loot_area_entered", self)
-	pass
-	
+
 func _on_area_exited(area):
 	if (area.name == "Player"):
 		interactable = false
 		emit_signal("loot_area_exited", self)
-	pass
 
 func _to_string():
 	return "{Loot: %s}" % [item_name]
@@ -50,6 +47,7 @@ func set_texture(texture_path: String):
 func offload_state():
 	return {
 		"name": item_name,
+		"display_name": display_name,
 		"texture_path": texture_path
 	}
 

@@ -5,11 +5,9 @@ extends Control
 func _ready():
 	visible = false
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
 
 func _on_loot_area_entered(area):
 	print("area : ", area)
