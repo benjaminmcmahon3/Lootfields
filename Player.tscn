@@ -1,11 +1,12 @@
-[gd_scene load_steps=42 format=3 uid="uid://dd8jcisbxo10x"]
+[gd_scene load_steps=43 format=3 uid="uid://dd8jcisbxo10x"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_bi8p7"]
+[ext_resource type="Script" path="res://PlayerCamera.gd" id="2_y3cug"]
 [ext_resource type="PackedScene" uid="uid://cv6tmq18f2jpw" path="res://PlayerInventory.tscn" id="3_cblyl"]
 [ext_resource type="Texture2D" uid="uid://cscmrnc6i03im" path="res://assets/CharAni-Full-NoWeps.png" id="3_krhtp"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_4sqhf"]
-radius = 333.333
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uyfiv"]
+size = Vector2(366.667, 200)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0vmkl"]
 atlas = ExtResource("3_krhtp")
@@ -288,18 +289,22 @@ animations = [{
 }]
 
 [node name="Player" type="Area2D"]
-z_index = 5
+z_index = 1
 position = Vector2(1.29247e-26, 1.29247e-26)
+disable_mode = 2
+collision_layer = 3
 script = ExtResource("1_bi8p7")
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4.76837e-07, 8)
 scale = Vector2(0.06, 0.06)
-shape = SubResource("CircleShape2D_4sqhf")
+shape = SubResource("RectangleShape2D_uyfiv")
 debug_color = Color(0.305882, 0.768627, 0.819608, 0.419608)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
+script = ExtResource("2_y3cug")
 
 [node name="PlayerInventory" parent="." instance=ExtResource("3_cblyl")]
 
@@ -307,6 +312,6 @@ zoom = Vector2(3, 3)
 scale = Vector2(1.75, 1.75)
 sprite_frames = SubResource("SpriteFrames_a5f68")
 animation = &"idle"
-frame_progress = 0.232351
 
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="player_picked_up_item" from="." to="PlayerInventory" method="_on_player_player_picked_up_item"]
