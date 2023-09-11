@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://ce5dpo8k68oj1"]
+
+[ext_resource type="Script" path="res://ScenePortals/scene_portal.gd" id="1_1al0x"]
+[ext_resource type="Texture2D" uid="uid://dveu7f7g8ckm8" path="res://ScenePortals/clipart1659079.png" id="1_i4yt5"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m6mgq"]
+radius = 21.0238
+
+[node name="ScenePortal" type="Area2D"]
+y_sort_enabled = true
+script = ExtResource("1_1al0x")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_m6mgq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_i4yt5")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -21.0
+offset_top = -49.0
+offset_right = 21.0
+offset_bottom = -23.0
+text = "Enter"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
