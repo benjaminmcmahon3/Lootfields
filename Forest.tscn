@@ -11,7 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dq5my0oryvkgd" path="res://assets/tilesets/TX Shadow Plant.png" id="8_6y1uw"]
 [ext_resource type="Texture2D" uid="uid://bsanwsu2pc3j0" path="res://assets/tilesets/TX Shadow.png" id="9_vecan"]
 [ext_resource type="PackedScene" uid="uid://csxhhsn6almrr" path="res://ScenePortals/ScenePortal.tscn" id="11_65yks"]
-[ext_resource type="PackedScene" uid="uid://dd8jcisbxo10x" path="res://Player.tscn" id="12_bip0i"]
+[ext_resource type="PackedScene" uid="uid://qc04levxu3he" path="res://Characters/PlayerCharacter.tscn" id="13_0bfjx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h0385"]
 
@@ -1530,9 +1530,5 @@ layer_1/tile_data = PackedInt32Array(131072, 327685, 0, 1179648, 5, 0, 2031616, 
 [node name="ScenePortal" parent="." instance=ExtResource("11_65yks")]
 position = Vector2(368, 285)
 
-[node name="Player" parent="." instance=ExtResource("12_bip0i")]
-position = Vector2(228, 278)
-disable_mode = 0
-collision_layer = 1
-
-[connection signal="player_tree_entered" from="Player" to="." method="_on_player_tree_entered"]
+[node name="PlayerCharacter" parent="." instance=ExtResource("13_0bfjx")]
+position = Vector2(438, 410)
