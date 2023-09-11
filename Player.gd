@@ -1,6 +1,6 @@
-extends Area2D
+extends Area2D 
 
-class_name PlayerScene
+
 
 signal player_tree_entered(player_scene)
 signal player_picked_up_item(item)
@@ -35,8 +35,10 @@ func _process(delta):
 		velocity = velocity.normalized() * speed
 
 	position += velocity * delta
-	position.x = clamp(position.x, 15, 3985)
-	position.y = clamp(position.y, 15, 3985)
+	#position.x = clamp(position.x, 15, 3985)
+	#position.y = clamp(position.y, 15, 3985)
+	
+
 
 func _enter_tree():
 	emit_signal("player_tree_entered", self)
@@ -45,3 +47,8 @@ func _on_loot_taken(loot):
 	emit_signal("player_picked_up_item", loot)
 	loot.visible = false;
 	pass
+
+func _on_body_entered(body):
+	if body is TileMap:
+		print("Cannot Go That Way")
+
