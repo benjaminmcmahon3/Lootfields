@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://ck8pqd6u1wkqa" path="res://assets/tilesets/TX Props.png" id="7_vre5r"]
 [ext_resource type="Texture2D" uid="uid://dq5my0oryvkgd" path="res://assets/tilesets/TX Shadow Plant.png" id="8_6y1uw"]
 [ext_resource type="Texture2D" uid="uid://bsanwsu2pc3j0" path="res://assets/tilesets/TX Shadow.png" id="9_vecan"]
-[ext_resource type="PackedScene" uid="uid://csxhhsn6almrr" path="res://ScenePortal/ScenePortal.tscn" id="11_65yks"]
+[ext_resource type="PackedScene" uid="uid://csxhhsn6almrr" path="res://ScenePortals/ScenePortal.tscn" id="11_65yks"]
 [ext_resource type="PackedScene" uid="uid://dd8jcisbxo10x" path="res://Player.tscn" id="12_bip0i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h0385"]
@@ -1534,3 +1534,5 @@ position = Vector2(368, 285)
 position = Vector2(228, 278)
 disable_mode = 0
 collision_layer = 1
+
+[connection signal="player_tree_entered" from="Player" to="." method="_on_player_tree_entered"]

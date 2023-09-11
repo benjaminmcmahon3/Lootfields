@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://deh2o7yjjxm1u"]
 
 [ext_resource type="Script" path="res://ScenePortal/ScenePortal.gd" id="1_qkdek"]
-[ext_resource type="Texture2D" uid="uid://d3x1eyjbipqeu" path="res://ScenePortal/clipart1659079.png" id="2_8d5f5"]
+[ext_resource type="Texture2D" uid="uid://d3x1eyjbipqeu" path="res://ScenePortals/clipart1659079.png" id="2_8d5f5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ef61a"]
 

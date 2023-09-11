@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cs4s46nn1beuv" path="res://assets/tilesets/cave.png" id="1_1a43s"]
 [ext_resource type="Script" path="res://Regions/Cave/cave.gd" id="1_da73p"]
 [ext_resource type="PackedScene" uid="uid://dd8jcisbxo10x" path="res://Player.tscn" id="2_vp8p5"]
-[ext_resource type="PackedScene" uid="uid://csxhhsn6almrr" path="res://ScenePortal/ScenePortal.tscn" id="4_n8v1t"]
+[ext_resource type="PackedScene" uid="uid://csxhhsn6almrr" path="res://ScenePortals/ScenePortal.tscn" id="4_n8v1t"]
 [ext_resource type="Texture2D" uid="uid://b51s4r4acgnnn" path="res://assets/tilesets/1.png" id="5_w3qgj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gs6wm"]
