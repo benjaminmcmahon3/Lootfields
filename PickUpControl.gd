@@ -17,9 +17,7 @@ func _on_loot_area_entered(area):
 func _on_loot_area_exited(area):
 	print("Loot area left from control")
 	visible = false
-	pass # Replace with function body.
 
 func _on_loot_item_ready(loot_scene):
-	print("loot scene item name : ", loot_scene.item_name)
 	$Button.text = loot_scene.display_name
 	

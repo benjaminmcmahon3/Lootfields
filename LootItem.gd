@@ -21,13 +21,13 @@ func _process(_delta):
 		print("interact")
 		emit_signal("loot_taken", self)
 
-func _on_area_entered(area):
-	if (area.name == "Player"):
+func _on_body_entered(body):
+	if (body.name == "PlayerCharacter"):
 		interactable = true
 		emit_signal("loot_area_entered", self)
 
-func _on_area_exited(area):
-	if (area.name == "Player"):
+func _on_body_exited(body):
+	if (body.name == "PlayerCharacter"):
 		interactable = false
 		emit_signal("loot_area_exited", self)
 
@@ -53,4 +53,3 @@ func offload_state():
 
 func _on_loot_button_pressed():
 	emit_signal("loot_taken", self)
-	pass # Replace with function body.

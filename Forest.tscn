@@ -1532,3 +1532,5 @@ position = Vector2(368, 285)
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("13_0bfjx")]
 position = Vector2(438, 410)
+
+[connection signal="player_tree_entered" from="PlayerCharacter" to="." method="_on_player_tree_entered"]

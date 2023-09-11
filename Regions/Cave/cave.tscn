@@ -305,8 +305,8 @@ script/source = "extends Area2D
 
 var scene_path
 
-func _on_area_entered(area):
-	if area.name == \"Player\":
+func _on_body_entered(body):
+	if body.name == \"PlayerCharacter\":
 		print(\"Cave Portal Entered\")
 		get_tree().change_scene_to_file(scene_path)
 
@@ -332,6 +332,7 @@ layer_0/tile_data = PackedInt32Array(0, 65536, 8, 65536, 65536, 8, 131072, 65536
 
 [node name="Player" parent="." instance=ExtResource("2_vp8p5")]
 position = Vector2(70, 54)
+speed = 400
 
 [node name="ScenePortal" parent="." instance=ExtResource("4_n8v1t")]
 position = Vector2(305, 183)

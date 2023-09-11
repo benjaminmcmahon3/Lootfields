@@ -1,7 +1,5 @@
 extends Area2D 
 
-
-
 signal player_tree_entered(player_scene)
 signal player_picked_up_item(item)
 
