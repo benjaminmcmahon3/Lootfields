@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://ck8pqd6u1wkqa" path="res://assets/tilesets/TX Props.png" id="7_vre5r"]
 [ext_resource type="Texture2D" uid="uid://dq5my0oryvkgd" path="res://assets/tilesets/TX Shadow Plant.png" id="8_6y1uw"]
 [ext_resource type="Texture2D" uid="uid://bsanwsu2pc3j0" path="res://assets/tilesets/TX Shadow.png" id="9_vecan"]
+[ext_resource type="PackedScene" uid="uid://ce5dpo8k68oj1" path="res://ScenePortals/scene_portal.tscn" id="12_fnv27"]
 [ext_resource type="PackedScene" uid="uid://qc04levxu3he" path="res://Characters/PlayerCharacter.tscn" id="13_0bfjx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h0385"]
@@ -1528,5 +1529,9 @@ layer_1/tile_data = PackedInt32Array(131072, 327685, 0, 1179648, 5, 0, 2031616, 
 
 [node name="PlayerCharacter" parent="." instance=ExtResource("13_0bfjx")]
 position = Vector2(438, 410)
+
+[node name="ScenePortal" parent="." instance=ExtResource("12_fnv27")]
+position = Vector2(392, 281)
+next_scene_path = "res://Regions/Cave/cave.tscn"
 
 [connection signal="player_tree_entered" from="PlayerCharacter" to="." method="_on_player_tree_entered"]
