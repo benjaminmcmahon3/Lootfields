@@ -337,4 +337,6 @@ offset_right = 27.0
 offset_bottom = -30.0
 text = "Exit"
 
+[connection signal="player_tree_entered" from="PlayerCharacter" to="." method="_on_player_player_tree_entered"]
+
 [editable path="ScenePortal"]

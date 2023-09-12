@@ -13,4 +13,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-	
+
+
+func _on_player_player_tree_entered(player_scene):
+	player_ref = player_scene
