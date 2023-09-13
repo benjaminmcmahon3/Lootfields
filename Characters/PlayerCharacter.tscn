@@ -1,12 +1,11 @@
-[gd_scene load_steps=42 format=3 uid="uid://qc04levxu3he"]
+[gd_scene load_steps=43 format=3 uid="uid://qc04levxu3he"]
 
 [ext_resource type="Script" path="res://Characters/PlayerCharacter.gd" id="1_nxc8p"]
+[ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://scripts/PlayerInventory.tres" id="2_72jb1"]
 [ext_resource type="Texture2D" uid="uid://cscmrnc6i03im" path="res://assets/CharAni-Full-NoWeps.png" id="2_e57q2"]
-[ext_resource type="PackedScene" uid="uid://cv6tmq18f2jpw" path="res://PlayerInventory.tscn" id="3_hgr4a"]
+[ext_resource type="PackedScene" uid="uid://deowxwlnioosj" path="res://Characters/PlayerMenu.tscn" id="4_r5dw1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ec3xk"]
-radius = 6.0
-height = 22.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0vmkl"]
 atlas = ExtResource("2_e57q2")
@@ -290,12 +289,10 @@ animations = [{
 
 [node name="PlayerCharacter" type="CharacterBody2D"]
 z_index = 1
-position = Vector2(0, -8)
 script = ExtResource("1_nxc8p")
+inventory = ExtResource("2_72jb1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-7.10543e-15, 8)
-rotation = 1.5708
 shape = SubResource("CapsuleShape2D_ec3xk")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -306,4 +303,4 @@ scale = Vector2(1.75, 1.75)
 sprite_frames = SubResource("SpriteFrames_2jkd5")
 animation = &"idle"
 
-[node name="PlayerInventory" parent="." instance=ExtResource("3_hgr4a")]
+[node name="PlayerMenu" parent="." instance=ExtResource("4_r5dw1")]
