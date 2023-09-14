@@ -2,6 +2,7 @@ extends CharacterBody2D
 
 signal player_tree_entered(player_scene)
 signal player_picked_up_item(item)
+signal player_damaged(amount)
 
 @export var speed = 400
 
@@ -48,4 +49,5 @@ func _on_body_entered(body):
 	if body is TileMap:
 		print("Cannot Go That Way")
 
-
+func _on_damage_taken(damage_amount):
+	emit_signal("player_damaged", damage_amount)
