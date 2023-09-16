@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cmo160bijfa1e"]
+
+[ext_resource type="Script" path="res://scripts/ItemData.gd" id="1_yqgef"]
+[ext_resource type="Texture2D" uid="uid://d0ogvnbc184ru" path="res://assets/Ghostpixxells_pixelfood/59_jelly.png" id="2_lv5hs"]
+
+[resource]
+script = ExtResource("1_yqgef")
+unique_id = "jelly"
+display_name = "Jelly"
+description = "It's jelly"
+weight = 2
+texture = ExtResource("2_lv5hs")

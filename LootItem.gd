@@ -7,9 +7,11 @@ signal loot_area_exited(loot_scene)
 signal loot_item_ready(loot_scene)
 signal loot_taken(loot)
 
-var item_name
-var display_name
-var texture_path
+#var item_name
+#var display_name
+#var texture_path
+
+@export var item_data: ItemData
 
 var interactable = false;
 
@@ -33,22 +35,22 @@ func _on_body_exited(body):
 		interactable = false
 		emit_signal("loot_area_exited", self)
 
-func set_item_name(name: String):
-	item_name = name
+#func set_item_name(name: String):
+#	item_name = name
+
+#func set_item_display_name(name: String):
+#	display_name = name
 	
-func set_item_display_name(name: String):
-	display_name = name
+#func set_texture(texture_path: String):
+#	texture_path = texture_path
+#	$Sprite2D.texture = load(texture_path)
 	
-func set_texture(texture_path: String):
-	texture_path = texture_path
-	$Sprite2D.texture = load(texture_path)
-	
-func offload_state():
-	return {
-		"name": item_name,
-		"display_name": display_name,
-		"texture_path": texture_path
-	}
+#func offload_state():
+#	return {
+#		"name": item_name,
+#		"display_name": display_name,
+#		"texture_path": texture_path
+#	}
 
 func _on_loot_button_pressed():
 	emit_signal("loot_taken", self)

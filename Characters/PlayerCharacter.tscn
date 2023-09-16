@@ -1,8 +1,9 @@
-[gd_scene load_steps=43 format=3 uid="uid://qc04levxu3he"]
+[gd_scene load_steps=44 format=3 uid="uid://qc04levxu3he"]
 
 [ext_resource type="Script" path="res://Characters/PlayerCharacter.gd" id="1_nxc8p"]
-[ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://scripts/PlayerInventory.tres" id="2_72jb1"]
 [ext_resource type="Texture2D" uid="uid://cscmrnc6i03im" path="res://assets/CharAni-Full-NoWeps.png" id="2_e57q2"]
+[ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://Resources/PlayerInventory.tres" id="2_kbmv3"]
+[ext_resource type="Resource" uid="uid://g668rkqhbseg" path="res://Resources/PlayerStats.tres" id="2_su6cb"]
 [ext_resource type="PackedScene" uid="uid://deowxwlnioosj" path="res://Characters/PlayerMenu.tscn" id="4_r5dw1"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ec3xk"]
@@ -290,7 +291,8 @@ animations = [{
 [node name="PlayerCharacter" type="CharacterBody2D"]
 z_index = 1
 script = ExtResource("1_nxc8p")
-inventory = ExtResource("2_72jb1")
+stats = ExtResource("2_su6cb")
+inventory = ExtResource("2_kbmv3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_ec3xk")

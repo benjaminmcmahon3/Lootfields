@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://ou7520313mbw"]
+
+[ext_resource type="Script" path="res://scripts/ItemData.gd" id="1_sr3r2"]
+[ext_resource type="Texture2D" uid="uid://dj4dhaih4jmce" path="res://assets/Ghostpixxells_pixelfood/85_roastedchicken.png" id="2_th01j"]
+
+[resource]
+script = ExtResource("1_sr3r2")
+unique_id = "roasted_chicken"
+display_name = "Roasted Chicken"
+description = "An incredible, juicy roasted chicken"
+weight = 6
+texture = ExtResource("2_th01j")
+areas = null
+tags = null

@@ -3,7 +3,7 @@ extends CharacterBody2D
 signal player_tree_entered(player_scene)
 signal player_damaged(amount)
 
-@export var speed = 400
+@export var stats: Stats
 @export var inventory: Inventory
 
 @onready var ui_sprite := $AnimatedSprite2D
@@ -36,7 +36,7 @@ func _physics_process(delta):
 		ui_sprite.play("idle")
 
 	if velocity.length() > 0:
-		velocity = velocity.normalized() * speed
+		velocity = velocity.normalized() * stats.speed
 
 	position += velocity * delta
 

@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bdgv0wk03ew7g" path="res://Interface/Elements/InventoryUI.tscn" id="1_fy326"]
 [ext_resource type="Script" path="res://Characters/PlayerMenu.gd" id="1_hvwlw"]
 [ext_resource type="Script" path="res://Interface/Elements/InventoryUI.gd" id="3_33l7b"]
-[ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://scripts/PlayerInventory.tres" id="4_54lsf"]
+[ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://Resources/PlayerInventory.tres" id="4_k5lnp"]
 
 [node name="PlayerMenu" type="CanvasLayer"]
 script = ExtResource("1_hvwlw")
@@ -11,4 +11,4 @@ script = ExtResource("1_hvwlw")
 [node name="Inventory" parent="." instance=ExtResource("1_fy326")]
 follow_viewport_enabled = false
 script = ExtResource("3_33l7b")
-inventory = ExtResource("4_54lsf")
+inventory = ExtResource("4_k5lnp")
