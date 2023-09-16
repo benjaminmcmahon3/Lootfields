@@ -1,5 +1,7 @@
 extends Area2D
 
+class_name LootItem
+
 signal loot_area_entered(loot_scene)
 signal loot_area_exited(loot_scene)
 signal loot_item_ready(loot_scene)
@@ -30,9 +32,6 @@ func _on_body_exited(body):
 	if (body.name == "PlayerCharacter"):
 		interactable = false
 		emit_signal("loot_area_exited", self)
-
-func _to_string():
-	return "{Loot: %s}" % [item_name]
 
 func set_item_name(name: String):
 	item_name = name

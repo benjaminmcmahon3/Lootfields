@@ -1,15 +1,14 @@
-extends Node2D
+extends CanvasLayer
 
-var inventory: InventoryManager
+@onready var ui_inventory = $Inventory
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	inventory = preload("res://scripts/InventoryManager.gd").new()
+	ui_inventory.visible = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-	
-func _on_player_player_picked_up_item(item):
-	inventory.add_item(item)
 
+func toggle_inventory():
+	ui_inventory.visible = !ui_inventory.visible

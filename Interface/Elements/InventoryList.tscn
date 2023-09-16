@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbvgxkfmqfg5y"]
+
+[ext_resource type="Theme" uid="uid://boiua8vmjfi7w" path="res://Interface/theme/default.tres" id="1_u27h4"]
+[ext_resource type="PackedScene" uid="uid://bidvbnch5f5q" path="res://Interface/Elements/InventoryListItem.tscn" id="1_wp1x8"]
+
+[node name="InventoryList" type="VBoxContainer"]
+offset_right = 320.0
+offset_bottom = 472.0
+theme = ExtResource("1_u27h4")
+
+[node name="InventoryListItem" parent="." instance=ExtResource("1_wp1x8")]
+layout_mode = 2
+
+[node name="InventoryListItem2" parent="." instance=ExtResource("1_wp1x8")]
+visible = false
+layout_mode = 2
+
+[node name="InventoryListItem3" parent="." instance=ExtResource("1_wp1x8")]
+visible = false
+layout_mode = 2
+
+[node name="InventoryListItem4" parent="." instance=ExtResource("1_wp1x8")]
+visible = false
+layout_mode = 2
+
+[node name="InventoryListItem5" parent="." instance=ExtResource("1_wp1x8")]
+visible = false
+layout_mode = 2
+
+[node name="InventoryListItem6" parent="." instance=ExtResource("1_wp1x8")]
+visible = false
+layout_mode = 2
+
+[node name="InventoryListItem7" parent="." instance=ExtResource("1_wp1x8")]
+visible = false
+layout_mode = 2
