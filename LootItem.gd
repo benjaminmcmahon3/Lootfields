@@ -7,21 +7,22 @@ signal loot_area_exited(loot_scene)
 signal loot_item_ready(loot_scene)
 signal loot_taken(loot)
 
-var item_name
-var display_name
-var texture_path
+@onready var sprite := $Sprite2D
+
+@export var item_data: ItemData
 
 var interactable = false;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	emit_signal("loot_item_ready", self)
+	sprite.texture = item_data.texture
+	emit_signal("loot_item_ready", item_data)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if (interactable && Input.is_action_pressed("interact")):
-		print("interact")
-		emit_signal("loot_taken", self)
+	if (interactable && Input.is_action_just_pressed("interact")):
+		self.queue_free()
+		emit_signal("loot_taken")
 
 func _on_body_entered(body):
 	if (body.name == "PlayerCharacter"):
@@ -33,22 +34,6 @@ func _on_body_exited(body):
 		interactable = false
 		emit_signal("loot_area_exited", self)
 
-func set_item_name(name: String):
-	item_name = name
-	
-func set_item_display_name(name: String):
-	display_name = name
-	
-func set_texture(texture_path: String):
-	texture_path = texture_path
-	$Sprite2D.texture = load(texture_path)
-	
-func offload_state():
-	return {
-		"name": item_name,
-		"display_name": display_name,
-		"texture_path": texture_path
-	}
-
 func _on_loot_button_pressed():
-	emit_signal("loot_taken", self)
+	self.queue_free()
+	emit_signal("loot_taken")

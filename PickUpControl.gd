@@ -16,6 +16,5 @@ func _on_loot_area_entered(area):
 func _on_loot_area_exited(area):
 	visible = false
 
-func _on_loot_item_ready(loot_scene):
-	ui_button.text = loot_scene.display_name
-
+func _on_loot_item_ready(item_data: ItemData):
+	ui_button.text = item_data.display_name

@@ -1,10 +1,17 @@
-[gd_scene load_steps=10 format=3 uid="uid://7y32c1cq175h"]
+[gd_scene load_steps=13 format=3 uid="uid://7y32c1cq175h"]
 
 [ext_resource type="Texture2D" uid="uid://cs4s46nn1beuv" path="res://assets/tilesets/cave.png" id="1_1a43s"]
 [ext_resource type="Script" path="res://Regions/Cave/cave.gd" id="1_da73p"]
+[ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://Resources/PlayerInventory.tres" id="2_8hh0l"]
+[ext_resource type="Script" path="res://scripts/LootGenerator.gd" id="2_ueg05"]
 [ext_resource type="PackedScene" uid="uid://qc04levxu3he" path="res://Characters/PlayerCharacter.tscn" id="3_g8aua"]
 [ext_resource type="PackedScene" uid="uid://ce5dpo8k68oj1" path="res://ScenePortals/scene_portal.tscn" id="4_3engu"]
 [ext_resource type="Texture2D" uid="uid://b51s4r4acgnnn" path="res://assets/tilesets/1.png" id="5_4skvy"]
+
+[sub_resource type="Resource" id="Resource_31ffe"]
+script = ExtResource("2_ueg05")
+item_areas = Array[String](["cave"])
+player_inventory = ExtResource("2_8hh0l")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gs6wm"]
 
@@ -305,6 +312,7 @@ size = Vector2(16, 68)
 
 [node name="cave" type="Area2D"]
 script = ExtResource("1_da73p")
+loot_generator = SubResource("Resource_31ffe")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(500, 500)

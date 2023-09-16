@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://dvqhfgb8b2nw1"]
+
+[ext_resource type="Script" path="res://scripts/ItemData.gd" id="1_1swnp"]
+[ext_resource type="Texture2D" uid="uid://s3plv3hhxmgm" path="res://assets/Ghostpixxells_pixelfood/61_jam.png" id="2_nlhc3"]
+
+[resource]
+script = ExtResource("1_1swnp")
+unique_id = "jam"
+display_name = "Jam"
+description = "A jar of jam"
+weight = 2
+texture = ExtResource("2_nlhc3")
+areas = Array[String](["cave"])
+tags = Array[String]([])

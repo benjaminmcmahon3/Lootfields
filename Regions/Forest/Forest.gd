@@ -1,6 +1,6 @@
 extends Node2D
 
-const loot_generator = preload("res://scripts/LootGenerate.gd")
+@export var loot_generator: LootGenerator
 
 var player_ref
 
@@ -8,7 +8,7 @@ var player_ref
 func _ready():
 	var x = $CollisionShape2D.position.x * 2
 	var y = $CollisionShape2D.position.y * 2
-	loot_generator.generate(self, player_ref, Vector2(x, y), "res://configuration/forest_loot.json")
+	loot_generator.generate(self, player_ref, Vector2(x, y))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):

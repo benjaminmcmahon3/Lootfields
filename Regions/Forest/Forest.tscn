@@ -1,7 +1,9 @@
-[gd_scene load_steps=25 format=3 uid="uid://ma78yrw6r63n"]
+[gd_scene load_steps=28 format=3 uid="uid://ma78yrw6r63n"]
 
 [ext_resource type="Script" path="res://Regions/Forest/Forest.gd" id="1_2rn4r"]
 [ext_resource type="Texture2D" uid="uid://dthupmmr2fl5s" path="res://assets/tilesets/TX Struct.png" id="1_j1og1"]
+[ext_resource type="Script" path="res://scripts/LootGenerator.gd" id="2_d5yb1"]
+[ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://Resources/PlayerInventory.tres" id="2_ejegg"]
 [ext_resource type="Texture2D" uid="uid://bvl3gkrkoaaya" path="res://assets/tilesets/TX Tileset Grass.png" id="2_pkvbf"]
 [ext_resource type="Texture2D" uid="uid://b45qx5salnfk6" path="res://assets/tilesets/TX Tileset Stone Ground.png" id="3_sqygi"]
 [ext_resource type="Texture2D" uid="uid://bp852g8jyn2ss" path="res://assets/tilesets/TX Tileset Wall.png" id="4_agw3k"]
@@ -12,6 +14,11 @@
 [ext_resource type="Texture2D" uid="uid://bsanwsu2pc3j0" path="res://assets/tilesets/TX Shadow.png" id="9_vecan"]
 [ext_resource type="PackedScene" uid="uid://ce5dpo8k68oj1" path="res://ScenePortals/scene_portal.tscn" id="12_fnv27"]
 [ext_resource type="PackedScene" uid="uid://qc04levxu3he" path="res://Characters/PlayerCharacter.tscn" id="13_0bfjx"]
+
+[sub_resource type="Resource" id="Resource_hku2y"]
+script = ExtResource("2_d5yb1")
+item_areas = Array[String](["overworld"])
+player_inventory = ExtResource("2_ejegg")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h0385"]
 
@@ -1503,6 +1510,7 @@ pattern_0 = SubResource("TileMapPattern_vvnnb")
 
 [node name="Forest" type="Area2D"]
 script = ExtResource("1_2rn4r")
+loot_generator = SubResource("Resource_hku2y")
 metadata/_edit_lock_ = true
 metadata/_edit_group_ = true
 
