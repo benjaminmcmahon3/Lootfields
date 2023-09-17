@@ -42,17 +42,19 @@ func _physics_process(delta):
 
 	var hasCollided = move_and_slide()
 	if hasCollided:
+		stats.health -= 5
+		
+		if (stats.health == 0):
+			stats.health = 100
+		
 		print("Cannot go that way")
 
 	if Input.is_action_just_pressed("open_player_menu"):
 		ui_player_menu.toggle_inventory()
 
+
 func _enter_tree():
 	emit_signal("player_tree_entered", self)
-
-func _on_loot_taken(loot):
-	loot.visible = false;
-	inventory.add_item(loot)
 
 func _on_body_entered(body):
 	if body is TileMap:
