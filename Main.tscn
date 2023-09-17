@@ -1,7 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b87dlgu0iwm3d"]
+[gd_scene load_steps=3 format=3 uid="uid://b87dlgu0iwm3d"]
 
 [ext_resource type="PackedScene" uid="uid://ma78yrw6r63n" path="res://Regions/Forest/Forest.tscn" id="1_mnac8"]
+[ext_resource type="PackedScene" uid="uid://qc04levxu3he" path="res://Characters/PlayerCharacter.tscn" id="2_dxdgv"]
 
 [node name="Main" type="Node"]
 
-[node name="Forest" parent="." instance=ExtResource("1_mnac8")]
+[node name="Worldspace" type="Node2D" parent="."]
+
+[node name="Forest" parent="Worldspace" instance=ExtResource("1_mnac8")]
+
+[node name="PlayerCharacter" parent="Worldspace" instance=ExtResource("2_dxdgv")]
+position = Vector2(193, 222)

@@ -2,6 +2,8 @@ extends Node2D
 
 @export var loot_generator: LootGenerator
 
+#@export var loot_generation: LootGenerator
+
 var player_ref
 
 # Called when the node enters the scene tree for the first time.
