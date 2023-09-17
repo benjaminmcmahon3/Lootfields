@@ -10,3 +10,5 @@ display_name = "Jam"
 description = "A jar of jam"
 weight = 2
 texture = ExtResource("2_nlhc3")
+areas = Array[String](["cave"])
+tags = Array[String]([])

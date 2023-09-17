@@ -10,5 +10,5 @@ display_name = "Bread"
 description = "It's a loaf of bread"
 weight = 2
 texture = ExtResource("2_ko6yv")
-areas = []
-tags = []
+areas = Array[String](["overworld", "cave"])
+tags = Array[String]([])

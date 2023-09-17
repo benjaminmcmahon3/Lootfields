@@ -10,3 +10,5 @@ display_name = "Jelly"
 description = "It's jelly"
 weight = 2
 texture = ExtResource("2_lv5hs")
+areas = Array[String](["cave"])
+tags = Array[String]([])

@@ -9,8 +9,8 @@ class_name ItemData
 @export var texture: Texture2D
 
 @export_category("Spawn Areas")
-@export var areas = []
-@export var tags = []
+@export var areas: Array[String]
+@export var tags: Array[String]
 
 func _to_string():
 	print("unique_id : %s" % [unique_id])

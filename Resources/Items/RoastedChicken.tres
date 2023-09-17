@@ -10,5 +10,5 @@ display_name = "Roasted Chicken"
 description = "An incredible, juicy roasted chicken"
 weight = 6
 texture = ExtResource("2_th01j")
-areas = null
-tags = null
+areas = Array[String](["overworld"])
+tags = Array[String]([])

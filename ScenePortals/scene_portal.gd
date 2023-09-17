@@ -15,6 +15,7 @@ func _ready():
 func _process(delta):
 	if (enabled && interactable && Input.is_action_pressed("interact")):
 		emit_signal("portal_entered", self)
+		get_tree()
 		get_tree().change_scene_to_file(next_scene_path)
 
 func _on_body_entered(body):
