@@ -15,31 +15,46 @@ func _ready():
 
 func _physics_process(delta):
 	var velocity = Vector2.ZERO # The pawlayer's movement vector.
+	var is_moving: bool
+
+	if Input.is_action_pressed("move_up"):
+		is_moving = true
+		ui_sprite.play("walk_up")
 
 	if Input.is_action_pressed("move_right"):
-		velocity.x += 1
+		is_moving = true
 		ui_sprite.play("walk_right")
 
 	if Input.is_action_pressed("move_left"):
-		velocity.x -= 1
+		is_moving = true
 		ui_sprite.play("walk_left")
 
 	if Input.is_action_pressed("move_down"):
-		velocity.y += 1
+		is_moving = true
 		ui_sprite.play("walk_down")
 
-	if Input.is_action_pressed("move_up"):
-		velocity.y -= 1
-		ui_sprite.play("walk_up")
-
-	if velocity.x == 0 && velocity.y ==0:
+	if not is_moving:
 		ui_sprite.play("idle")
 
-	if velocity.length() > 0:
-		velocity = velocity.normalized() * stats.speed
+	if is_moving:
+		var mouse_position = get_global_mouse_position()
+		var direction = (mouse_position - position).normalized()
+		
+		var dir_angle = direction.angle()
+		if dir_angle < -0.75*PI and dir_angle > -0.25*PI:
+			ui_sprite.play("walk_up")
+		if dir_angle > -0.75*PI and dir_angle > 0.75*PI:
+			ui_sprite.play("walk_left")
+		if dir_angle < 0.75*PI and dir_angle > 0.25*PI:
+			ui_sprite.play("walk_down")
+		if dir_angle < 0.25*PI and dir_angle > -0.25*PI:
+			ui_sprite.play("walk_right")
+		
+		velocity = direction * stats.speed
+		
 
 	position += velocity * delta
-
+	
 	var hasCollided = move_and_slide()
 	if hasCollided:
 		stats.health -= 5
@@ -51,7 +66,6 @@ func _physics_process(delta):
 
 	if Input.is_action_just_pressed("open_player_menu"):
 		ui_player_menu.toggle_inventory()
-
 
 func _enter_tree():
 	emit_signal("player_tree_entered", self)

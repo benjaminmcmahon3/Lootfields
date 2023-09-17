@@ -12,5 +12,5 @@ func set_health(val: int) -> void:
 	emit_changed()
 
 func set_speed(val: int) -> void:
-	speed = clamp(val, 0, 100)
+	speed = clamp(val, 0, 10000)
 	emit_changed()
