@@ -14,48 +14,44 @@ func _ready():
 	pass
 
 func _physics_process(delta):
-	var velocity = Vector2.ZERO # The pawlayer's movement vector.
-	var is_moving: bool
+	var velocity = Vector2.ZERO # The player's movement vector.
 
 	if Input.is_action_pressed("move_up"):
-		is_moving = true
-		ui_sprite.play("walk_up")
+		velocity.y -= 1
 
 	if Input.is_action_pressed("move_right"):
-		is_moving = true
-		ui_sprite.play("walk_right")
+		velocity.x += 1
 
 	if Input.is_action_pressed("move_left"):
-		is_moving = true
-		ui_sprite.play("walk_left")
+		velocity.x -= 1
 
 	if Input.is_action_pressed("move_down"):
-		is_moving = true
-		ui_sprite.play("walk_down")
+		velocity.y += 1
 
-	if not is_moving:
-		ui_sprite.play("idle")
+	if velocity.length() > 0:
+		velocity = velocity.normalized() * stats.speed
 
-	if is_moving:
-		var mouse_position = get_global_mouse_position()
-		var direction = (mouse_position - position).normalized()
-		
-		var dir_angle = direction.angle()
-		if dir_angle < -0.75*PI and dir_angle > -0.25*PI:
-			ui_sprite.play("walk_up")
-		if dir_angle > -0.75*PI and dir_angle > 0.75*PI:
-			ui_sprite.play("walk_left")
-		if dir_angle < 0.75*PI and dir_angle > 0.25*PI:
-			ui_sprite.play("walk_down")
-		if dir_angle < 0.25*PI and dir_angle > -0.25*PI:
-			ui_sprite.play("walk_right")
-		
-		velocity = direction * stats.speed
-		
-
+	self.velocity = velocity
 	position += velocity * delta
-	
-	var hasCollided = move_and_slide()
+
+	move_and_slide()
+
+func _process(delta):
+	if not velocity.length():
+		ui_sprite.play("idle")
+	elif velocity.x > 0:
+		ui_sprite.play("walk_right")
+	elif velocity.x < 0:
+		ui_sprite.play("walk_left")
+	elif velocity.y >= 0:
+		ui_sprite.play("walk_down")
+	elif velocity.y < 0:
+		ui_sprite.play("walk_up")
+
+	if Input.is_action_just_pressed("open_player_menu"):
+		ui_player_menu.toggle_inventory()
+		
+	var hasCollided = get_last_slide_collision()
 	if hasCollided:
 		stats.health -= 5
 		
@@ -63,9 +59,6 @@ func _physics_process(delta):
 			stats.health = 100
 		
 		print("Cannot go that way")
-
-	if Input.is_action_just_pressed("open_player_menu"):
-		ui_player_menu.toggle_inventory()
 
 func _enter_tree():
 	emit_signal("player_tree_entered", self)
