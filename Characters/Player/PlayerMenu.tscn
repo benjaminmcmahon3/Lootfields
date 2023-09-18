@@ -1,0 +1,14 @@
+[gd_scene load_steps=5 format=3 uid="uid://deowxwlnioosj"]
+
+[ext_resource type="Script" path="res://Characters/Player/PlayerMenu.gd" id="1_ok08r"]
+[ext_resource type="PackedScene" uid="uid://bdgv0wk03ew7g" path="res://Interface/Elements/InventoryUI.tscn" id="2_lt2w5"]
+[ext_resource type="Script" path="res://Interface/Elements/InventoryUI.gd" id="3_v8tob"]
+[ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://Resources/PlayerInventory.tres" id="4_o4pw4"]
+
+[node name="PlayerMenu" type="CanvasLayer"]
+script = ExtResource("1_ok08r")
+
+[node name="Inventory" parent="." instance=ExtResource("2_lt2w5")]
+follow_viewport_enabled = false
+script = ExtResource("3_v8tob")
+inventory = ExtResource("4_o4pw4")
