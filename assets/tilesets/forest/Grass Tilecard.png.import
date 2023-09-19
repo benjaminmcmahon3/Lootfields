@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://7qpngw7f7stp"
-path="res://.godot/imported/FieldLandscape.png-d66f7747156d8f59a3b674510df44f03.ctex"
+uid="uid://hlsj2oko04p5"
+path="res://.godot/imported/Grass Tilecard.png-a38c42aff96696a2d59cc9cb5647c47c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/forest/FieldLandscape.png"
-dest_files=["res://.godot/imported/FieldLandscape.png-d66f7747156d8f59a3b674510df44f03.ctex"]
+source_file="res://assets/tilesets/forest/Grass Tilecard.png"
+dest_files=["res://.godot/imported/Grass Tilecard.png-a38c42aff96696a2d59cc9cb5647c47c.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cev78rxlwhy8h"
-path="res://.godot/imported/Dirt Grass Floor Tiles.png-593079881d8ff74cd7574aa22e566d8c.ctex"
+uid="uid://dot4qpjl2mt8i"
+path="res://.godot/imported/Water Tilecard.png-768c27c540a6c0f3f6ffb6e60ea925f5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/forest/Dirt Grass Floor Tiles.png"
-dest_files=["res://.godot/imported/Dirt Grass Floor Tiles.png-593079881d8ff74cd7574aa22e566d8c.ctex"]
+source_file="res://assets/tilesets/forest/Water Tilecard.png"
+dest_files=["res://.godot/imported/Water Tilecard.png-768c27c540a6c0f3f6ffb6e60ea925f5.ctex"]
 
 [params]
 
