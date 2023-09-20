@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://d2xl6ylqh1y4e"]
+[gd_scene load_steps=9 format=3 uid="uid://d2xl6ylqh1y4e"]
 
 [ext_resource type="Texture2D" uid="uid://ddfavm8crxq51" path="res://assets/Magical Free Asset Pack/adept necromancer/AdeptNecromancerIdle.png" id="1_4kslc"]
+[ext_resource type="Script" path="res://Characters/Enemy/Enemy.gd" id="1_7eyxu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c2c3v"]
 atlas = ExtResource("1_4kslc")
@@ -41,7 +42,9 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jb820"]
 size = Vector2(16, 16)
 
-[node name="Enemy" type="CharacterBody2D"]
+[node name="Enemy" type="CharacterBody2D" node_paths=PackedStringArray("navigation_agent")]
+script = ExtResource("1_7eyxu")
+navigation_agent = NodePath("NavigationAgent2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_i4xh8")
@@ -50,3 +53,5 @@ frame_progress = 0.234348
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_jb820")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
