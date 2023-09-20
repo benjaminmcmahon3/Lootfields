@@ -10,5 +10,5 @@ display_name = "Apple Pie"
 description = "A warm slice of delicious apple pie"
 weight = 3
 texture = ExtResource("2_i3k7i")
-areas = ["overworld"]
+areas = Array[String](["overworld"])
 tags = Array[String]([])
