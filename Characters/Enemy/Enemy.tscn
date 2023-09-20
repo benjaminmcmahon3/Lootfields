@@ -40,7 +40,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jb820"]
-size = Vector2(9, 8)
+size = Vector2(7, 4)
 
 [node name="Enemy" type="CharacterBody2D" node_paths=PackedStringArray("navigation_agent")]
 script = ExtResource("1_7eyxu")
@@ -53,6 +53,8 @@ animation = &"idle"
 frame_progress = 0.234348
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_jb820")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+debug_enabled = true
