@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name PlayerCharacter
 
 signal player_tree_entered(player_scene)
 signal player_damaged(amount)
@@ -10,10 +11,15 @@ signal player_damaged(amount)
 @onready var ui_player_menu := $PlayerMenu
 @onready var ui_inventory := $PlayerMenu/Inventory
 
+const projectile = preload("res://Shootables/Fireball/Fireball.tscn")
+
 func _ready():
+	stats.global_position = global_position
 	pass
 
 func _physics_process(delta):
+	stats.global_position = global_position
+	
 	var velocity = Vector2.ZERO # The player's movement vector.
 
 	if Input.is_action_pressed("move_up"):
@@ -33,6 +39,9 @@ func _physics_process(delta):
 
 	self.velocity = velocity
 	position += velocity * delta
+	
+	if Input.is_action_just_pressed("shoot"):
+		spawn_projectile()
 
 	move_and_slide()
 
@@ -69,3 +78,14 @@ func _on_body_entered(body):
 
 func _on_damage_taken(damage_amount):
 	emit_signal("player_damaged", damage_amount)
+	
+func spawn_projectile():
+	var projectile = projectile.instantiate()
+	self.add_child(projectile)
+	
+	var offset = (get_global_mouse_position() - self.position).normalized()
+	projectile.apply_central_impulse(offset)
+	projectile.look_at(get_global_mouse_position())
+	var angle_to_mouse = get_angle_to(get_global_mouse_position())
+	var direction = Vector2(cos(angle_to_mouse), sin(angle_to_mouse))
+	projectile.linear_velocity = direction * projectile.projectile.speed

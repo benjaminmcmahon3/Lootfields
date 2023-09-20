@@ -1,7 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://d2xl6ylqh1y4e"]
+[gd_scene load_steps=12 format=3 uid="uid://d2xl6ylqh1y4e"]
 
 [ext_resource type="Texture2D" uid="uid://ddfavm8crxq51" path="res://assets/Magical Free Asset Pack/adept necromancer/AdeptNecromancerIdle.png" id="1_4kslc"]
 [ext_resource type="Script" path="res://Characters/Enemy/Enemy.gd" id="1_7eyxu"]
+[ext_resource type="Script" path="res://scripts/Stats.gd" id="2_a8vwj"]
+
+[sub_resource type="Resource" id="Resource_xdaeq"]
+script = ExtResource("2_a8vwj")
+speed = 400
+health = 80
+global_position = Vector2(0, 0)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c2c3v"]
 atlas = ExtResource("1_4kslc")
@@ -39,11 +46,18 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_jb820"]
-size = Vector2(7, 4)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0l0d8"]
+radius = 3.0
+height = 10.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xofe8"]
+size = Vector2(15, 16)
 
 [node name="Enemy" type="CharacterBody2D" node_paths=PackedStringArray("navigation_agent")]
+collision_layer = 9
+collision_mask = 9
 script = ExtResource("1_7eyxu")
+stats = SubResource("Resource_xdaeq")
 navigation_agent = NodePath("NavigationAgent2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -52,9 +66,19 @@ sprite_frames = SubResource("SpriteFrames_i4xh8")
 animation = &"idle"
 frame_progress = 0.234348
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, 2)
-shape = SubResource("RectangleShape2D_jb820")
+[node name="LandCollision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_0l0d8")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+process_thread_group = 2
+process_thread_group_order = 0
+process_thread_messages = 0
+path_postprocessing = 1
 debug_enabled = true
+
+[node name="HitboxCollision" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, -4)
+shape = SubResource("RectangleShape2D_xofe8")
+debug_color = Color(0.882353, 0.509804, 0.54902, 0.239216)

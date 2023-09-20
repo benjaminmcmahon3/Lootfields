@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://c7ycfwecougfb"]
+
+[ext_resource type="Script" path="res://Shootables/Fireball/Fireball.gd" id="1_8rnxa"]
+[ext_resource type="Script" path="res://scripts/Projectile.gd" id="2_4uvy8"]
+[ext_resource type="Texture2D" uid="uid://bbcu7gh3cmqgo" path="res://assets/bullet_effects/Fire Effect and Bullet 16x16.png" id="2_scmlw"]
+
+[sub_resource type="Resource" id="Resource_y2jxv"]
+script = ExtResource("2_4uvy8")
+speed = 400.0
+damage = 20.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vxmoy"]
+radius = 4.0
+height = 12.0
+
+[node name="Fireball" type="RigidBody2D"]
+collision_layer = 8
+collision_mask = 8
+mass = 0.01
+max_contacts_reported = 1
+contact_monitor = true
+can_sleep = false
+script = ExtResource("1_8rnxa")
+projectile = SubResource("Resource_y2jxv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_vxmoy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("2_scmlw")
+region_enabled = true
+region_rect = Rect2(418, 5, 12, 7)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

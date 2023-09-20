@@ -6,6 +6,9 @@ class_name Stats
 
 @export_range(0, 100) var health := 100:
 	set = set_health
+	
+@export var global_position: Vector2:
+	set = set_global_position
 
 func set_health(val: int) -> void:
 	health = clamp(val, 0, 100)
@@ -13,4 +16,8 @@ func set_health(val: int) -> void:
 
 func set_speed(val: int) -> void:
 	speed = clamp(val, 0, 10000)
+	emit_changed()
+	
+func set_global_position(val: Vector2) -> void:
+	global_position = val
 	emit_changed()
