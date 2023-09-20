@@ -40,13 +40,14 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jb820"]
-size = Vector2(16, 16)
+size = Vector2(9, 8)
 
 [node name="Enemy" type="CharacterBody2D" node_paths=PackedStringArray("navigation_agent")]
 script = ExtResource("1_7eyxu")
 navigation_agent = NodePath("NavigationAgent2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(2, -4)
 sprite_frames = SubResource("SpriteFrames_i4xh8")
 animation = &"idle"
 frame_progress = 0.234348

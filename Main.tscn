@@ -10,4 +10,6 @@
 [node name="Forest" parent="Worldspace" instance=ExtResource("1_mnac8")]
 
 [node name="PlayerCharacter" parent="Worldspace" instance=ExtResource("2_dxdgv")]
-position = Vector2(152, 184)
+z_index = 0
+y_sort_enabled = true
+position = Vector2(69, 40)
