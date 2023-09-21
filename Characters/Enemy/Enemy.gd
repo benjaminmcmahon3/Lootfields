@@ -8,6 +8,8 @@ class_name Enemy
 @export var navigation_agent: NavigationAgent2D
 @export var enable_movement := false
 
+@onready var ui_health := $Health
+
 var player: PlayerCharacter
 
 enum {
@@ -71,6 +73,7 @@ func on_projectile_impact(projectile: Projectile):
 	
 func take_damage(damage: float):
 	stats.set_health(stats.health - damage)
+	ui_health.value = stats.health
 	if (stats.health == 0):
 		print("Enemy died")
 		self.queue_free()
