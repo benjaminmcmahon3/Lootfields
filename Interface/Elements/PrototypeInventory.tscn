@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://6ywhunmqabsy"]
+
+[ext_resource type="Theme" uid="uid://bsmhbeleqi1bg" path="res://Interface/theme/PrototypeTheme.tres" id="1_f8j20"]
+[ext_resource type="Texture2D" uid="uid://de8sub03aj280" path="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/sword_02c.png" id="2_35ovn"]
+
+[node name="PrototypeInventory" type="Node2D"]
+
+[node name="InventoryWindow" type="TabContainer" parent="."]
+offset_right = 991.0
+offset_bottom = 701.0
+theme = ExtResource("1_f8j20")
+
+[node name="Weapons" type="TabBar" parent="InventoryWindow"]
+layout_mode = 2
+
+[node name="HFlowContainer" type="HFlowContainer" parent="InventoryWindow/Weapons"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprite2D" type="Sprite2D" parent="InventoryWindow/Weapons"]
+position = Vector2(300, 244)
+scale = Vector2(13.1875, 12.4375)
+texture = ExtResource("2_35ovn")
+
+[node name="Armor" type="TabBar" parent="InventoryWindow"]
+visible = false
+layout_mode = 2
+
+[node name="HFlowContainer" type="HFlowContainer" parent="InventoryWindow/Armor"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Food" type="TabBar" parent="InventoryWindow"]
+visible = false
+layout_mode = 2
+
+[node name="HFlowContainer" type="HFlowContainer" parent="InventoryWindow/Food"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Potions" type="TabBar" parent="InventoryWindow"]
+visible = false
+layout_mode = 2
+
+[node name="HFlowContainer" type="HFlowContainer" parent="InventoryWindow/Potions"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Crafting" type="TabBar" parent="InventoryWindow"]
+visible = false
+layout_mode = 2
+
+[node name="HFlowContainer" type="HFlowContainer" parent="InventoryWindow/Crafting"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Alchemy" type="TabBar" parent="InventoryWindow"]
+visible = false
+layout_mode = 2
+
+[node name="HFlowContainer" type="HFlowContainer" parent="InventoryWindow/Alchemy"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
