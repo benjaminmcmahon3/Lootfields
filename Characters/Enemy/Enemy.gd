@@ -67,7 +67,7 @@ func continue_navigation(delta):
 	var new_velocity: Vector2 = next_path_position - current_agent_position
 	velocity = new_velocity.normalized() * stats.speedsd
 	
-func on_projectile_impact(projectile: Projectile):
+func _on_projectile_shape_entered(projectile: ProjectileStats):
 	print("Enemy hit with projectile for %s damage" % [projectile.damage])
 	take_damage(projectile.damage);
 	

@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7ycfwecougfb"]
+
+[ext_resource type="Script" path="res://Shootables/Projectile/Projectile.gd" id="1_7c32p"]
+
+[node name="Projectile" type="RigidBody2D"]
+collision_layer = 8
+collision_mask = 8
+mass = 0.01
+max_contacts_reported = 1
+contact_monitor = true
+can_sleep = false
+script = ExtResource("1_7c32p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.8, 0.8)
+region_enabled = true
+region_rect = Rect2(418, 5, 12, 7)
+
+[connection signal="body_shape_entered" from="." to="." method="_on_body_shape_entered"]

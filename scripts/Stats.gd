@@ -21,3 +21,6 @@ func set_speed(val: int) -> void:
 func set_global_position(val: Vector2) -> void:
 	global_position = val
 	emit_changed()
+	
+func take_damage(damage: int):
+	set_health(health - damage)

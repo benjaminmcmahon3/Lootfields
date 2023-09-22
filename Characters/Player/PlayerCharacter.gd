@@ -11,7 +11,7 @@ signal player_damaged(amount)
 @onready var ui_player_menu := $PlayerMenu
 @onready var ui_inventory := $PlayerMenu/Inventory
 
-const projectile = preload("res://Shootables/Fireball/Fireball.tscn")
+const fireball = preload("res://Shootables/Fireball/Fireball.tscn")
 
 func _ready():
 	stats.global_position = global_position
@@ -74,18 +74,20 @@ func _enter_tree():
 
 func _on_body_entered(body):
 	if body is TileMap:
-		print("Cannot Go That Way")
+		pass
 
 func _on_damage_taken(damage_amount):
 	emit_signal("player_damaged", damage_amount)
 	
 func spawn_projectile():
-	var projectile = projectile.instantiate()
-	self.add_child(projectile)
+	var fireball = fireball.instantiate()
+	print(fireball)
+	self.add_child(fireball)
 	
 	var offset = (get_global_mouse_position() - self.position).normalized()
-	projectile.apply_central_impulse(offset)
-	projectile.look_at(get_global_mouse_position())
+	fireball.apply_central_impulse(offset)
+	fireball.look_at(get_global_mouse_position())
 	var angle_to_mouse = get_angle_to(get_global_mouse_position())
 	var direction = Vector2(cos(angle_to_mouse), sin(angle_to_mouse))
-	projectile.linear_velocity = direction * projectile.projectile.speed
+	
+	fireball.linear_velocity = direction * fireball.projectileStats.speed
