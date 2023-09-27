@@ -89,4 +89,5 @@ func spawn_projectile():
 	var angle_to_mouse = get_angle_to(get_global_mouse_position())
 	var direction = Vector2(cos(angle_to_mouse), sin(angle_to_mouse))
 
+	fireball.global_position = self.position + Vector2(0, -5.0)
 	fireball.linear_velocity = direction * fireball.projectileStats.speed

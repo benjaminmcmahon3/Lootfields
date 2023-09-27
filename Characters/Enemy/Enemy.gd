@@ -37,10 +37,8 @@ func _physics_process(delta):
 	match state:
 		IDLE:
 			find_new_target()
-			print("IDLE")
 			state = WANDER
 		WANDER:
-			print("WANDER")
 			continue_navigation(delta)
 			
 			if navigation_agent.is_navigation_finished():

@@ -65,6 +65,7 @@ collision_mask = 9
 script = ExtResource("1_7eyxu")
 stats = SubResource("Resource_xdaeq")
 navigation_agent = NodePath("NavigationAgent2D")
+enable_movement = true
 
 [node name="HitboxCollision" type="CollisionShape2D" parent="."]
 position = Vector2(2, -4)
