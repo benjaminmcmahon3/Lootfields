@@ -11,7 +11,7 @@ signal player_damaged(amount)
 @onready var ui_player_menu := $PlayerMenu
 @onready var ui_inventory := $PlayerMenu/Inventory
 
-const fireball = preload("res://Shootables/Fireball/Fireball.tscn")
+const fireball_scene = preload("res://Shootables/Fireball/Fireball.tscn")
 
 func _ready():
 	stats.global_position = global_position
@@ -19,27 +19,27 @@ func _ready():
 
 func _physics_process(delta):
 	stats.global_position = global_position
-	
-	var velocity = Vector2.ZERO # The player's movement vector.
+
+	var _velocity = Vector2.ZERO # The player's movement vector.
 
 	if Input.is_action_pressed("move_up"):
-		velocity.y -= 1
+		_velocity.y -= 1
 
 	if Input.is_action_pressed("move_right"):
-		velocity.x += 1
+		_velocity.x += 1
 
 	if Input.is_action_pressed("move_left"):
-		velocity.x -= 1
+		_velocity.x -= 1
 
 	if Input.is_action_pressed("move_down"):
-		velocity.y += 1
+		_velocity.y += 1
 
-	if velocity.length() > 0:
-		velocity = velocity.normalized() * stats.speed
+	if _velocity.length() > 0:
+		_velocity = _velocity.normalized() * stats.speed
 
-	self.velocity = velocity
+	self.velocity = _velocity
 	position += velocity * delta
-	
+
 	if Input.is_action_just_pressed("shoot"):
 		spawn_projectile()
 
@@ -59,14 +59,14 @@ func _process(delta):
 
 	if Input.is_action_just_pressed("open_player_menu"):
 		ui_player_menu.toggle_inventory()
-		
+
 	var hasCollided = get_last_slide_collision()
 	if hasCollided:
 		stats.health -= 5
-		
+
 		if (stats.health == 0):
 			stats.health = 100
-		
+
 		print("Cannot go that way")
 
 func _enter_tree():
@@ -78,16 +78,15 @@ func _on_body_entered(body):
 
 func _on_damage_taken(damage_amount):
 	emit_signal("player_damaged", damage_amount)
-	
+
 func spawn_projectile():
-	var fireball = fireball.instantiate()
-	print(fireball)
+	var fireball = fireball_scene.instantiate()
 	self.add_child(fireball)
-	
+
 	var offset = (get_global_mouse_position() - self.position).normalized()
 	fireball.apply_central_impulse(offset)
 	fireball.look_at(get_global_mouse_position())
 	var angle_to_mouse = get_angle_to(get_global_mouse_position())
 	var direction = Vector2(cos(angle_to_mouse), sin(angle_to_mouse))
-	
+
 	fireball.linear_velocity = direction * fireball.projectileStats.speed

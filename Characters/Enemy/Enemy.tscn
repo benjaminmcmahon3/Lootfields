@@ -6,7 +6,7 @@
 
 [sub_resource type="Resource" id="Resource_xdaeq"]
 script = ExtResource("2_a8vwj")
-speed = 400
+speed = 100
 health = 80
 global_position = Vector2(0, 0)
 
@@ -50,21 +50,22 @@ animations = [{
 radius = 3.0
 height = 10.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xofe8"]
-size = Vector2(15, 16)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_32na1"]
 bg_color = Color(0.243137, 0.243137, 0.243137, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pr45y"]
 bg_color = Color(0.658824, 0, 0, 1)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xofe8"]
+size = Vector2(15, 16)
+
 [node name="Enemy" type="CharacterBody2D" node_paths=PackedStringArray("navigation_agent")]
-collision_layer = 9
-collision_mask = 9
+collision_layer = 25
+collision_mask = 25
 script = ExtResource("1_7eyxu")
 stats = SubResource("Resource_xdaeq")
 navigation_agent = NodePath("NavigationAgent2D")
+enable_movement = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(2, -4)
@@ -84,11 +85,6 @@ process_thread_messages = 0
 path_postprocessing = 1
 debug_enabled = true
 
-[node name="HitboxCollision" type="CollisionShape2D" parent="."]
-position = Vector2(2.5, -4)
-shape = SubResource("RectangleShape2D_xofe8")
-debug_color = Color(0.882353, 0.509804, 0.54902, 0.239216)
-
 [node name="Health" type="ProgressBar" parent="."]
 anchors_preset = 2
 anchor_top = 1.0
@@ -104,3 +100,10 @@ theme_override_styles/fill = SubResource("StyleBoxFlat_pr45y")
 value = 100.0
 rounded = true
 show_percentage = false
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="HitboxCollision" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(2, -4)
+shape = SubResource("RectangleShape2D_xofe8")
+debug_color = Color(0.882353, 0.509804, 0.54902, 0.239216)

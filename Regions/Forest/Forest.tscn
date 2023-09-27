@@ -5323,7 +5323,7 @@ layer_1/tile_data = PackedInt32Array()
 
 [node name="Enemy" parent="." node_paths=PackedStringArray("navigation_bounds") instance=ExtResource("7_c7gcd")]
 y_sort_enabled = true
-position = Vector2(517, 167)
+position = Vector2(92, 108)
 navigation_bounds = NodePath("../NavigationRegion2D")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]

@@ -40,21 +40,19 @@ func _physics_process(delta):
 			find_new_target()
 		WANDER:
 			continue_navigation(delta)
-			
+
 			if navigation_agent.is_navigation_finished():
 				state = IDLE
-
-	move_and_slide()
 
 func find_new_target():
 	var bounds: Rect2 = navigation_bounds.get_viewport_rect()
 	while true:
-		var x = randi_range(bounds.position.x, bounds.end.x)
-		var y = randi_range(bounds.position.y, bounds.end.y)
+		var x = randf_range(bounds.position.x, bounds.end.x)
+		var y = randf_range(bounds.position.y, bounds.end.y)
 		var new_potential_target = Vector2(x, y)
-		
+
 		navigation_agent.target_position = new_potential_target
-		
+
 		if navigation_agent.is_target_reachable() == false:
 			continue
 		else:
@@ -65,15 +63,21 @@ func continue_navigation(delta):
 	var next_path_position = navigation_agent.get_next_path_position()
 
 	var new_velocity: Vector2 = next_path_position - current_agent_position
-	velocity = new_velocity.normalized() * stats.speedsd
-	
+	velocity = new_velocity.normalized() * stats.speed
+
 func _on_projectile_shape_entered(projectile: ProjectileStats):
 	print("Enemy hit with projectile for %s damage" % [projectile.damage])
 	take_damage(projectile.damage);
-	
-func take_damage(damage: float):
+
+func take_damage(damage: int):
 	stats.set_health(stats.health - damage)
 	ui_health.value = stats.health
 	if (stats.health == 0):
 		print("Enemy died")
-		self.queue_free()
+		death()
+
+func death():
+	$AnimatedSprite2D.stop()
+	var tween = create_tween()
+	tween.tween_property(self, "rotation", deg_to_rad(90.0), 0.25)
+	tween.tween_callback(func(): self.queue_free())

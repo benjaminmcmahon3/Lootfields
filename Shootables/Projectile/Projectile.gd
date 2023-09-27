@@ -6,4 +6,3 @@ class_name Projectile
 func _on_body_shape_entered(body_rid, body, body_shape_index, local_shape_index):
 	body._on_projectile_shape_entered(projectileStats)
 	self.queue_free()
-	

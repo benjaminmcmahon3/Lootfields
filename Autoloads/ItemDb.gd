@@ -4,7 +4,7 @@ extends Node
 var ITEMS := {}
 
 func _ready() -> void:
-	var items := _load_items()
+	var items := ItemDb._load_items()
 	for item in items:
 		ITEMS[item.unique_id] = item
 
