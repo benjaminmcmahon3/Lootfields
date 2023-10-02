@@ -9,15 +9,17 @@ class_name Enemy
 @export var enable_movement := false
 
 @onready var ui_health := $Health
-
-var player: PlayerCharacter
+@onready var timer := $Timer
+@onready var projectile := preload("res://Shootables/Fireball/Fireball.tscn")
 
 enum {
 	IDLE,
 	WANDER
 }
 
+var player: PlayerCharacter
 var state = null
+var isPlayerInRange: bool
 
 func _ready():
 	navigation_agent.path_desired_distance = 4.0
@@ -72,10 +74,9 @@ func _on_projectile_shape_entered(projectile: ProjectileStats):
 	take_damage(projectile.damage);
 
 func take_damage(damage: int):
-	stats.set_health(stats.health - damage)
+	stats.take_damage(damage)
 	ui_health.value = stats.health
 	if (stats.health == 0):
-		print("Enemy died")
 		death()
 
 func death():
@@ -83,3 +84,28 @@ func death():
 	var tween = create_tween()
 	tween.tween_property(self, "rotation", deg_to_rad(90.0), 0.25)
 	tween.tween_callback(func(): self.queue_free())
+
+func _on_range_body_entered(body: PhysicsBody2D):
+	timer.start()
+	player = body
+
+func shoot_sequence():
+	var fireball = projectile.instantiate()
+	self.add_child(fireball)
+
+	var offset = (player.global_position - self.position).normalized()
+	fireball.apply_central_impulse(offset)
+	fireball.look_at(player.global_position)
+	fireball.add_collision_exception_with(self)
+	var angle_to_player = get_angle_to(player.global_position)
+	var direction = Vector2(cos(angle_to_player), sin(angle_to_player))
+
+	fireball.global_position = self.position + Vector2(0, -5.0)
+	fireball.linear_velocity = direction * fireball.projectileStats.speed
+
+func _on_range_area_body_exited(body):
+	timer.stop()
+	player = null
+
+func _on_timer_timeout():
+	shoot_sequence()

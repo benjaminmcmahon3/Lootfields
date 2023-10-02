@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://qc04levxu3he"]
+[gd_scene load_steps=50 format=3 uid="uid://qc04levxu3he"]
 
 [ext_resource type="Script" path="res://Characters/Player/PlayerCharacter.gd" id="1_eobtk"]
 [ext_resource type="Resource" uid="uid://g668rkqhbseg" path="res://Resources/PlayerStats.tres" id="2_7isqj"]
@@ -6,6 +6,8 @@
 [ext_resource type="Texture2D" uid="uid://cscmrnc6i03im" path="res://assets/CharAni-Full-NoWeps.png" id="4_syeur"]
 [ext_resource type="PackedScene" uid="uid://deowxwlnioosj" path="res://Characters/Player/PlayerMenu.tscn" id="5_pecsj"]
 [ext_resource type="Script" path="res://PlayerHUD.gd" id="6_tg1mm"]
+[ext_resource type="Script" path="res://Characters/Player/you_died.gd" id="7_rt8ar"]
+[ext_resource type="Theme" uid="uid://boiua8vmjfi7w" path="res://Interface/theme/default.tres" id="8_pa6nk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ec3xk"]
 radius = 3.0
@@ -297,8 +299,13 @@ bg_color = Color(0.243137, 0.243137, 0.243137, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vvye0"]
 bg_color = Color(0.658824, 0, 0, 1)
 
+[sub_resource type="LabelSettings" id="LabelSettings_vjefd"]
+font_color = Color(0.854902, 0, 0.121569, 1)
+
 [node name="PlayerCharacter" type="CharacterBody2D"]
 z_index = 1
+collision_layer = 2
+collision_mask = 9
 script = ExtResource("1_eobtk")
 stats = ExtResource("2_7isqj")
 inventory = ExtResource("3_ivugd")
@@ -349,3 +356,42 @@ grow_vertical = 0
 scale = Vector2(2, 2)
 text = "Health
 "
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
+script = ExtResource("7_rt8ar")
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.054902, 0.054902, 0.054902, 0.686275)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -353.0
+offset_top = -101.0
+offset_right = -268.0
+offset_bottom = -81.9999
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(10, 10)
+alignment = 1
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("8_pa6nk")
+theme_override_font_sizes/font_size = 60
+text = "YOU DIED"
+label_settings = SubResource("LabelSettings_vjefd")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[connection signal="player_death" from="." to="CanvasLayer" method="show_you_died"]

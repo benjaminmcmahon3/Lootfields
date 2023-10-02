@@ -1,4 +1,4 @@
-[gd_scene load_steps=206 format=3 uid="uid://ma78yrw6r63n"]
+[gd_scene load_steps=211 format=3 uid="uid://ma78yrw6r63n"]
 
 [ext_resource type="Script" path="res://Regions/Forest/Forest.gd" id="1_2rn4r"]
 [ext_resource type="Script" path="res://scripts/LootGenerator.gd" id="2_d5yb1"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://hlsj2oko04p5" path="res://assets/tilesets/forest/Grass Tilecard.png" id="5_rktfj"]
 [ext_resource type="Texture2D" uid="uid://dot4qpjl2mt8i" path="res://assets/tilesets/forest/Water Tilecard.png" id="6_dqqim"]
 [ext_resource type="PackedScene" uid="uid://d2xl6ylqh1y4e" path="res://Characters/Enemy/Enemy.tscn" id="7_c7gcd"]
+[ext_resource type="Script" path="res://scripts/Stats.gd" id="8_rkdg3"]
 
 [sub_resource type="Resource" id="Resource_hku2y"]
 script = ExtResource("2_d5yb1")
@@ -5291,10 +5292,38 @@ sources/1 = SubResource("TileSetAtlasSource_wgtlx")
 sources/2 = SubResource("TileSetAtlasSource_kfkg3")
 pattern_0 = SubResource("TileMapPattern_vvnnb")
 
+[sub_resource type="Resource" id="Resource_lxiui"]
+script = ExtResource("8_rkdg3")
+speed = 100
+health = 80
+is_alive = true
+global_position = Vector2(0, 0)
+
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_1et6o"]
 vertices = PackedVector2Array(656, 704, -16, 704, -16, -8, 936, -8, 936, 600, 952, 600, 952, 720, 656, 720)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(0, 4, 5, 6, 7)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(-16, -8, 936, -8, 936, 600, 952, 600, 952, 720, 656, 720, 656, 704, -16, 704)])
+
+[sub_resource type="Resource" id="Resource_6yrp2"]
+script = ExtResource("8_rkdg3")
+speed = 100
+health = 80
+is_alive = true
+global_position = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_wa37c"]
+script = ExtResource("8_rkdg3")
+speed = 100
+health = 80
+is_alive = true
+global_position = Vector2(0, 0)
+
+[sub_resource type="Resource" id="Resource_il0vt"]
+script = ExtResource("8_rkdg3")
+speed = 100
+health = 80
+is_alive = true
+global_position = Vector2(0, 0)
 
 [node name="Forest" type="Area2D"]
 script = ExtResource("1_2rn4r")
@@ -5324,7 +5353,29 @@ layer_1/tile_data = PackedInt32Array()
 [node name="Enemy" parent="." node_paths=PackedStringArray("navigation_bounds") instance=ExtResource("7_c7gcd")]
 y_sort_enabled = true
 position = Vector2(92, 108)
+stats = SubResource("Resource_lxiui")
 navigation_bounds = NodePath("../NavigationRegion2D")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 navigation_polygon = SubResource("NavigationPolygon_1et6o")
+
+[node name="Enemy2" parent="." node_paths=PackedStringArray("navigation_bounds", "navigation_agent") instance=ExtResource("7_c7gcd")]
+y_sort_enabled = true
+position = Vector2(196, 229)
+stats = SubResource("Resource_6yrp2")
+navigation_bounds = NodePath("../NavigationRegion2D")
+navigation_agent = NodePath("../Enemy/NavigationAgent2D")
+
+[node name="Enemy3" parent="." node_paths=PackedStringArray("navigation_bounds", "navigation_agent") instance=ExtResource("7_c7gcd")]
+y_sort_enabled = true
+position = Vector2(239, 47)
+stats = SubResource("Resource_wa37c")
+navigation_bounds = NodePath("../NavigationRegion2D")
+navigation_agent = NodePath("../Enemy/NavigationAgent2D")
+
+[node name="Enemy4" parent="." node_paths=PackedStringArray("navigation_bounds", "navigation_agent") instance=ExtResource("7_c7gcd")]
+y_sort_enabled = true
+position = Vector2(93, 203)
+stats = SubResource("Resource_il0vt")
+navigation_bounds = NodePath("../NavigationRegion2D")
+navigation_agent = NodePath("../Enemy/NavigationAgent2D")

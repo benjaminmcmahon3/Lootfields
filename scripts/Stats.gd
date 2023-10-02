@@ -7,6 +7,8 @@ class_name Stats
 @export_range(0, 100) var health := 100:
 	set = set_health
 	
+@export var is_alive := true
+	
 @export var global_position: Vector2:
 	set = set_global_position
 
