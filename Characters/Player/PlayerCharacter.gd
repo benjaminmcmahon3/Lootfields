@@ -12,7 +12,7 @@ signal player_death
 @onready var ui_player_menu := $PlayerMenu
 @onready var ui_inventory := $PlayerMenu/Inventory
 
-const fireball_scene = preload("res://Shootables/Fireball/Fireball.tscn")
+const fireball_scene = preload("res://Shootables/Fireball.tscn")
 
 func _ready():
 	stats.global_position = global_position

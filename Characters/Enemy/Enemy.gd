@@ -10,7 +10,7 @@ class_name Enemy
 
 @onready var ui_health := $Health
 @onready var timer := $Timer
-@onready var projectile := preload("res://Shootables/Fireball/Fireball.tscn")
+@onready var projectile := preload("res://Shootables/MageGreenOrb.tscn")
 
 enum {
 	IDLE,
@@ -89,23 +89,24 @@ func _on_range_body_entered(body: PhysicsBody2D):
 	timer.start()
 	player = body
 
-func shoot_sequence():
-	var fireball = projectile.instantiate()
-	self.add_child(fireball)
+func shoot_projectile():
+	var _projectile = projectile.instantiate()
+	_projectile.projectileStats.speed = 100
+	self.add_child(_projectile)
 
 	var offset = (player.global_position - self.position).normalized()
-	fireball.apply_central_impulse(offset)
-	fireball.look_at(player.global_position)
-	fireball.add_collision_exception_with(self)
+	_projectile.apply_central_impulse(offset)
+	_projectile.look_at(player.global_position)
+	_projectile.add_collision_exception_with(self)
 	var angle_to_player = get_angle_to(player.global_position)
 	var direction = Vector2(cos(angle_to_player), sin(angle_to_player))
 
-	fireball.global_position = self.position + Vector2(0, -5.0)
-	fireball.linear_velocity = direction * fireball.projectileStats.speed
+	_projectile.global_position = self.position + Vector2(0, -5.0)
+	_projectile.linear_velocity = direction * _projectile.projectileStats.speed
 
 func _on_range_area_body_exited(body):
 	timer.stop()
 	player = null
 
 func _on_timer_timeout():
-	shoot_sequence()
+	shoot_projectile()
