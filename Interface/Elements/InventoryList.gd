@@ -1,3 +1,2 @@
 extends VBoxContainer
-
-@export var inventory
+class_name InventoryList

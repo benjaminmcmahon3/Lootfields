@@ -23,18 +23,16 @@ func set_inventory(new_inventory: Inventory) -> void:
 func update_items_display():
 	for tab in inventory_tab_container.get_children():
 		var tab_children = tab.get_children()
-
+	
 		for n in tab_children:
 			tab.remove_child(n)
 			n.queue_free()
-
-	print("inventory.items : ", inventory.items())
 	
 	for tab in inventory_tab_container.get_children():
 		for item in inventory.items():
 			if tab.name == "Food":
-				var loot_item_instance = preload("res://Interface/Elements/InventoryListItem.tscn").instantiate()
+				var loot_item_instance: InventoryListItem = preload("res://Interface/Elements/InventoryListItem.tscn").instantiate()
 				var item_data = ItemDb.get_item_data(item.unique_id)
-				loot_item_instance.get_node("ItemName").text = item_data.display_name
-				loot_item_instance.get_node("Quantity").text = str(item.count)
+				loot_item_instance.get_node("MarginContainer/ItemName").text = item_data.display_name
+				loot_item_instance.get_node("MarginContainer/Quantity").text = str(item.count)
 				tab.add_child(loot_item_instance)	

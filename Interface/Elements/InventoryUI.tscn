@@ -42,3 +42,7 @@ offset_left = 258.0
 offset_top = 243.0
 offset_right = 1249.0
 offset_bottom = 944.0
+
+[node name="ItemList" type="ItemList" parent="PrototypeInventory"]
+visible = false
+layout_mode = 2

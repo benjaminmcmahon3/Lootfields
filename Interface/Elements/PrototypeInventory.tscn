@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://6ywhunmqabsy"]
+[gd_scene load_steps=3 format=3 uid="uid://6ywhunmqabsy"]
 
 [ext_resource type="Theme" uid="uid://boiua8vmjfi7w" path="res://Interface/theme/default.tres" id="1_vt3cj"]
+[ext_resource type="PackedScene" uid="uid://bidvbnch5f5q" path="res://Interface/Elements/InventoryListItem.tscn" id="2_kk1ba"]
 
 [node name="PrototypeInventory" type="TabContainer"]
 offset_right = 991.0
@@ -8,25 +9,37 @@ offset_bottom = 701.0
 theme = ExtResource("1_vt3cj")
 theme_override_font_sizes/font_size = 32
 
-[node name="Weapons" type="HFlowContainer" parent="."]
+[node name="Food" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="InventoryListItem" parent="Food" instance=ExtResource("2_kk1ba")]
 visible = false
 layout_mode = 2
 
-[node name="Food" type="HFlowContainer" parent="."]
+[node name="InventoryListItem2" parent="Food" instance=ExtResource("2_kk1ba")]
 visible = false
 layout_mode = 2
 
-[node name="Armor" type="HFlowContainer" parent="."]
-layout_mode = 2
-
-[node name="Potions" type="HFlowContainer" parent="."]
+[node name="InventoryListItem3" parent="Food" instance=ExtResource("2_kk1ba")]
 visible = false
 layout_mode = 2
 
-[node name="Crafting" type="HFlowContainer" parent="."]
+[node name="Weapons" type="VBoxContainer" parent="."]
 visible = false
 layout_mode = 2
 
-[node name="Alchemy" type="HFlowContainer" parent="."]
+[node name="Armor" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="Potions" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="Crafting" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="Alchemy" type="VBoxContainer" parent="."]
 visible = false
 layout_mode = 2
