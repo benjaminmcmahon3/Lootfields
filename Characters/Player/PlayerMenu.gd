@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@onready var ui_inventory = $Inventory
+@onready var ui_inventory = $MarginContainer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

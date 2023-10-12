@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://bmnsralcgbx5b"]
+
+[ext_resource type="Theme" uid="uid://boiua8vmjfi7w" path="res://Interface/theme/default.tres" id="1_x5375"]
+[ext_resource type="PackedScene" uid="uid://cvvo2r0c2tuu3" path="res://Interface/PlayerMenu/Stats/stats.tscn" id="2_4loht"]
+[ext_resource type="PackedScene" uid="uid://b8u6ww0pmfed3" path="res://Interface/PlayerMenu/Journal/journal.tscn" id="3_rt8cw"]
+[ext_resource type="PackedScene" uid="uid://b6xuvbkpvblu3" path="res://Interface/PlayerMenu/Equipment/equipment.tscn" id="4_6y82e"]
+[ext_resource type="PackedScene" uid="uid://djwwdhkgtp4hx" path="res://Interface/PlayerMenu/Inventory/inventory.tscn" id="5_2nlil"]
+[ext_resource type="PackedScene" uid="uid://cq5dyourte6fe" path="res://Interface/PlayerMenu/Skills/skills.tscn" id="6_rsnsx"]
+[ext_resource type="PackedScene" uid="uid://qm55whkh4we1" path="res://Interface/PlayerMenu/Map/map.tscn" id="7_i71td"]
+
+[node name="PlayerMenu" type="HSplitContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_x5375")
+dragger_visibility = 1
+
+[node name="Left" type="TabContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Stats" parent="Left" instance=ExtResource("2_4loht")]
+layout_mode = 2
+
+[node name="Journal" parent="Left" instance=ExtResource("3_rt8cw")]
+visible = false
+layout_mode = 2
+
+[node name="Equipment" parent="Left" instance=ExtResource("4_6y82e")]
+visible = false
+layout_mode = 2
+
+[node name="Right" type="TabContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 2.0
+
+[node name="Inventory" parent="Right" instance=ExtResource("5_2nlil")]
+layout_mode = 2
+
+[node name="Skills" parent="Right" instance=ExtResource("6_rsnsx")]
+visible = false
+layout_mode = 2
+
+[node name="Map" parent="Right" instance=ExtResource("7_i71td")]
+visible = false
+layout_mode = 2

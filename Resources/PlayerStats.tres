@@ -6,4 +6,5 @@
 script = ExtResource("1_dbl28")
 speed = 50
 health = 100
+is_alive = true
 global_position = Vector2(0, 0)

@@ -1,2 +1,0 @@
-extends VBoxContainer
-class_name InventoryList
