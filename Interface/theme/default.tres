@@ -28,7 +28,12 @@ corner_radius_bottom_left = 4
 
 [resource]
 default_font = ExtResource("1_k8i1k")
-default_font_size = 18
+default_font_size = 40
 Fonts/fonts/normal = ExtResource("1_k8i1k")
+HSplitContainer/constants/separation = 50
+MarginContainer/constants/margin_bottom = 20
+MarginContainer/constants/margin_left = 20
+MarginContainer/constants/margin_right = 20
+MarginContainer/constants/margin_top = 20
 Panel/styles/panel = SubResource("StyleBoxFlat_3u2cf")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_o0ord")

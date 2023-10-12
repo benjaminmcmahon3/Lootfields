@@ -1,0 +1,96 @@
+[gd_scene load_steps=5 format=3 uid="uid://djwwdhkgtp4hx"]
+
+[ext_resource type="Theme" uid="uid://boiua8vmjfi7w" path="res://Interface/theme/default.tres" id="1_c2bgf"]
+[ext_resource type="PackedScene" uid="uid://bidvbnch5f5q" path="res://Interface/Elements/InventoryListItem.tscn" id="2_71sh4"]
+[ext_resource type="Script" path="res://Interface/PlayerMenu/Inventory/inventory.gd" id="2_wqog2"]
+[ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://Resources/PlayerInventory.tres" id="3_dnqh6"]
+
+[node name="Inventory" type="TabContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("1_c2bgf")
+script = ExtResource("2_wqog2")
+inventory = ExtResource("3_dnqh6")
+
+[node name="Weapons" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Weapons"]
+layout_mode = 2
+
+[node name="InventoryListItem3" parent="Weapons/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2
+
+[node name="InventoryListItem4" parent="Weapons/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2
+
+[node name="Armor" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 2
+theme = ExtResource("1_c2bgf")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Armor"]
+layout_mode = 2
+
+[node name="InventoryListItem3" parent="Armor/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2
+
+[node name="InventoryListItem4" parent="Armor/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2
+
+[node name="Food" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Food"]
+layout_mode = 2
+
+[node name="InventoryListItem2" parent="Food/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2
+
+[node name="InventoryListItem" parent="Food/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2
+
+[node name="Keys" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Keys"]
+layout_mode = 2
+
+[node name="InventoryListItem3" parent="Keys/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2
+
+[node name="InventoryListItem4" parent="Keys/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2
+
+[node name="Potions" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Potions"]
+layout_mode = 2
+
+[node name="InventoryListItem5" parent="Potions/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2
+
+[node name="InventoryListItem6" parent="Potions/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2
+
+[node name="Misc" type="MarginContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Misc"]
+layout_mode = 2
+
+[node name="InventoryListItem7" parent="Misc/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2
+
+[node name="InventoryListItem8" parent="Misc/VBoxContainer" instance=ExtResource("2_71sh4")]
+layout_mode = 2

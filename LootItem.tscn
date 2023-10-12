@@ -4,14 +4,13 @@
 [ext_resource type="Script" path="res://PickUpControl.gd" id="2_edv1x"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lx1hv"]
-radius = 24.0
+radius = 42.9523
 
 [node name="Area2D" type="Area2D" groups=["loot"]]
 scale = Vector2(0.35, 0.35)
 collision_layer = 4
 collision_mask = 3
 script = ExtResource("1_eggdx")
-metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
@@ -28,8 +27,11 @@ script = ExtResource("2_edv1x")
 
 [node name="Button" type="Button" parent="Control"]
 layout_mode = 0
-offset_right = 64.0
-offset_bottom = 16.0
+offset_left = -31.4286
+offset_top = -42.8571
+offset_right = 32.5714
+offset_bottom = -26.8571
+icon_alignment = 1
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

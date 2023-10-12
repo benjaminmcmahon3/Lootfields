@@ -10,7 +10,6 @@ signal player_death
 
 @onready var ui_sprite := $AnimatedSprite2D
 @onready var ui_player_menu := $PlayerMenu
-@onready var ui_inventory := $PlayerMenu/Inventory
 
 const fireball_scene = preload("res://Shootables/Fireball.tscn")
 
