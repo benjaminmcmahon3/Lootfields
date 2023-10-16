@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://boiua8vmjfi7w" path="res://Interface/theme/default.tres" id="1_l1edq"]
 
 [node name="PanelContainer" type="PanelContainer"]
-custom_minimum_size = Vector2(2.08165e-12, 64)
+offset_left = -1.0
 offset_right = 480.0
-offset_bottom = 80.0
+offset_bottom = 132.0
 theme = ExtResource("1_l1edq")

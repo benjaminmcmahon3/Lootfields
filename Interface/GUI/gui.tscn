@@ -1,24 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cghhd1mrk25qq"]
+[gd_scene load_steps=3 format=3 uid="uid://cghhd1mrk25qq"]
 
 [ext_resource type="Theme" uid="uid://boiua8vmjfi7w" path="res://Interface/theme/default.tres" id="1_mflbq"]
 [ext_resource type="PackedScene" uid="uid://bmnsralcgbx5b" path="res://Interface/PlayerMenu/player_menu.tscn" id="1_oqlo2"]
 
-[sub_resource type="GDScript" id="GDScript_sjn3c"]
-script/source = "extends CanvasLayer
-
-@onready var player_menu := $PlayerMenuScreenMargin/PlayerMenu
-@onready var loot_scene: PackedScene = preload(\"res://LootItem.tscn\")
-
-func _ready():
-	player_menu.visible = false
-
-func _input(event):
-	if Input.is_action_just_pressed(\"open_player_menu\"):
-		player_menu.visible = !player_menu.visible
-"
-
 [node name="GUI" type="CanvasLayer"]
-script = SubResource("GDScript_sjn3c")
 
 [node name="PlayerMenuScreenMargin" type="MarginContainer" parent="."]
 anchors_preset = 15

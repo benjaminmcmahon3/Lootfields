@@ -56,8 +56,8 @@ func _process(delta):
 	elif velocity.y < 0:
 		ui_sprite.play("walk_up")
 
-	if Input.is_action_just_pressed("open_player_menu"):
-		ui_player_menu.toggle_inventory()
+#	if Input.is_action_just_pressed("open_player_menu"):
+#		ui_player_menu.toggle_inventory()
 
 func _enter_tree():
 	emit_signal("player_tree_entered", self)

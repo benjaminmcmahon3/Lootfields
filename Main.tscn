@@ -1,14 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://b87dlgu0iwm3d"]
+[gd_scene load_steps=6 format=3 uid="uid://b87dlgu0iwm3d"]
 
 [ext_resource type="PackedScene" uid="uid://cghhd1mrk25qq" path="res://Interface/GUI/gui.tscn" id="1_5kxeh"]
 [ext_resource type="PackedScene" uid="uid://ma78yrw6r63n" path="res://Regions/Forest/Forest.tscn" id="1_mnac8"]
 [ext_resource type="PackedScene" uid="uid://qc04levxu3he" path="res://Characters/Player/PlayerCharacter.tscn" id="2_dxdgv"]
+[ext_resource type="Script" path="res://Interface/GUI/gui.gd" id="2_quhyr"]
+[ext_resource type="Script" path="res://Worldspace.gd" id="3_8ttex"]
 
 [node name="Main" type="Node"]
 
 [node name="GUI" parent="." instance=ExtResource("1_5kxeh")]
+process_mode = 3
+script = ExtResource("2_quhyr")
 
 [node name="Worldspace" type="Node2D" parent="."]
+process_mode = 1
+script = ExtResource("3_8ttex")
 
 [node name="Forest" parent="Worldspace" instance=ExtResource("1_mnac8")]
 

@@ -1,10 +1,9 @@
-[gd_scene load_steps=50 format=3 uid="uid://qc04levxu3he"]
+[gd_scene load_steps=49 format=3 uid="uid://qc04levxu3he"]
 
 [ext_resource type="Script" path="res://Characters/Player/PlayerCharacter.gd" id="1_eobtk"]
 [ext_resource type="Resource" uid="uid://g668rkqhbseg" path="res://Resources/PlayerStats.tres" id="2_7isqj"]
 [ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://Resources/PlayerInventory.tres" id="3_ivugd"]
 [ext_resource type="Texture2D" uid="uid://cscmrnc6i03im" path="res://assets/CharAni-Full-NoWeps.png" id="4_syeur"]
-[ext_resource type="PackedScene" uid="uid://deowxwlnioosj" path="res://Characters/Player/PlayerMenu.tscn" id="5_pecsj"]
 [ext_resource type="Script" path="res://PlayerHUD.gd" id="6_tg1mm"]
 [ext_resource type="Script" path="res://Characters/Player/you_died.gd" id="7_rt8ar"]
 [ext_resource type="Theme" uid="uid://boiua8vmjfi7w" path="res://Interface/theme/default.tres" id="8_pa6nk"]
@@ -321,9 +320,6 @@ zoom = Vector2(7, 7)
 position = Vector2(0, -5)
 sprite_frames = SubResource("SpriteFrames_2jkd5")
 animation = &"idle"
-
-[node name="PlayerMenu" parent="." instance=ExtResource("5_pecsj")]
-visible = false
 
 [node name="PlayerHUD" type="CanvasLayer" parent="."]
 script = ExtResource("6_tg1mm")
