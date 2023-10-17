@@ -2805,19 +2805,9 @@ texture = ExtResource("5_rktfj")
 3:7/0/terrains_peering_bit/top_right_corner = 1
 3:7/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_dohk5")
 4:7/0 = 0
-4:7/0/terrain_set = 0
-4:7/0/terrain = 2
 4:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 4:7/0/physics_layer_0/angular_velocity = 0.0
 4:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-4, -4, -4, -8, -8, -8, -8, -4)
-4:7/0/terrains_peering_bit/right_side = 2
-4:7/0/terrains_peering_bit/bottom_right_corner = 2
-4:7/0/terrains_peering_bit/bottom_side = 2
-4:7/0/terrains_peering_bit/bottom_left_corner = 2
-4:7/0/terrains_peering_bit/left_side = 2
-4:7/0/terrains_peering_bit/top_left_corner = 1
-4:7/0/terrains_peering_bit/top_side = 2
-4:7/0/terrains_peering_bit/top_right_corner = 2
 4:7/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_tnvh8")
 5:7/0 = 0
 5:7/0/terrain_set = 0
@@ -3204,18 +3194,8 @@ texture = ExtResource("5_rktfj")
 4:10/0/terrains_peering_bit/top_right_corner = 2
 4:10/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_xpq5m")
 5:10/0 = 0
-5:10/0/terrain_set = 0
-5:10/0/terrain = 2
 5:10/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 5:10/0/physics_layer_0/angular_velocity = 0.0
-5:10/0/terrains_peering_bit/right_side = 2
-5:10/0/terrains_peering_bit/bottom_right_corner = 2
-5:10/0/terrains_peering_bit/bottom_side = 2
-5:10/0/terrains_peering_bit/bottom_left_corner = 2
-5:10/0/terrains_peering_bit/left_side = 2
-5:10/0/terrains_peering_bit/top_left_corner = 2
-5:10/0/terrains_peering_bit/top_side = 2
-5:10/0/terrains_peering_bit/top_right_corner = 2
 5:10/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_nal38")
 6:10/0 = 0
 6:10/0/terrain_set = 0
@@ -5352,30 +5332,31 @@ layer_1/tile_data = PackedInt32Array()
 
 [node name="Enemy" parent="." node_paths=PackedStringArray("navigation_bounds") instance=ExtResource("7_c7gcd")]
 y_sort_enabled = true
-position = Vector2(92, 108)
+position = Vector2(112, 216)
 stats = SubResource("Resource_lxiui")
 navigation_bounds = NodePath("../NavigationRegion2D")
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+visible = false
 navigation_polygon = SubResource("NavigationPolygon_1et6o")
 
 [node name="Enemy2" parent="." node_paths=PackedStringArray("navigation_bounds", "navigation_agent") instance=ExtResource("7_c7gcd")]
 y_sort_enabled = true
-position = Vector2(196, 229)
+position = Vector2(483, 383)
 stats = SubResource("Resource_6yrp2")
 navigation_bounds = NodePath("../NavigationRegion2D")
 navigation_agent = NodePath("../Enemy/NavigationAgent2D")
 
 [node name="Enemy3" parent="." node_paths=PackedStringArray("navigation_bounds", "navigation_agent") instance=ExtResource("7_c7gcd")]
 y_sort_enabled = true
-position = Vector2(239, 47)
+position = Vector2(433, 73)
 stats = SubResource("Resource_wa37c")
 navigation_bounds = NodePath("../NavigationRegion2D")
 navigation_agent = NodePath("../Enemy/NavigationAgent2D")
 
 [node name="Enemy4" parent="." node_paths=PackedStringArray("navigation_bounds", "navigation_agent") instance=ExtResource("7_c7gcd")]
 y_sort_enabled = true
-position = Vector2(93, 203)
+position = Vector2(115, 476)
 stats = SubResource("Resource_il0vt")
 navigation_bounds = NodePath("../NavigationRegion2D")
 navigation_agent = NodePath("../Enemy/NavigationAgent2D")

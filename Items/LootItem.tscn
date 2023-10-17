@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cjdk1gl0je131"]
 
-[ext_resource type="Script" path="res://LootItem.gd" id="1_eggdx"]
-[ext_resource type="Script" path="res://PickUpControl.gd" id="2_edv1x"]
+[ext_resource type="Script" path="res://Items/LootItem.gd" id="1_ssoew"]
+[ext_resource type="Script" path="res://Items/PickUpControl.gd" id="2_644mi"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_lx1hv"]
 radius = 42.9523
@@ -10,7 +10,7 @@ radius = 42.9523
 scale = Vector2(0.35, 0.35)
 collision_layer = 4
 collision_mask = 3
-script = ExtResource("1_eggdx")
+script = ExtResource("1_ssoew")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708
@@ -23,7 +23,8 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
-script = ExtResource("2_edv1x")
+size_flags_horizontal = 0
+script = ExtResource("2_644mi")
 
 [node name="Button" type="Button" parent="Control"]
 layout_mode = 0
@@ -31,6 +32,7 @@ offset_left = -31.4286
 offset_top = -42.8571
 offset_right = 32.5714
 offset_bottom = -26.8571
+text = "Bread"
 icon_alignment = 1
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

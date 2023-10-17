@@ -7,8 +7,10 @@
 script = ExtResource("1_sr3r2")
 unique_id = "roasted_chicken"
 display_name = "Roasted Chicken"
+inventory_category = ""
 description = "An incredible, juicy roasted chicken"
-weight = 6
+mass = 0
+value = 0
 texture = ExtResource("2_th01j")
 areas = Array[String](["overworld"])
 tags = Array[String]([])

@@ -35,5 +35,6 @@ func _on_body_exited(body):
 		emit_signal("loot_area_exited", self)
 
 func _on_loot_button_pressed():
+	print("loot button pressed")
 	self.queue_free()
 	emit_signal("loot_taken")

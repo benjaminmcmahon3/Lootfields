@@ -5,7 +5,7 @@ class_name LootGenerator
 @export var item_areas: Array[String]
 @export var player_inventory: Inventory
 
-static var loot_scene: PackedScene = preload("res://LootItem.tscn")
+static var loot_scene: PackedScene = preload("res://Items/LootItem.tscn")
 
 func generate(parent_node: Node2D, player_node, coords: Vector2):
 	var items = ItemDb.ITEMS

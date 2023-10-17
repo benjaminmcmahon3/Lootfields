@@ -61,7 +61,7 @@ bg_color = Color(0.243137, 0.243137, 0.243137, 1)
 bg_color = Color(0.658824, 0, 0, 1)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sk531"]
-radius = 74.0608
+radius = 142.014
 
 [node name="Enemy" type="CharacterBody2D" node_paths=PackedStringArray("navigation_agent")]
 collision_mask = 10

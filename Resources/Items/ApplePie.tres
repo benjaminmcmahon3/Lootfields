@@ -7,8 +7,10 @@
 script = ExtResource("1_dpm5v")
 unique_id = "apple_pie"
 display_name = "Apple Pie"
+inventory_category = ""
 description = "A warm slice of delicious apple pie"
-weight = 3
+mass = 0
+value = 0
 texture = ExtResource("2_i3k7i")
 areas = Array[String](["overworld"])
 tags = Array[String]([])

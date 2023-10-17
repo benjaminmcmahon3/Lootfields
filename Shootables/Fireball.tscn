@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://bbf7lvwl0pmkb"]
+[gd_scene load_steps=8 format=3 uid="uid://bbf7lvwl0pmkb"]
 
 [ext_resource type="PackedScene" uid="uid://c7ycfwecougfb" path="res://Shootables/Projectile/Projectile.tscn" id="1_tkuds"]
 [ext_resource type="Script" path="res://scripts/Projectile.gd" id="2_frjee"]
@@ -14,6 +14,17 @@ damage = 20.0
 radius = 3.0
 height = 10.0
 
+[sub_resource type="Gradient" id="Gradient_qgn6i"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.108883, 0.280802)
+colors = PackedColorArray(1, 1, 1, 1, 0.703704, 0.703704, 0.703704, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_4w74c"]
+gradient = SubResource("Gradient_qgn6i")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+fill_to = Vector2(0, 0)
+
 [node name="Fireball" instance=ExtResource("1_tkuds")]
 projectileStats = SubResource("Resource_5rrnr")
 
@@ -22,3 +33,9 @@ shape = SubResource("CapsuleShape2D_jvpsg")
 
 [node name="Sprite2D" parent="." index="1"]
 texture = ExtResource("3_q1dmv")
+
+[node name="PointLight2D" type="PointLight2D" parent="." index="3"]
+color = Color(0.901961, 0.572549, 0.454902, 1)
+energy = 0.75
+texture = SubResource("GradientTexture2D_4w74c")
+texture_scale = 0.5

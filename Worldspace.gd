@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready():
-	print("Worldspace ready! ", self)
+	pass
 
 func on_pause_game():
 	get_tree().paused = true

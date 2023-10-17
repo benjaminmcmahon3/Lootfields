@@ -91,17 +91,16 @@ func _on_range_body_entered(body: PhysicsBody2D):
 
 func shoot_projectile():
 	var _projectile = projectile.instantiate()
+	get_node("/root/Main/Worldspace").add_child(_projectile)
 	_projectile.projectileStats.speed = 100
-	self.add_child(_projectile)
+	_projectile.add_collision_exception_with(self)
+	_projectile.global_position = self.position + Vector2(0, -5.0)
 
 	var offset = (player.global_position - self.position).normalized()
 	_projectile.apply_central_impulse(offset)
 	_projectile.look_at(player.global_position)
-	_projectile.add_collision_exception_with(self)
 	var angle_to_player = get_angle_to(player.global_position)
 	var direction = Vector2(cos(angle_to_player), sin(angle_to_player))
-
-	_projectile.global_position = self.position + Vector2(0, -5.0)
 	_projectile.linear_velocity = direction * _projectile.projectileStats.speed
 
 func _on_range_area_body_exited(body):

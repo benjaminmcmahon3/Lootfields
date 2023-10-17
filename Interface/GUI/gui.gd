@@ -4,7 +4,7 @@ signal pause_game
 signal resume_game
 
 @onready var player_menu := $PlayerMenuScreenMargin/PlayerMenu
-@onready var loot_scene: PackedScene = preload("res://LootItem.tscn")
+@onready var loot_scene: PackedScene = preload("res://Items/LootItem.tscn")
 @onready var worldspace = get_node("../Worldspace")
 
 func _ready():
@@ -18,6 +18,7 @@ func _input(event):
 
 func toggle_menu():
 	player_menu.visible = !player_menu.visible
+	print("player menu visible : ", player_menu.visible)
 	if (player_menu.visible == true):
 		emit_signal("pause_game")
 	elif (player_menu.visible == false):
