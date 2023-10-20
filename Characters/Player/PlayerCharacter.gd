@@ -7,10 +7,11 @@ signal player_death
 
 @export var stats: Stats
 @export var inventory: Inventory
+@export var shoot_logic: ShootLogic
 
 @onready var ui_sprite := $AnimatedSprite2D
 
-const fireball_scene = preload("res://Shootables/Fireball.tscn")
+const fireball_scene: Resource = preload("res://Shootables/Fireball.tscn")
 
 func _ready():
 	stats.global_position = global_position
@@ -39,7 +40,7 @@ func _physics_process(delta):
 	position += velocity * delta
 
 	if Input.is_action_just_pressed("shoot"):
-		spawn_projectile()
+		shoot()
 
 	move_and_slide()
 
@@ -73,18 +74,14 @@ func death_tween_callback():
 	emit_signal("player_death")
 	process_mode = Node.PROCESS_MODE_DISABLED
 
-func spawn_projectile():
-	var fireball = fireball_scene.instantiate()
-	get_node("/root/Main/Worldspace").add_child(fireball)
-	fireball.global_position = self.position + (Vector2(0, -5.0))
-	
-	var offset = (get_global_mouse_position() - self.position).normalized()
-	fireball.apply_central_impulse(offset)
-	fireball.look_at(get_global_mouse_position())
-	fireball.add_collision_exception_with(self)
-	var angle_to_mouse = get_angle_to(get_global_mouse_position())
-	var direction = Vector2(cos(angle_to_mouse), sin(angle_to_mouse))
-	fireball.linear_velocity = direction * fireball.projectileStats.speed
+func shoot():
+	shoot_logic.spawn(
+		self,
+		fireball_scene,
+		get_node("/root/Main/Worldspace"),
+		self.position + (Vector2(0, -5.0)),
+		(get_global_mouse_position() - self.position).normalized()
+	)
 
 func _on_projectile_shape_entered(projectile: ProjectileStats):
 	take_damage(projectile.damage)

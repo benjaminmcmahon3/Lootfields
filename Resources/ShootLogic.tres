@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="ShootLogic" load_steps=2 format=3 uid="uid://dugipbii8sj8l"]
+
+[ext_resource type="Script" path="res://scripts/ShootLogic.gd" id="1_43u5l"]
+
+[resource]
+script = ExtResource("1_43u5l")

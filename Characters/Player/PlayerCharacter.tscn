@@ -1,8 +1,9 @@
-[gd_scene load_steps=49 format=3 uid="uid://qc04levxu3he"]
+[gd_scene load_steps=50 format=3 uid="uid://qc04levxu3he"]
 
 [ext_resource type="Script" path="res://Characters/Player/PlayerCharacter.gd" id="1_eobtk"]
 [ext_resource type="Resource" uid="uid://g668rkqhbseg" path="res://Resources/PlayerStats.tres" id="2_7isqj"]
 [ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://Resources/PlayerInventory.tres" id="3_ivugd"]
+[ext_resource type="Resource" uid="uid://dugipbii8sj8l" path="res://Resources/ShootLogic.tres" id="4_am0tl"]
 [ext_resource type="Texture2D" uid="uid://cscmrnc6i03im" path="res://assets/CharAni-Full-NoWeps.png" id="4_syeur"]
 [ext_resource type="Script" path="res://PlayerHUD.gd" id="6_tg1mm"]
 [ext_resource type="Script" path="res://Characters/Player/you_died.gd" id="7_rt8ar"]
@@ -308,6 +309,7 @@ collision_mask = 9
 script = ExtResource("1_eobtk")
 stats = ExtResource("2_7isqj")
 inventory = ExtResource("3_ivugd")
+shoot_logic = ExtResource("4_am0tl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = 1.5708

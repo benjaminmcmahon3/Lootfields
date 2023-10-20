@@ -2,6 +2,7 @@ extends CharacterBody2D
 class_name Enemy
 
 @export var stats: Stats = null
+@export var shoot_logic: ShootLogic
 
 @export var movement_target: Node2D
 @export var navigation_bounds: Node2D
@@ -19,7 +20,6 @@ enum {
 
 var player: PlayerCharacter
 var state = null
-var isPlayerInRange: bool
 
 func _ready():
 	navigation_agent.path_desired_distance = 4.0
@@ -90,18 +90,17 @@ func _on_range_body_entered(body: PhysicsBody2D):
 	player = body
 
 func shoot_projectile():
-	var _projectile = projectile.instantiate()
-	get_node("/root/Main/Worldspace").add_child(_projectile)
-	_projectile.projectileStats.speed = 100
-	_projectile.add_collision_exception_with(self)
-	_projectile.global_position = self.position + Vector2(0, -5.0)
-
-	var offset = (player.global_position - self.position).normalized()
-	_projectile.apply_central_impulse(offset)
-	_projectile.look_at(player.global_position)
 	var angle_to_player = get_angle_to(player.global_position)
-	var direction = Vector2(cos(angle_to_player), sin(angle_to_player))
-	_projectile.linear_velocity = direction * _projectile.projectileStats.speed
+	
+	shoot_logic.spawn(
+		self,
+		projectile,
+		get_node("/root/Main/Worldspace"),
+		self.position + Vector2(0, -5.0),
+		(player.global_position - self.position).normalized(),
+		player.global_position,
+		Vector2(cos(angle_to_player), sin(angle_to_player))
+	)
 
 func _on_range_area_body_exited(body):
 	timer.stop()
