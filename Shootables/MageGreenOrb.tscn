@@ -70,5 +70,4 @@ libraries = {
 [node name="FakeLight" type="Sprite2D" parent="." index="3"]
 self_modulate = Color(0.537255, 0.52549, 0, 1)
 material = SubResource("CanvasItemMaterial_2dxpr")
-scale = Vector2(1, 1)
 texture = SubResource("GradientTexture2D_xol7o")

@@ -75,11 +75,13 @@ func death_tween_callback():
 	process_mode = Node.PROCESS_MODE_DISABLED
 
 func shoot():
+	var offset = Vector2(0, -5.0)
+	
 	shoot_logic.spawn(
 		self,
 		fireball_scene,
-		get_node("/root/Main/Worldspace"),
-		self.position + (Vector2(0, -5.0)),
+		get_parent(),
+		self.position + offset,
 		(get_global_mouse_position() - self.position).normalized()
 	)
 

@@ -95,7 +95,7 @@ func shoot_projectile():
 	shoot_logic.spawn(
 		self,
 		projectile,
-		get_node("/root/Main/Worldspace"),
+		get_parent(),
 		self.position + Vector2(0, -5.0),
 		(player.global_position - self.position).normalized(),
 		player.global_position,

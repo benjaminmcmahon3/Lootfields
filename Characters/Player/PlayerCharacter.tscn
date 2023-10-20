@@ -6,7 +6,7 @@
 [ext_resource type="Resource" uid="uid://dugipbii8sj8l" path="res://Resources/ShootLogic.tres" id="4_am0tl"]
 [ext_resource type="Texture2D" uid="uid://cscmrnc6i03im" path="res://assets/CharAni-Full-NoWeps.png" id="4_syeur"]
 [ext_resource type="Script" path="res://PlayerHUD.gd" id="6_tg1mm"]
-[ext_resource type="Script" path="res://Characters/Player/you_died.gd" id="7_rt8ar"]
+[ext_resource type="Script" path="res://Characters/Player/YouDied.gd" id="7_e6cs4"]
 [ext_resource type="Theme" uid="uid://boiua8vmjfi7w" path="res://Interface/theme/default.tres" id="8_pa6nk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ec3xk"]
@@ -304,6 +304,7 @@ font_color = Color(0.854902, 0, 0.121569, 1)
 
 [node name="PlayerCharacter" type="CharacterBody2D"]
 z_index = 1
+position = Vector2(0, 4)
 collision_layer = 2
 collision_mask = 9
 script = ExtResource("1_eobtk")
@@ -316,7 +317,8 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_ec3xk")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(7, 7)
+zoom = Vector2(6, 6)
+position_smoothing_speed = 1.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -5)
@@ -358,7 +360,7 @@ text = "Health
 
 [node name="DeathScreen" type="CanvasLayer" parent="."]
 visible = false
-script = ExtResource("7_rt8ar")
+script = ExtResource("7_e6cs4")
 
 [node name="ColorRect" type="ColorRect" parent="DeathScreen"]
 anchors_preset = 15

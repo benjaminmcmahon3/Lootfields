@@ -18,7 +18,7 @@ script = ExtResource("3_8ttex")
 
 [node name="Forest" parent="Worldspace" instance=ExtResource("1_mnac8")]
 
-[node name="PlayerCharacter" parent="Worldspace" instance=ExtResource("2_dxdgv")]
+[node name="PlayerCharacter" parent="Worldspace/Forest" instance=ExtResource("2_dxdgv")]
 z_index = 0
 y_sort_enabled = true
 position = Vector2(69, 40)

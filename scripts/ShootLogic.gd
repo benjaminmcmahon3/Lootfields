@@ -11,18 +11,17 @@ func spawn(
 		look_at: Vector2 = originator.get_global_mouse_position(),
 		linear_velocity_direction: Vector2 = get_default_linear_velocity_direction(originator)
 	):
-	var projectile = projectile_scene.instantiate()
+	var projectile: RigidBody2D = projectile_scene.instantiate()
 	
 	assert(projectile.projectileStats != null, "Projectiles must have a `projectileStats` class: %s" % [projectile])
 	
-	projectile.global_position = spawn_position
+	projectile.position = spawn_position
 	
 	container_scene.add_child(projectile)
 	
 	projectile.apply_central_impulse(impulse)
-	projectile.look_at(originator.get_global_mouse_position())
+	projectile.look_at(look_at)
 	projectile.add_collision_exception_with(originator)
-	
 	projectile.linear_velocity = linear_velocity_direction * projectile.projectileStats.speed
 
 func get_default_linear_velocity_direction(originator):
