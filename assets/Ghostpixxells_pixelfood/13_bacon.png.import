@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://crv7dx14mr7q5"
-path="res://.godot/imported/13_bacon.png-d8d4377463a961993d9df13ba2e058d0.ctex"
+path="res://.godot/imported/13_bacon.png-4123fef6d9b9c5b7dfbfb9b25db803b4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/13_bacon.png"
-dest_files=["res://.godot/imported/13_bacon.png-d8d4377463a961993d9df13ba2e058d0.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/13_bacon.png"
+dest_files=["res://.godot/imported/13_bacon.png-4123fef6d9b9c5b7dfbfb9b25db803b4.ctex"]
 
 [params]
 

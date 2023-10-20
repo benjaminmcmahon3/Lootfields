@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmny7wohsxv33"
-path="res://.godot/imported/book_06a.png-67414688a6512b9bf261d364aace358d.ctex"
+path="res://.godot/imported/book_06a.png-082e9fc212c1a8f37eadc42f040063a6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/book_06a.png"
-dest_files=["res://.godot/imported/book_06a.png-67414688a6512b9bf261d364aace358d.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/book_06a.png"
+dest_files=["res://.godot/imported/book_06a.png-082e9fc212c1a8f37eadc42f040063a6.ctex"]
 
 [params]
 

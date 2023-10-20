@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://uxcfle8h8lfk"
-path="res://.godot/imported/33_curry_dish.png-8ef970504ef8bdf7039e87a7a2c62c6d.ctex"
+path="res://.godot/imported/33_curry_dish.png-77410824ecc41e3d23d9c06b0f9c1164.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/33_curry_dish.png"
-dest_files=["res://.godot/imported/33_curry_dish.png-8ef970504ef8bdf7039e87a7a2c62c6d.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/33_curry_dish.png"
+dest_files=["res://.godot/imported/33_curry_dish.png-77410824ecc41e3d23d9c06b0f9c1164.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://brccbwra0dcbc"
-path="res://.godot/imported/spellbook_01b.png-dc2ce66cfdaf52cf293c8bc6bbf9ea75.ctex"
+path="res://.godot/imported/spellbook_01b.png-5fa9de90f3e59ed69e1cdea4d34f9711.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/spellbook_01b.png"
-dest_files=["res://.godot/imported/spellbook_01b.png-dc2ce66cfdaf52cf293c8bc6bbf9ea75.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/spellbook_01b.png"
+dest_files=["res://.godot/imported/spellbook_01b.png-5fa9de90f3e59ed69e1cdea4d34f9711.ctex"]
 
 [params]
 

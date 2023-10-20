@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pqbwcus1f8an"
-path="res://.godot/imported/CluckingChickenIdleSide.png-89a7f21a83c9abc3a72b224463a86d36.ctex"
+path="res://.godot/imported/CluckingChickenIdleSide.png-bd0ca65347942cf28c9dbd1a43555084.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Clucking Chicken/CluckingChickenIdleSide.png"
-dest_files=["res://.godot/imported/CluckingChickenIdleSide.png-89a7f21a83c9abc3a72b224463a86d36.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Clucking Chicken/CluckingChickenIdleSide.png"
+dest_files=["res://.godot/imported/CluckingChickenIdleSide.png-bd0ca65347942cf28c9dbd1a43555084.ctex"]
 
 [params]
 

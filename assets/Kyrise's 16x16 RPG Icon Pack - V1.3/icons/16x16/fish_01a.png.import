@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://l2qoobq08x51"
-path="res://.godot/imported/fish_01a.png-20272273e927ec55e12fa17de51f00b1.ctex"
+path="res://.godot/imported/fish_01a.png-d3b6daf7041be497212b28d10a3ddc0d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/fish_01a.png"
-dest_files=["res://.godot/imported/fish_01a.png-20272273e927ec55e12fa17de51f00b1.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/fish_01a.png"
+dest_files=["res://.godot/imported/fish_01a.png-d3b6daf7041be497212b28d10a3ddc0d.ctex"]
 
 [params]
 

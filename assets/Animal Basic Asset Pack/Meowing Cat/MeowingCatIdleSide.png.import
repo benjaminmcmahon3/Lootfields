@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cae1w3sriesq"
-path="res://.godot/imported/MeowingCatIdleSide.png-6e406b4ec1a0940cbdf35c6c1e18ecc5.ctex"
+path="res://.godot/imported/MeowingCatIdleSide.png-00ccd3f5d38976bd4ab1a12d4b761fe5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Meowing Cat/MeowingCatIdleSide.png"
-dest_files=["res://.godot/imported/MeowingCatIdleSide.png-6e406b4ec1a0940cbdf35c6c1e18ecc5.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Meowing Cat/MeowingCatIdleSide.png"
+dest_files=["res://.godot/imported/MeowingCatIdleSide.png-00ccd3f5d38976bd4ab1a12d4b761fe5.ctex"]
 
 [params]
 

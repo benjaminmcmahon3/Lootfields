@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bdysyqcmhxraq"
-path="res://.godot/imported/42_eggtart.png-9c0713b817d7275b923a9ec4d95c2d1e.ctex"
+path="res://.godot/imported/42_eggtart.png-9bdd27fcb246de6aed95733bd17f952b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/42_eggtart.png"
-dest_files=["res://.godot/imported/42_eggtart.png-9c0713b817d7275b923a9ec4d95c2d1e.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/42_eggtart.png"
+dest_files=["res://.godot/imported/42_eggtart.png-9bdd27fcb246de6aed95733bd17f952b.ctex"]
 
 [params]
 

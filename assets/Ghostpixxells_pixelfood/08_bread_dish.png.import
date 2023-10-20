@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cf1qp0vqxim4m"
-path="res://.godot/imported/08_bread_dish.png-6d42cedd490753fcef409d02144b6540.ctex"
+path="res://.godot/imported/08_bread_dish.png-4dabc0f47fe1543a7051cb18b35e0005.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/08_bread_dish.png"
-dest_files=["res://.godot/imported/08_bread_dish.png-6d42cedd490753fcef409d02144b6540.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/08_bread_dish.png"
+dest_files=["res://.godot/imported/08_bread_dish.png-4dabc0f47fe1543a7051cb18b35e0005.ctex"]
 
 [params]
 

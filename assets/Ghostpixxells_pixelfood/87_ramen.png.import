@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://doqt8jw0qn833"
-path="res://.godot/imported/87_ramen.png-1b36ca823338646ea9dbc1f9caed8817.ctex"
+path="res://.godot/imported/87_ramen.png-b757dab61bb4b1c7db4f32398b083169.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/87_ramen.png"
-dest_files=["res://.godot/imported/87_ramen.png-1b36ca823338646ea9dbc1f9caed8817.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/87_ramen.png"
+dest_files=["res://.godot/imported/87_ramen.png-b757dab61bb4b1c7db4f32398b083169.ctex"]
 
 [params]
 

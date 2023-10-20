@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://caiwvn3ppys3t"
-path="res://.godot/imported/53_gingerbreadman_dish.png-1770b5b18d0013d7bc35746af7318f27.ctex"
+path="res://.godot/imported/53_gingerbreadman_dish.png-b7a430388cc4cf721883cae242dce05a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/53_gingerbreadman_dish.png"
-dest_files=["res://.godot/imported/53_gingerbreadman_dish.png-1770b5b18d0013d7bc35746af7318f27.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/53_gingerbreadman_dish.png"
+dest_files=["res://.godot/imported/53_gingerbreadman_dish.png-b7a430388cc4cf721883cae242dce05a.ctex"]
 
 [params]
 

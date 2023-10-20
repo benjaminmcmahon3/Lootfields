@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbq1c2w5t746k"
-path="res://.godot/imported/51_giantgummybear_dish.png-cf14436f4d578e0725131ca393b0802e.ctex"
+path="res://.godot/imported/51_giantgummybear_dish.png-c23ddf1ff9e150f054930c53106fb627.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/51_giantgummybear_dish.png"
-dest_files=["res://.godot/imported/51_giantgummybear_dish.png-cf14436f4d578e0725131ca393b0802e.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/51_giantgummybear_dish.png"
+dest_files=["res://.godot/imported/51_giantgummybear_dish.png-c23ddf1ff9e150f054930c53106fb627.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dot4qpjl2mt8i"
-path="res://.godot/imported/Water Tilecard.png-768c27c540a6c0f3f6ffb6e60ea925f5.ctex"
+path="res://.godot/imported/Water Tilecard.png-f191a210b867aaeb4e54699dfd3887a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/forest/Water Tilecard.png"
-dest_files=["res://.godot/imported/Water Tilecard.png-768c27c540a6c0f3f6ffb6e60ea925f5.ctex"]
+source_file="res://Assets/tilesets/forest/Water Tilecard.png"
+dest_files=["res://.godot/imported/Water Tilecard.png-f191a210b867aaeb4e54699dfd3887a4.ctex"]
 
 [params]
 

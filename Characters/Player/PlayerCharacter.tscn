@@ -4,7 +4,7 @@
 [ext_resource type="Resource" uid="uid://g668rkqhbseg" path="res://Resources/PlayerStats.tres" id="2_7isqj"]
 [ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://Resources/PlayerInventory.tres" id="3_ivugd"]
 [ext_resource type="Resource" uid="uid://dugipbii8sj8l" path="res://Resources/ShootLogic.tres" id="4_am0tl"]
-[ext_resource type="Texture2D" uid="uid://cscmrnc6i03im" path="res://assets/CharAni-Full-NoWeps.png" id="4_syeur"]
+[ext_resource type="Texture2D" uid="uid://cscmrnc6i03im" path="res://Assets/CharAni-Full-NoWeps.png" id="4_syeur"]
 [ext_resource type="Script" path="res://PlayerHUD.gd" id="6_tg1mm"]
 [ext_resource type="Script" path="res://Characters/Player/YouDied.gd" id="7_e6cs4"]
 [ext_resource type="Theme" uid="uid://boiua8vmjfi7w" path="res://Interface/theme/default.tres" id="8_pa6nk"]

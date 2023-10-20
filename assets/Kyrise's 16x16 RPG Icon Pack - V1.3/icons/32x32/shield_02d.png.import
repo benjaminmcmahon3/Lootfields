@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dh46aachslwvt"
-path="res://.godot/imported/shield_02d.png-2cd6ee088d63564c65397b9630e34922.ctex"
+path="res://.godot/imported/shield_02d.png-69b06ce0f1dc356627206739f6149902.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/32x32/shield_02d.png"
-dest_files=["res://.godot/imported/shield_02d.png-2cd6ee088d63564c65397b9630e34922.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/32x32/shield_02d.png"
+dest_files=["res://.godot/imported/shield_02d.png-69b06ce0f1dc356627206739f6149902.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4nhi4ira0au5"
-path="res://.godot/imported/CoralCrabIdleSide.png-3a4dc62c01bace047d7a3eb017156791.ctex"
+path="res://.godot/imported/CoralCrabIdleSide.png-6618b219fab4bbb9712713c54ae79e17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Coral Crab/CoralCrabIdleSide.png"
-dest_files=["res://.godot/imported/CoralCrabIdleSide.png-3a4dc62c01bace047d7a3eb017156791.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Coral Crab/CoralCrabIdleSide.png"
+dest_files=["res://.godot/imported/CoralCrabIdleSide.png-6618b219fab4bbb9712713c54ae79e17.ctex"]
 
 [params]
 

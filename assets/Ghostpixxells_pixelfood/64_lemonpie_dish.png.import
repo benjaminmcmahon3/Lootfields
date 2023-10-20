@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dleel7h25cjw2"
-path="res://.godot/imported/64_lemonpie_dish.png-f6f9f265ba1046103c44f862b48208de.ctex"
+path="res://.godot/imported/64_lemonpie_dish.png-08f4b6e236155f7a2acd60b1c1856539.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/64_lemonpie_dish.png"
-dest_files=["res://.godot/imported/64_lemonpie_dish.png-f6f9f265ba1046103c44f862b48208de.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/64_lemonpie_dish.png"
+dest_files=["res://.godot/imported/64_lemonpie_dish.png-08f4b6e236155f7a2acd60b1c1856539.ctex"]
 
 [params]
 

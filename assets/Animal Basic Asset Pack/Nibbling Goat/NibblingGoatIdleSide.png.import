@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://gah8h7vgyttv"
-path="res://.godot/imported/NibblingGoatIdleSide.png-554fd7f5c9983e7bfe428a5c7590a59d.ctex"
+path="res://.godot/imported/NibblingGoatIdleSide.png-8f976c3dadc75f99f5d36758e5474c88.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Nibbling Goat/NibblingGoatIdleSide.png"
-dest_files=["res://.godot/imported/NibblingGoatIdleSide.png-554fd7f5c9983e7bfe428a5c7590a59d.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Nibbling Goat/NibblingGoatIdleSide.png"
+dest_files=["res://.godot/imported/NibblingGoatIdleSide.png-8f976c3dadc75f99f5d36758e5474c88.ctex"]
 
 [params]
 

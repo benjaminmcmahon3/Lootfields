@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://db4vq7olp032u"
-path="res://.godot/imported/21_bagel_dish.png-4218ba6b061fe7419f1fb68aa2a2c042.ctex"
+path="res://.godot/imported/21_bagel_dish.png-05baa8cee403d396ec9418556652b35b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/21_bagel_dish.png"
-dest_files=["res://.godot/imported/21_bagel_dish.png-4218ba6b061fe7419f1fb68aa2a2c042.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/21_bagel_dish.png"
+dest_files=["res://.godot/imported/21_bagel_dish.png-05baa8cee403d396ec9418556652b35b.ctex"]
 
 [params]
 

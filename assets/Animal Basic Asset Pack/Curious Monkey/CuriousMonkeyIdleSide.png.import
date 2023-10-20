@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dssot4uxi0j18"
-path="res://.godot/imported/CuriousMonkeyIdleSide.png-7b74f22889602a9066cfb2e945387859.ctex"
+path="res://.godot/imported/CuriousMonkeyIdleSide.png-19739af85856bc82fba2d1f01416d612.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Curious Monkey/CuriousMonkeyIdleSide.png"
-dest_files=["res://.godot/imported/CuriousMonkeyIdleSide.png-7b74f22889602a9066cfb2e945387859.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Curious Monkey/CuriousMonkeyIdleSide.png"
+dest_files=["res://.godot/imported/CuriousMonkeyIdleSide.png-19739af85856bc82fba2d1f01416d612.ctex"]
 
 [params]
 

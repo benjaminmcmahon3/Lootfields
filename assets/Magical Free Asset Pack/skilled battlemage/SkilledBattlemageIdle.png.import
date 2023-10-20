@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjdscul6nnphw"
-path="res://.godot/imported/SkilledBattlemageIdle.png-fb8af9faa0507c774d1e15dbebe283da.ctex"
+path="res://.godot/imported/SkilledBattlemageIdle.png-8d844ccee7a6e8dc3c95e5dc768e5c3d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Magical Free Asset Pack/skilled battlemage/SkilledBattlemageIdle.png"
-dest_files=["res://.godot/imported/SkilledBattlemageIdle.png-fb8af9faa0507c774d1e15dbebe283da.ctex"]
+source_file="res://Assets/Magical Free Asset Pack/skilled battlemage/SkilledBattlemageIdle.png"
+dest_files=["res://.godot/imported/SkilledBattlemageIdle.png-8d844ccee7a6e8dc3c95e5dc768e5c3d.ctex"]
 
 [params]
 

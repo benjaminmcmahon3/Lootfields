@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddfavm8crxq51"
-path="res://.godot/imported/AdeptNecromancerIdle.png-ad7641746954133333dc336a84774190.ctex"
+path="res://.godot/imported/AdeptNecromancerIdle.png-b3e56d7483e585278f24fa93077d9f44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Magical Free Asset Pack/adept necromancer/AdeptNecromancerIdle.png"
-dest_files=["res://.godot/imported/AdeptNecromancerIdle.png-ad7641746954133333dc336a84774190.ctex"]
+source_file="res://Assets/Magical Free Asset Pack/adept necromancer/AdeptNecromancerIdle.png"
+dest_files=["res://.godot/imported/AdeptNecromancerIdle.png-b3e56d7483e585278f24fa93077d9f44.ctex"]
 
 [params]
 

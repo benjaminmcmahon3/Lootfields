@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://babwkxldfooun"
-path="res://.godot/imported/shard_01d.png-eba230496a44630706ff682b9f22f5da.ctex"
+path="res://.godot/imported/shard_01d.png-8f0b6d864e477bc84e19b17a35c23147.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/48x48/shard_01d.png"
-dest_files=["res://.godot/imported/shard_01d.png-eba230496a44630706ff682b9f22f5da.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/48x48/shard_01d.png"
+dest_files=["res://.godot/imported/shard_01d.png-8f0b6d864e477bc84e19b17a35c23147.ctex"]
 
 [params]
 

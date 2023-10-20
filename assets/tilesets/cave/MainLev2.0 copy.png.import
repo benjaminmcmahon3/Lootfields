@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bpnax2abfcrst"
-path="res://.godot/imported/MainLev2.0 copy.png-4f70adf9e16efe45a9cfd90c86b14fcd.ctex"
+path="res://.godot/imported/MainLev2.0 copy.png-f5961da6e171d80f756891c010a2734a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/cave/MainLev2.0 copy.png"
-dest_files=["res://.godot/imported/MainLev2.0 copy.png-4f70adf9e16efe45a9cfd90c86b14fcd.ctex"]
+source_file="res://Assets/tilesets/cave/MainLev2.0 copy.png"
+dest_files=["res://.godot/imported/MainLev2.0 copy.png-f5961da6e171d80f756891c010a2734a.ctex"]
 
 [params]
 

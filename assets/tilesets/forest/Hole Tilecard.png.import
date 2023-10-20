@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b7evm0fjb3res"
-path="res://.godot/imported/Hole Tilecard.png-2424ee557e00f71da7ca89070f57773f.ctex"
+path="res://.godot/imported/Hole Tilecard.png-c4b9bab286ccdac4862718a4006e78fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/forest/Hole Tilecard.png"
-dest_files=["res://.godot/imported/Hole Tilecard.png-2424ee557e00f71da7ca89070f57773f.ctex"]
+source_file="res://Assets/tilesets/forest/Hole Tilecard.png"
+dest_files=["res://.godot/imported/Hole Tilecard.png-c4b9bab286ccdac4862718a4006e78fa.ctex"]
 
 [params]
 

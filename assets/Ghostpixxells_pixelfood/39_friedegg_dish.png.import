@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://40pv377qn2xm"
-path="res://.godot/imported/39_friedegg_dish.png-f5798d425c323413a57568ed16fc0268.ctex"
+path="res://.godot/imported/39_friedegg_dish.png-1548cf9b475d8b2e71985f9adb48da50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/39_friedegg_dish.png"
-dest_files=["res://.godot/imported/39_friedegg_dish.png-f5798d425c323413a57568ed16fc0268.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/39_friedegg_dish.png"
+dest_files=["res://.godot/imported/39_friedegg_dish.png-1548cf9b475d8b2e71985f9adb48da50.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jiwhbbrdg6xb"
-path="res://.godot/imported/35_donut_dish.png-b3b69c9d5c3774918f4864d12623a3d4.ctex"
+path="res://.godot/imported/35_donut_dish.png-826f4e753b3d5fc691165c03c11495ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/35_donut_dish.png"
-dest_files=["res://.godot/imported/35_donut_dish.png-b3b69c9d5c3774918f4864d12623a3d4.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/35_donut_dish.png"
+dest_files=["res://.godot/imported/35_donut_dish.png-826f4e753b3d5fc691165c03c11495ef.ctex"]
 
 [params]
 

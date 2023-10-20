@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mafwrtcpihbs"
-path="res://.godot/imported/57_icecream.png-d302391a2f2cd96542cc143d0c34db35.ctex"
+path="res://.godot/imported/57_icecream.png-6c7bea1bae838f2ceefc2540977fb602.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/57_icecream.png"
-dest_files=["res://.godot/imported/57_icecream.png-d302391a2f2cd96542cc143d0c34db35.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/57_icecream.png"
+dest_files=["res://.godot/imported/57_icecream.png-6c7bea1bae838f2ceefc2540977fb602.ctex"]
 
 [params]
 

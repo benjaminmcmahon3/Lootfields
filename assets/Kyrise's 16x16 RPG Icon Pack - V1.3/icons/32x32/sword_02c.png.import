@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dho78pkuiacyj"
-path="res://.godot/imported/sword_02c.png-8d07c6cadcfa916a905640e241cc2f3a.ctex"
+path="res://.godot/imported/sword_02c.png-f4a5e08d48cd579302cc6ad8955e8009.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/32x32/sword_02c.png"
-dest_files=["res://.godot/imported/sword_02c.png-8d07c6cadcfa916a905640e241cc2f3a.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/32x32/sword_02c.png"
+dest_files=["res://.godot/imported/sword_02c.png-f4a5e08d48cd579302cc6ad8955e8009.ctex"]
 
 [params]
 

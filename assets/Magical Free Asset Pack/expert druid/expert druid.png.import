@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://batxnf3c2llsg"
-path="res://.godot/imported/expert druid.png-4e4bf271374ccfb5b27fbceecf3c4a0c.ctex"
+path="res://.godot/imported/expert druid.png-88a747b010f9ff0d2c4b27ca9196d14f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Magical Free Asset Pack/expert druid/expert druid.png"
-dest_files=["res://.godot/imported/expert druid.png-4e4bf271374ccfb5b27fbceecf3c4a0c.ctex"]
+source_file="res://Assets/Magical Free Asset Pack/expert druid/expert druid.png"
+dest_files=["res://.godot/imported/expert druid.png-88a747b010f9ff0d2c4b27ca9196d14f.ctex"]
 
 [params]
 

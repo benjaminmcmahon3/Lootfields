@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://by4ul4eaf74e1"
-path="res://.godot/imported/FleshGolemIdle.png-153cfd5996c1b68f2091f92b5611b774.ctex"
+path="res://.godot/imported/FleshGolemIdle.png-1324e928aebc2ecdfcfc24616ff8fd11.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Magical Free Asset Pack/flesh golem/FleshGolemIdle.png"
-dest_files=["res://.godot/imported/FleshGolemIdle.png-153cfd5996c1b68f2091f92b5611b774.ctex"]
+source_file="res://Assets/Magical Free Asset Pack/flesh golem/FleshGolemIdle.png"
+dest_files=["res://.godot/imported/FleshGolemIdle.png-1324e928aebc2ecdfcfc24616ff8fd11.ctex"]
 
 [params]
 

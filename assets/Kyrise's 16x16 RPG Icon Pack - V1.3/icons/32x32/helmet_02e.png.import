@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bm4s5adlxq5v8"
-path="res://.godot/imported/helmet_02e.png-887f3be655bf9e6c42544c2848dfcc5c.ctex"
+path="res://.godot/imported/helmet_02e.png-f66e7a63e915e32b586bf852a3d20350.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/32x32/helmet_02e.png"
-dest_files=["res://.godot/imported/helmet_02e.png-887f3be655bf9e6c42544c2848dfcc5c.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/32x32/helmet_02e.png"
+dest_files=["res://.godot/imported/helmet_02e.png-f66e7a63e915e32b586bf852a3d20350.ctex"]
 
 [params]
 

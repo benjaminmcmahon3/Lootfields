@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tvx36m4o3aii"
-path="res://.godot/imported/99_taco.png-26a60653cbdb11c5e849f9480f6ab6ac.ctex"
+path="res://.godot/imported/99_taco.png-c2b1f3b16f390daa3c60e7b58d8d61cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/99_taco.png"
-dest_files=["res://.godot/imported/99_taco.png-26a60653cbdb11c5e849f9480f6ab6ac.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/99_taco.png"
+dest_files=["res://.godot/imported/99_taco.png-c2b1f3b16f390daa3c60e7b58d8d61cd.ctex"]
 
 [params]
 

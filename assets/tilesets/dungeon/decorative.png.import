@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bb2b3ycd3inir"
-path="res://.godot/imported/decorative.png-17b61ff6959eb34584ed9aa9dc029573.ctex"
+path="res://.godot/imported/decorative.png-8b23f7ea4b0681c54faef7ec22632e89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/dungeon/decorative.png"
-dest_files=["res://.godot/imported/decorative.png-17b61ff6959eb34584ed9aa9dc029573.ctex"]
+source_file="res://Assets/tilesets/dungeon/decorative.png"
+dest_files=["res://.godot/imported/decorative.png-8b23f7ea4b0681c54faef7ec22632e89.ctex"]
 
 [params]
 

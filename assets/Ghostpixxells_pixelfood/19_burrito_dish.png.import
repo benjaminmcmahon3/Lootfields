@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dha1kgb18qqbo"
-path="res://.godot/imported/19_burrito_dish.png-931f313cd9ccbf496b8624ecfe43565a.ctex"
+path="res://.godot/imported/19_burrito_dish.png-a501cf35baf9062ea2810e2abb22afb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/19_burrito_dish.png"
-dest_files=["res://.godot/imported/19_burrito_dish.png-931f313cd9ccbf496b8624ecfe43565a.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/19_burrito_dish.png"
+dest_files=["res://.godot/imported/19_burrito_dish.png-a501cf35baf9062ea2810e2abb22afb1.ctex"]
 
 [params]
 

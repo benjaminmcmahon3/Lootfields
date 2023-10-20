@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://6nxh4cvr6ry2"
-path="res://.godot/imported/DaintyPigIdleSide.png-487e140cf900a417723cd65f47e6c966.ctex"
+path="res://.godot/imported/DaintyPigIdleSide.png-1dbe9828068ba936a1959cde41858ccf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Dainty Pig/DaintyPigIdleSide.png"
-dest_files=["res://.godot/imported/DaintyPigIdleSide.png-487e140cf900a417723cd65f47e6c966.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Dainty Pig/DaintyPigIdleSide.png"
+dest_files=["res://.godot/imported/DaintyPigIdleSide.png-1dbe9828068ba936a1959cde41858ccf.ctex"]
 
 [params]
 

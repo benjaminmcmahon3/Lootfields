@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1idh7svuxxo4"
-path="res://.godot/imported/Free Sprites 2x.png-f896290423161181b419a05e778e25ca.ctex"
+path="res://.godot/imported/Free Sprites 2x.png-f8317aa8c08d6617e31fbde9961f50ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Free Sprites 2x.png"
-dest_files=["res://.godot/imported/Free Sprites 2x.png-f896290423161181b419a05e778e25ca.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Free Sprites 2x.png"
+dest_files=["res://.godot/imported/Free Sprites 2x.png-f8317aa8c08d6617e31fbde9961f50ae.ctex"]
 
 [params]
 

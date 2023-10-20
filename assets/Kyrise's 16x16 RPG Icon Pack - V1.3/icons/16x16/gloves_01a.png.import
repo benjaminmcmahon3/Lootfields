@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbufmmyapyuis"
-path="res://.godot/imported/gloves_01a.png-c329df03607449dae449d1084e80b876.ctex"
+path="res://.godot/imported/gloves_01a.png-9f8144afe539df3c92d27ecb3356b554.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/gloves_01a.png"
-dest_files=["res://.godot/imported/gloves_01a.png-c329df03607449dae449d1084e80b876.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/gloves_01a.png"
+dest_files=["res://.godot/imported/gloves_01a.png-9f8144afe539df3c92d27ecb3356b554.ctex"]
 
 [params]
 

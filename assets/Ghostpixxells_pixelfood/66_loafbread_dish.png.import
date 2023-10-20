@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqa82u452uwix"
-path="res://.godot/imported/66_loafbread_dish.png-abdb6f8dfe519882825bf009c103cd21.ctex"
+path="res://.godot/imported/66_loafbread_dish.png-c342ac58c6c6322634f343fc5e7582cb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/66_loafbread_dish.png"
-dest_files=["res://.godot/imported/66_loafbread_dish.png-abdb6f8dfe519882825bf009c103cd21.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/66_loafbread_dish.png"
+dest_files=["res://.godot/imported/66_loafbread_dish.png-c342ac58c6c6322634f343fc5e7582cb.ctex"]
 
 [params]
 

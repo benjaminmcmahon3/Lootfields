@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cji724waxp1d8"
-path="res://.godot/imported/FlutteringPixieIdle.png-690c0d6f45a95e9505d61080c8daea57.ctex"
+path="res://.godot/imported/FlutteringPixieIdle.png-b966dc0521c7f84893f6dc10197b0343.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Magical Free Asset Pack/fluttering pixie/FlutteringPixieIdle.png"
-dest_files=["res://.godot/imported/FlutteringPixieIdle.png-690c0d6f45a95e9505d61080c8daea57.ctex"]
+source_file="res://Assets/Magical Free Asset Pack/fluttering pixie/FlutteringPixieIdle.png"
+dest_files=["res://.godot/imported/FlutteringPixieIdle.png-b966dc0521c7f84893f6dc10197b0343.ctex"]
 
 [params]
 

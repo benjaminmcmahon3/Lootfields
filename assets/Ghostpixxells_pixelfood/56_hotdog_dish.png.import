@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://4vt8b5g68in3"
-path="res://.godot/imported/56_hotdog_dish.png-5ee71cb9ba72509beadca653f64450d6.ctex"
+path="res://.godot/imported/56_hotdog_dish.png-d2051bdc43acff47ed2f5454e13f5d14.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/56_hotdog_dish.png"
-dest_files=["res://.godot/imported/56_hotdog_dish.png-5ee71cb9ba72509beadca653f64450d6.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/56_hotdog_dish.png"
+dest_files=["res://.godot/imported/56_hotdog_dish.png-d2051bdc43acff47ed2f5454e13f5d14.ctex"]
 
 [params]
 

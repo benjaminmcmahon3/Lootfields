@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bcdl7uhba7tm1"
-path="res://.godot/imported/79_pancakes.png-56d9774cf3f156404b9d4bf570af30cf.ctex"
+path="res://.godot/imported/79_pancakes.png-cf1060ce05090c071607c24f7b1782d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/79_pancakes.png"
-dest_files=["res://.godot/imported/79_pancakes.png-56d9774cf3f156404b9d4bf570af30cf.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/79_pancakes.png"
+dest_files=["res://.godot/imported/79_pancakes.png-cf1060ce05090c071607c24f7b1782d1.ctex"]
 
 [params]
 

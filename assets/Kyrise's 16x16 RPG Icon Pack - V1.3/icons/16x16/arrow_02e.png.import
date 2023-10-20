@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tlca51idc1j"
-path="res://.godot/imported/arrow_02e.png-4e7b56ae898816c0d2d13e198efc79af.ctex"
+path="res://.godot/imported/arrow_02e.png-70a4b30957a87f2a29e01b4a62afe0a2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/arrow_02e.png"
-dest_files=["res://.godot/imported/arrow_02e.png-4e7b56ae898816c0d2d13e198efc79af.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/arrow_02e.png"
+dest_files=["res://.godot/imported/arrow_02e.png-70a4b30957a87f2a29e01b4a62afe0a2.ctex"]
 
 [params]
 

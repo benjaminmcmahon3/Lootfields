@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cvceabdelb6iq"
-path="res://.godot/imported/32_curry.png-483cafe1dc642d6bc3bedcfb4f47a893.ctex"
+path="res://.godot/imported/32_curry.png-7f99efc6b633e179beb0e43bad5f2f77.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/32_curry.png"
-dest_files=["res://.godot/imported/32_curry.png-483cafe1dc642d6bc3bedcfb4f47a893.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/32_curry.png"
+dest_files=["res://.godot/imported/32_curry.png-7f99efc6b633e179beb0e43bad5f2f77.ctex"]
 
 [params]
 

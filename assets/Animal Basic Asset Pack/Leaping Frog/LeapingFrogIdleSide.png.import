@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ot20rr5duhig"
-path="res://.godot/imported/LeapingFrogIdleSide.png-d9af43570fd9a798f99f31893da4c7f8.ctex"
+path="res://.godot/imported/LeapingFrogIdleSide.png-e7b2931f935363950c50be5ecf971663.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Leaping Frog/LeapingFrogIdleSide.png"
-dest_files=["res://.godot/imported/LeapingFrogIdleSide.png-d9af43570fd9a798f99f31893da4c7f8.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Leaping Frog/LeapingFrogIdleSide.png"
+dest_files=["res://.godot/imported/LeapingFrogIdleSide.png-e7b2931f935363950c50be5ecf971663.ctex"]
 
 [params]
 

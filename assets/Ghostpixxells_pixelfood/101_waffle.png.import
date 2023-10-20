@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://18rh2r4mcjmo"
-path="res://.godot/imported/101_waffle.png-2f19f6f37db23853cc84c00d5530412c.ctex"
+path="res://.godot/imported/101_waffle.png-7e23bb501a8aa3a8909f6c1cdc4815cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/101_waffle.png"
-dest_files=["res://.godot/imported/101_waffle.png-2f19f6f37db23853cc84c00d5530412c.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/101_waffle.png"
+dest_files=["res://.godot/imported/101_waffle.png-7e23bb501a8aa3a8909f6c1cdc4815cc.ctex"]
 
 [params]
 

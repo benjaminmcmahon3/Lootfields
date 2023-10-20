@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dj4dhaih4jmce"
-path="res://.godot/imported/85_roastedchicken.png-03e4bcd1c00d95b472e8518cec0e5784.ctex"
+path="res://.godot/imported/85_roastedchicken.png-7bb0f74397f0469ed13180f9b6cdd3aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/85_roastedchicken.png"
-dest_files=["res://.godot/imported/85_roastedchicken.png-03e4bcd1c00d95b472e8518cec0e5784.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/85_roastedchicken.png"
+dest_files=["res://.godot/imported/85_roastedchicken.png-7bb0f74397f0469ed13180f9b6cdd3aa.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ii4olk8j5u8a"
-path="res://.godot/imported/49_garlicbread_dish.png-04dc355cfcbeaf3dcd00224bdea3b7c0.ctex"
+path="res://.godot/imported/49_garlicbread_dish.png-830718b907753c12c0e2181e403f7b4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/49_garlicbread_dish.png"
-dest_files=["res://.godot/imported/49_garlicbread_dish.png-04dc355cfcbeaf3dcd00224bdea3b7c0.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/49_garlicbread_dish.png"
+dest_files=["res://.godot/imported/49_garlicbread_dish.png-830718b907753c12c0e2181e403f7b4c.ctex"]
 
 [params]
 

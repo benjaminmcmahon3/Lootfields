@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm18i081wdwq0"
-path="res://.godot/imported/bow_01d.png-b90c066b2832259404f94de413fbb2e2.ctex"
+path="res://.godot/imported/bow_01d.png-2a955d65b094de569afcc6e06f7e507d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/48x48/bow_01d.png"
-dest_files=["res://.godot/imported/bow_01d.png-b90c066b2832259404f94de413fbb2e2.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/48x48/bow_01d.png"
+dest_files=["res://.godot/imported/bow_01d.png-2a955d65b094de569afcc6e06f7e507d.ctex"]
 
 [params]
 

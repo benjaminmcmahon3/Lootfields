@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bnt3pajyximgk"
-path="res://.godot/imported/HonkingGooseIdleSide.png-e426704118257f097da05b2fc59d77fa.ctex"
+path="res://.godot/imported/HonkingGooseIdleSide.png-0c2d552309ecfcf91f99b727618f5c09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Honking Goose/HonkingGooseIdleSide.png"
-dest_files=["res://.godot/imported/HonkingGooseIdleSide.png-e426704118257f097da05b2fc59d77fa.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Honking Goose/HonkingGooseIdleSide.png"
+dest_files=["res://.godot/imported/HonkingGooseIdleSide.png-0c2d552309ecfcf91f99b727618f5c09.ctex"]
 
 [params]
 

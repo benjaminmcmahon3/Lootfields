@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ddeuigojexubk"
-path="res://.godot/imported/36_dumplings.png-6b8991089e310c9f6e70b90805417f54.ctex"
+path="res://.godot/imported/36_dumplings.png-a44e3ac51528d907e7ecd69a729d4aab.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/36_dumplings.png"
-dest_files=["res://.godot/imported/36_dumplings.png-6b8991089e310c9f6e70b90805417f54.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/36_dumplings.png"
+dest_files=["res://.godot/imported/36_dumplings.png-a44e3ac51528d907e7ecd69a729d4aab.ctex"]
 
 [params]
 

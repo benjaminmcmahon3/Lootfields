@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3a5ew7njtd05"
-path="res://.godot/imported/Water Effect and Bullet 16x16.png-67901291ab7c0efbafc5013b1c29ed9d.ctex"
+path="res://.godot/imported/Water Effect and Bullet 16x16.png-97acfee187daaf0d6be1d38a4359603c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/bullet_effects/Water Effect and Bullet 16x16.png"
-dest_files=["res://.godot/imported/Water Effect and Bullet 16x16.png-67901291ab7c0efbafc5013b1c29ed9d.ctex"]
+source_file="res://Assets/bullet_effects/Water Effect and Bullet 16x16.png"
+dest_files=["res://.godot/imported/Water Effect and Bullet 16x16.png-97acfee187daaf0d6be1d38a4359603c.ctex"]
 
 [params]
 

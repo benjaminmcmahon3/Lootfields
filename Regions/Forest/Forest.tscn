@@ -3,9 +3,9 @@
 [ext_resource type="Script" path="res://Regions/Forest/Forest.gd" id="1_2rn4r"]
 [ext_resource type="Script" path="res://scripts/LootGenerator.gd" id="2_d5yb1"]
 [ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://Resources/PlayerInventory.tres" id="2_ejegg"]
-[ext_resource type="Texture2D" uid="uid://dww0b5ndwkbof" path="res://assets/tilesets/forest/Dirt Tilecard.png" id="4_yco6e"]
-[ext_resource type="Texture2D" uid="uid://hlsj2oko04p5" path="res://assets/tilesets/forest/Grass Tilecard.png" id="5_rktfj"]
-[ext_resource type="Texture2D" uid="uid://dot4qpjl2mt8i" path="res://assets/tilesets/forest/Water Tilecard.png" id="6_dqqim"]
+[ext_resource type="Texture2D" uid="uid://dww0b5ndwkbof" path="res://Assets/tilesets/forest/Dirt Tilecard.png" id="4_yco6e"]
+[ext_resource type="Texture2D" uid="uid://hlsj2oko04p5" path="res://Assets/tilesets/forest/Grass Tilecard.png" id="5_rktfj"]
+[ext_resource type="Texture2D" uid="uid://dot4qpjl2mt8i" path="res://Assets/tilesets/forest/Water Tilecard.png" id="6_dqqim"]
 [ext_resource type="PackedScene" uid="uid://d2xl6ylqh1y4e" path="res://Characters/Enemy/Enemy.tscn" id="7_c7gcd"]
 [ext_resource type="Script" path="res://scripts/Stats.gd" id="8_rkdg3"]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cd6fx1nbqski3"
-path="res://.godot/imported/GrandmasterWarlockIdle.png-c7a7a50e00e2c4dcb3ca9bcfc08802f7.ctex"
+path="res://.godot/imported/GrandmasterWarlockIdle.png-ee4ed046f2c525a76e48acb0cf431891.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Magical Free Asset Pack/grandmaster warlock/GrandmasterWarlockIdle.png"
-dest_files=["res://.godot/imported/GrandmasterWarlockIdle.png-c7a7a50e00e2c4dcb3ca9bcfc08802f7.ctex"]
+source_file="res://Assets/Magical Free Asset Pack/grandmaster warlock/GrandmasterWarlockIdle.png"
+dest_files=["res://.godot/imported/GrandmasterWarlockIdle.png-ee4ed046f2c525a76e48acb0cf431891.ctex"]
 
 [params]
 

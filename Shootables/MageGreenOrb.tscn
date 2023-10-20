@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c7ycfwecougfb" path="res://Shootables/Projectile/Projectile.tscn" id="1_wlhmu"]
 [ext_resource type="Script" path="res://scripts/Projectile.gd" id="2_p7pbn"]
-[ext_resource type="Texture2D" uid="uid://b5csf5wiw84g4" path="res://assets/bullet_effects/Green Effect and Bullet 16x16.png" id="3_46l11"]
+[ext_resource type="Texture2D" uid="uid://b5csf5wiw84g4" path="res://Assets/bullet_effects/Green Effect and Bullet 16x16.png" id="3_46l11"]
 
 [sub_resource type="Resource" id="Resource_1fyp1"]
 resource_local_to_scene = true

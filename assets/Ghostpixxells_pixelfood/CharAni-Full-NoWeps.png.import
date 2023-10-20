@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbwuwoasb7olu"
-path="res://.godot/imported/CharAni-Full-NoWeps.png-8437288b6954272b0c725dfe96236b5e.ctex"
+path="res://.godot/imported/CharAni-Full-NoWeps.png-3a2e1b3b9ff4480c43199fb7909b81fb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/CharAni-Full-NoWeps.png"
-dest_files=["res://.godot/imported/CharAni-Full-NoWeps.png-8437288b6954272b0c725dfe96236b5e.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/CharAni-Full-NoWeps.png"
+dest_files=["res://.godot/imported/CharAni-Full-NoWeps.png-3a2e1b3b9ff4480c43199fb7909b81fb.ctex"]
 
 [params]
 

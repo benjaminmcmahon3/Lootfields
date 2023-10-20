@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwlntya10wy55"
-path="res://.godot/imported/potion_03e.png-0f8e0ccd6f6cf82c8c626f3e9ff07cae.ctex"
+path="res://.godot/imported/potion_03e.png-f2d6d94bde8258c3f8fa7d3f9a324e0a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/48x48/potion_03e.png"
-dest_files=["res://.godot/imported/potion_03e.png-0f8e0ccd6f6cf82c8c626f3e9ff07cae.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/48x48/potion_03e.png"
+dest_files=["res://.godot/imported/potion_03e.png-f2d6d94bde8258c3f8fa7d3f9a324e0a.ctex"]
 
 [params]
 

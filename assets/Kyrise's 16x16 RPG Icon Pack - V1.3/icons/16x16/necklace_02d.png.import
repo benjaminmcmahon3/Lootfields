@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ow23f0r7c22m"
-path="res://.godot/imported/necklace_02d.png-8ea67ee205ee69cc70430fa91954011d.ctex"
+path="res://.godot/imported/necklace_02d.png-68192bc8422ae1cd754f1dc30645b46f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/necklace_02d.png"
-dest_files=["res://.godot/imported/necklace_02d.png-8ea67ee205ee69cc70430fa91954011d.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/necklace_02d.png"
+dest_files=["res://.godot/imported/necklace_02d.png-68192bc8422ae1cd754f1dc30645b46f.ctex"]
 
 [params]
 

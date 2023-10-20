@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://o3p1okh5uulu"
-path="res://.godot/imported/92_sandwich.png-febe6c2dc5c70854f4453134ebf307a8.ctex"
+path="res://.godot/imported/92_sandwich.png-23f4ea1a87eb595a0f047b18c4ab161c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/92_sandwich.png"
-dest_files=["res://.godot/imported/92_sandwich.png-febe6c2dc5c70854f4453134ebf307a8.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/92_sandwich.png"
+dest_files=["res://.godot/imported/92_sandwich.png-23f4ea1a87eb595a0f047b18c4ab161c.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=9 format=3 uid="uid://7y32c1cq175h"]
 
-[ext_resource type="Texture2D" uid="uid://cs4s46nn1beuv" path="res://assets/tilesets/cave.png" id="1_1a43s"]
+[ext_resource type="Texture2D" uid="uid://cs4s46nn1beuv" path="res://Assets/tilesets/cave.png" id="1_1a43s"]
 [ext_resource type="Script" path="res://Regions/Cave/cave.gd" id="1_da73p"]
 [ext_resource type="Resource" uid="uid://cw0pikqls3p0l" path="res://Resources/PlayerInventory.tres" id="2_8hh0l"]
 [ext_resource type="Script" path="res://scripts/LootGenerator.gd" id="2_ueg05"]

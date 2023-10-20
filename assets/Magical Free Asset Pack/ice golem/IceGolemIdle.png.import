@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ltvcy6376d48"
-path="res://.godot/imported/IceGolemIdle.png-017042f580c5a226184084310b83b4d0.ctex"
+path="res://.godot/imported/IceGolemIdle.png-80f3dca0d0b8b08fdae8914ae59acc99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Magical Free Asset Pack/ice golem/IceGolemIdle.png"
-dest_files=["res://.godot/imported/IceGolemIdle.png-017042f580c5a226184084310b83b4d0.ctex"]
+source_file="res://Assets/Magical Free Asset Pack/ice golem/IceGolemIdle.png"
+dest_files=["res://.godot/imported/IceGolemIdle.png-80f3dca0d0b8b08fdae8914ae59acc99.ctex"]
 
 [params]
 

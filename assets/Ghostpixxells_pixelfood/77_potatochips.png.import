@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://pkcsx7vkures"
-path="res://.godot/imported/77_potatochips.png-a2a7881c1059b051db34a6595a15c778.ctex"
+path="res://.godot/imported/77_potatochips.png-7ae81ba397f5e5205ef6903089a60ab2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/77_potatochips.png"
-dest_files=["res://.godot/imported/77_potatochips.png-a2a7881c1059b051db34a6595a15c778.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/77_potatochips.png"
+dest_files=["res://.godot/imported/77_potatochips.png-7ae81ba397f5e5205ef6903089a60ab2.ctex"]
 
 [params]
 

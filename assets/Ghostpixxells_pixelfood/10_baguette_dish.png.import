@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://f8p6o3xfk3gy"
-path="res://.godot/imported/10_baguette_dish.png-87b0f757739f8f341b4cbf0bd0f6bdce.ctex"
+path="res://.godot/imported/10_baguette_dish.png-722fe050961075724b61f41c44accae7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/10_baguette_dish.png"
-dest_files=["res://.godot/imported/10_baguette_dish.png-87b0f757739f8f341b4cbf0bd0f6bdce.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/10_baguette_dish.png"
+dest_files=["res://.godot/imported/10_baguette_dish.png-722fe050961075724b61f41c44accae7.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://oyfckqbg4vge"
-path="res://.godot/imported/SpikeyPorcupineIdleSide.png-74757d14db3bcfb1a33dc3dccd9b9440.ctex"
+path="res://.godot/imported/SpikeyPorcupineIdleSide.png-ed77e16095d2875bcabdca9bd8584b10.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Spikey Porcupine/SpikeyPorcupineIdleSide.png"
-dest_files=["res://.godot/imported/SpikeyPorcupineIdleSide.png-74757d14db3bcfb1a33dc3dccd9b9440.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Spikey Porcupine/SpikeyPorcupineIdleSide.png"
+dest_files=["res://.godot/imported/SpikeyPorcupineIdleSide.png-ed77e16095d2875bcabdca9bd8584b10.ctex"]
 
 [params]
 

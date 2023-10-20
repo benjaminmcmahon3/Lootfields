@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cfqgtut38n176"
-path="res://.godot/imported/VileWitchIdle.png-53a77e080d8c8d25ee68747cb18100c0.ctex"
+path="res://.godot/imported/VileWitchIdle.png-171cbeb4b5906b2870c233d1ee1f3371.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Magical Free Asset Pack/vile witch/VileWitchIdle.png"
-dest_files=["res://.godot/imported/VileWitchIdle.png-53a77e080d8c8d25ee68747cb18100c0.ctex"]
+source_file="res://Assets/Magical Free Asset Pack/vile witch/VileWitchIdle.png"
+dest_files=["res://.godot/imported/VileWitchIdle.png-171cbeb4b5906b2870c233d1ee1f3371.ctex"]
 
 [params]
 

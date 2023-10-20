@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://eyojuojhambd"
-path="res://.godot/imported/MadBoarIdleSide.png-9409f8d863719cefc1f6d140cc7b77c7.ctex"
+path="res://.godot/imported/MadBoarIdleSide.png-2e2fcf9cee84695b525517aae3d74b85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Mad Boar/MadBoarIdleSide.png"
-dest_files=["res://.godot/imported/MadBoarIdleSide.png-9409f8d863719cefc1f6d140cc7b77c7.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Mad Boar/MadBoarIdleSide.png"
+dest_files=["res://.godot/imported/MadBoarIdleSide.png-2e2fcf9cee84695b525517aae3d74b85.ctex"]
 
 [params]
 

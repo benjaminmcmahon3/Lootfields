@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dckgachjb3h10"
-path="res://.godot/imported/30_chocolatecake.png-15e0adb72b44876b5c97f946f715d3f3.ctex"
+path="res://.godot/imported/30_chocolatecake.png-8260df5e0c7f4a787afbddf61a519ac8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/30_chocolatecake.png"
-dest_files=["res://.godot/imported/30_chocolatecake.png-15e0adb72b44876b5c97f946f715d3f3.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/30_chocolatecake.png"
+dest_files=["res://.godot/imported/30_chocolatecake.png-8260df5e0c7f4a787afbddf61a519ac8.ctex"]
 
 [params]
 

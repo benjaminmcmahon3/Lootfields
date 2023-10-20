@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bbfbvqedisn0f"
-path="res://.godot/imported/StinkySkunkIdleSide.png-b2c97a7b0eefbbe9666a0ebea9f51acc.ctex"
+path="res://.godot/imported/StinkySkunkIdleSide.png-d6b57e160f7378b566b42e34eeb95e1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Stinky Skunk/StinkySkunkIdleSide.png"
-dest_files=["res://.godot/imported/StinkySkunkIdleSide.png-b2c97a7b0eefbbe9666a0ebea9f51acc.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Stinky Skunk/StinkySkunkIdleSide.png"
+dest_files=["res://.godot/imported/StinkySkunkIdleSide.png-d6b57e160f7378b566b42e34eeb95e1a.ctex"]
 
 [params]
 

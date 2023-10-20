@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dis7lmk7gxolj"
-path="res://.godot/imported/68_macncheese_dish.png-adfdbdde522d9b7a08cb67b270a75257.ctex"
+path="res://.godot/imported/68_macncheese_dish.png-75576533369d702f02d3567f53750d7f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/68_macncheese_dish.png"
-dest_files=["res://.godot/imported/68_macncheese_dish.png-adfdbdde522d9b7a08cb67b270a75257.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/68_macncheese_dish.png"
+dest_files=["res://.godot/imported/68_macncheese_dish.png-75576533369d702f02d3567f53750d7f.ctex"]
 
 [params]
 

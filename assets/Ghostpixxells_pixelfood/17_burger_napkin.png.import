@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bghwke4ul2dxj"
-path="res://.godot/imported/17_burger_napkin.png-360e699aa6997559a64ce6e781d2ced1.ctex"
+path="res://.godot/imported/17_burger_napkin.png-5eb82758c4826fdf5a6d9f8163ca3968.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/17_burger_napkin.png"
-dest_files=["res://.godot/imported/17_burger_napkin.png-360e699aa6997559a64ce6e781d2ced1.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/17_burger_napkin.png"
+dest_files=["res://.godot/imported/17_burger_napkin.png-5eb82758c4826fdf5a6d9f8163ca3968.ctex"]
 
 [params]
 

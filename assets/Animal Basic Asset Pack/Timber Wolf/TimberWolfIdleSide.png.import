@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jqqii2ndwpx8"
-path="res://.godot/imported/TimberWolfIdleSide.png-d175ed53437e39c2bb524686d3948e66.ctex"
+path="res://.godot/imported/TimberWolfIdleSide.png-4c5d9f650f45d15b3d6bff8572ce9a8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Animal Basic Asset Pack/Timber Wolf/TimberWolfIdleSide.png"
-dest_files=["res://.godot/imported/TimberWolfIdleSide.png-d175ed53437e39c2bb524686d3948e66.ctex"]
+source_file="res://Assets/Animal Basic Asset Pack/Timber Wolf/TimberWolfIdleSide.png"
+dest_files=["res://.godot/imported/TimberWolfIdleSide.png-4c5d9f650f45d15b3d6bff8572ce9a8c.ctex"]
 
 [params]
 

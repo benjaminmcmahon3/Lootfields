@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kjtn24ejw6de"
-path="res://.godot/imported/CorruptedTreantIdle.png-e850cc9ed7a443efe75ac55d1856c2ad.ctex"
+path="res://.godot/imported/CorruptedTreantIdle.png-abad1243f8ab99e22e619f5c52365fa2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Magical Free Asset Pack/corrupted treant/CorruptedTreantIdle.png"
-dest_files=["res://.godot/imported/CorruptedTreantIdle.png-e850cc9ed7a443efe75ac55d1856c2ad.ctex"]
+source_file="res://Assets/Magical Free Asset Pack/corrupted treant/CorruptedTreantIdle.png"
+dest_files=["res://.godot/imported/CorruptedTreantIdle.png-abad1243f8ab99e22e619f5c52365fa2.ctex"]
 
 [params]
 

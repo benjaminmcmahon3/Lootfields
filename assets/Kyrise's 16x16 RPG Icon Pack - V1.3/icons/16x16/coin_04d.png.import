@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://mqr74c4eayns"
-path="res://.godot/imported/coin_04d.png-dbbaad52f3f693626129e23ac8dfcae4.ctex"
+path="res://.godot/imported/coin_04d.png-343faa134f72b8f39e1876a54fb58820.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/coin_04d.png"
-dest_files=["res://.godot/imported/coin_04d.png-dbbaad52f3f693626129e23ac8dfcae4.ctex"]
+source_file="res://Assets/Kyrise's 16x16 RPG Icon Pack - V1.3/icons/16x16/coin_04d.png"
+dest_files=["res://.godot/imported/coin_04d.png-343faa134f72b8f39e1876a54fb58820.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpnmxfas23pal"
-path="res://.godot/imported/88_salmon.png-5d394268b39cc8279435445b72ac8c91.ctex"
+path="res://.godot/imported/88_salmon.png-f06b53b57e45aa077072cfc209eb0307.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/88_salmon.png"
-dest_files=["res://.godot/imported/88_salmon.png-5d394268b39cc8279435445b72ac8c91.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/88_salmon.png"
+dest_files=["res://.godot/imported/88_salmon.png-f06b53b57e45aa077072cfc209eb0307.ctex"]
 
 [params]
 

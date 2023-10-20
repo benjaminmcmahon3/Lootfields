@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://17snw584a08d"
-path="res://.godot/imported/72_nacho_dish.png-bf476d87f49b5968cfd2587a1ae32797.ctex"
+path="res://.godot/imported/72_nacho_dish.png-baf2f4d77ecba8f20577917d8fcdece6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/72_nacho_dish.png"
-dest_files=["res://.godot/imported/72_nacho_dish.png-bf476d87f49b5968cfd2587a1ae32797.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/72_nacho_dish.png"
+dest_files=["res://.godot/imported/72_nacho_dish.png-baf2f4d77ecba8f20577917d8fcdece6.ctex"]
 
 [params]
 

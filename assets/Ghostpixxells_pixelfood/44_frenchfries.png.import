@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dijqfygkblgmh"
-path="res://.godot/imported/44_frenchfries.png-27ff3bde0759d0e995b93d379b5f7324.ctex"
+path="res://.godot/imported/44_frenchfries.png-ae3f5953e63e268a5c2aa7b7448f3041.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Ghostpixxells_pixelfood/44_frenchfries.png"
-dest_files=["res://.godot/imported/44_frenchfries.png-27ff3bde0759d0e995b93d379b5f7324.ctex"]
+source_file="res://Assets/Ghostpixxells_pixelfood/44_frenchfries.png"
+dest_files=["res://.godot/imported/44_frenchfries.png-ae3f5953e63e268a5c2aa7b7448f3041.ctex"]
 
 [params]
 
