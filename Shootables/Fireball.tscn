@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://bbf7lvwl0pmkb"]
+[gd_scene load_steps=10 format=3 uid="uid://bbf7lvwl0pmkb"]
 
 [ext_resource type="PackedScene" uid="uid://c7ycfwecougfb" path="res://Shootables/Projectile/Projectile.tscn" id="1_tkuds"]
 [ext_resource type="Script" path="res://scripts/Projectile.gd" id="2_frjee"]
@@ -14,16 +14,26 @@ damage = 20.0
 radius = 3.0
 height = 10.0
 
-[sub_resource type="Gradient" id="Gradient_qgn6i"]
+[sub_resource type="Gradient" id="Gradient_xaol1"]
 interpolation_mode = 2
-offsets = PackedFloat32Array(0, 0.108883, 0.280802)
+offsets = PackedFloat32Array(0, 0.0797414, 0.185345)
 colors = PackedColorArray(1, 1, 1, 1, 0.703704, 0.703704, 0.703704, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_4w74c"]
-gradient = SubResource("Gradient_qgn6i")
+gradient = SubResource("Gradient_xaol1")
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(0, 0)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_yc601"]
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = true
+
+[sub_resource type="Gradient" id="Gradient_uk5f6"]
+offsets = PackedFloat32Array(0.00434783, 1)
+colors = PackedColorArray(0.835294, 0.384314, 0.352941, 1, 0.976471, 0.929412, 0.545098, 1)
 
 [node name="Fireball" instance=ExtResource("1_tkuds")]
 projectileStats = SubResource("Resource_5rrnr")
@@ -39,3 +49,26 @@ color = Color(0.901961, 0.572549, 0.454902, 1)
 energy = 0.75
 texture = SubResource("GradientTexture2D_4w74c")
 texture_scale = 0.5
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." index="4"]
+material = SubResource("CanvasItemMaterial_yc601")
+use_parent_material = true
+amount = 10
+lifetime = 0.15
+lifetime_randomness = 0.5
+fixed_fps = 24
+emission_shape = 1
+emission_sphere_radius = 3.0
+direction = Vector2(2.08165e-12, 2.08165e-12)
+spread = 50.0
+gravity = Vector2(-1, 2.08165e-12)
+angular_velocity_min = -1000.0
+angular_velocity_max = 1000.0
+scale_amount_min = 0.25
+scale_amount_max = 1.25
+color = Color(0.968627, 0.819608, 0.458824, 1)
+color_ramp = SubResource("Gradient_uk5f6")
+hue_variation_min = 0.45
+hue_variation_max = 0.45
+anim_speed_min = 6.07
+anim_speed_max = 8.6

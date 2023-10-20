@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://d4ktfdp8e5vqf"]
+[gd_scene load_steps=11 format=3 uid="uid://d4ktfdp8e5vqf"]
 
 [ext_resource type="PackedScene" uid="uid://c7ycfwecougfb" path="res://Shootables/Projectile/Projectile.tscn" id="1_wlhmu"]
 [ext_resource type="Script" path="res://scripts/Projectile.gd" id="2_p7pbn"]
@@ -15,7 +15,7 @@ radius = 4.0
 
 [sub_resource type="Animation" id="Animation_uur6l"]
 resource_name = "mage_orb"
-length = 0.2
+length = 0.25
 loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
@@ -35,8 +35,23 @@ _data = {
 "mage_orb": SubResource("Animation_uur6l")
 }
 
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_2dxpr"]
+blend_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_1vfst"]
+interpolation_mode = 2
+offsets = PackedFloat32Array(0, 0.267241)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_xol7o"]
+gradient = SubResource("Gradient_1vfst")
+width = 24
+height = 24
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
 [node name="MageGreenOrb" instance=ExtResource("1_wlhmu")]
-rotation = 5.45504
+rotation = 3.1416
 projectileStats = SubResource("Resource_1fyp1")
 
 [node name="CollisionShape2D" parent="." index="0"]
@@ -51,3 +66,9 @@ autoplay = "mage_orb"
 libraries = {
 "": SubResource("AnimationLibrary_55d8c")
 }
+
+[node name="FakeLight" type="Sprite2D" parent="." index="3"]
+self_modulate = Color(0.537255, 0.52549, 0, 1)
+material = SubResource("CanvasItemMaterial_2dxpr")
+scale = Vector2(1, 1)
+texture = SubResource("GradientTexture2D_xol7o")
