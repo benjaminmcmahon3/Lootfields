@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://ou7520313mbw"]
 
 [ext_resource type="Script" path="res://scripts/ItemData.gd" id="1_sr3r2"]
-[ext_resource type="Texture2D" uid="uid://dj4dhaih4jmce" path="res://assets/Ghostpixxells_pixelfood/85_roastedchicken.png" id="2_th01j"]
+[ext_resource type="Texture2D" uid="uid://dj4dhaih4jmce" path="res://Assets/Ghostpixxells_pixelfood/85_roastedchicken.png" id="2_th01j"]
 
 [resource]
 script = ExtResource("1_sr3r2")
 unique_id = "roasted_chicken"
 display_name = "Roasted Chicken"
-inventory_category = ""
+inventory_category = "Consumable"
 description = "An incredible, juicy roasted chicken"
 mass = 0
-value = 0
+value = 20
 texture = ExtResource("2_th01j")
 areas = Array[String](["overworld"])
 tags = Array[String]([])

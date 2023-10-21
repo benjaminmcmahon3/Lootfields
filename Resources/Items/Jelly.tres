@@ -1,14 +1,16 @@
 [gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://cmo160bijfa1e"]
 
 [ext_resource type="Script" path="res://scripts/ItemData.gd" id="1_yqgef"]
-[ext_resource type="Texture2D" uid="uid://d0ogvnbc184ru" path="res://assets/Ghostpixxells_pixelfood/59_jelly.png" id="2_lv5hs"]
+[ext_resource type="Texture2D" uid="uid://d0ogvnbc184ru" path="res://Assets/Ghostpixxells_pixelfood/59_jelly.png" id="2_lv5hs"]
 
 [resource]
 script = ExtResource("1_yqgef")
 unique_id = "jelly"
 display_name = "Jelly"
+inventory_category = "Consumable"
 description = "It's jelly"
-weight = 2
+mass = 0
+value = 1
 texture = ExtResource("2_lv5hs")
 areas = Array[String](["cave"])
 tags = Array[String]([])

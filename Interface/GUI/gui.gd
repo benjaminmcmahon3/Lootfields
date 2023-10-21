@@ -4,7 +4,6 @@ signal pause_game
 signal resume_game
 
 @onready var player_menu := $PlayerMenuScreenMargin/PlayerMenu
-@onready var loot_scene: PackedScene = preload("res://Items/LootItem.tscn")
 @onready var worldspace = get_node("../Worldspace")
 
 func _ready():

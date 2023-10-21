@@ -15,11 +15,6 @@ const inventory_item: PackedScene = preload("res://Interface/Elements/InventoryL
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	update_items_display()
-	pass
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
 
 func set_inventory(new_inventory: Inventory) -> void:
 	inventory = new_inventory
@@ -36,7 +31,11 @@ func update_items_display():
 		for item in inventory.items():
 			if tab.name == "Food":
 				var loot_item_instance: InventoryListItem = preload("res://Interface/Elements/InventoryListItem.tscn").instantiate()
+				loot_item_instance.item_unique_id = item.unique_id
+				
 				var item_data = ItemDb.get_item_data(item.unique_id)
 				loot_item_instance.get_node("MarginContainer/ItemName").text = item_data.display_name
 				loot_item_instance.get_node("MarginContainer/Quantity").text = str(item.count)
+				
 				tab.get_node("VBoxContainer").add_child(loot_item_instance)
+				

@@ -116,3 +116,11 @@ func _on_mana_regen_timeout():
 	if stats.mana == stats.max_mana:
 		mana_regen.stop_regen()
 	
+func item_used(item_unique_id: String):
+	var item: ItemData = ItemDb.get_item_data(item_unique_id)
+	
+	if item != null:
+		if item.inventory_category == "Consumable":
+			stats.add_health(item.value)
+	
+	inventory.remove_item(item_unique_id)

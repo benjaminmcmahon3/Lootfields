@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://d0073rt7yo3uf"]
 
 [ext_resource type="Script" path="res://scripts/ItemData.gd" id="1_44wf8"]
-[ext_resource type="Texture2D" uid="uid://cvae7rfaty17u" path="res://assets/Ghostpixxells_pixelfood/07_bread.png" id="2_ko6yv"]
+[ext_resource type="Texture2D" uid="uid://cvae7rfaty17u" path="res://Assets/Ghostpixxells_pixelfood/07_bread.png" id="2_ko6yv"]
 
 [resource]
 script = ExtResource("1_44wf8")
 unique_id = "bread"
 display_name = "Bread"
-inventory_category = ""
+inventory_category = "Consumable"
 description = "It's a loaf of bread"
 mass = 0
-value = 0
+value = 5
 texture = ExtResource("2_ko6yv")
 areas = Array[String](["overworld", "cave"])
 tags = Array[String]([])

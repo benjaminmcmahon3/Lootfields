@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="ItemData" load_steps=3 format=3 uid="uid://bc5gb54q48a23"]
 
 [ext_resource type="Script" path="res://scripts/ItemData.gd" id="1_dpm5v"]
-[ext_resource type="Texture2D" uid="uid://nqnckywjiide" path="res://assets/Ghostpixxells_pixelfood/05_apple_pie.png" id="2_i3k7i"]
+[ext_resource type="Texture2D" uid="uid://nqnckywjiide" path="res://Assets/Ghostpixxells_pixelfood/05_apple_pie.png" id="2_i3k7i"]
 
 [resource]
 script = ExtResource("1_dpm5v")
 unique_id = "apple_pie"
 display_name = "Apple Pie"
-inventory_category = ""
+inventory_category = "Consumable"
 description = "A warm slice of delicious apple pie"
 mass = 0
-value = 0
+value = 8
 texture = ExtResource("2_i3k7i")
 areas = Array[String](["overworld"])
 tags = Array[String]([])

@@ -4,7 +4,7 @@ class_name ItemData
 @export_category("Item Data")
 @export var unique_id: String
 @export var display_name: String
-@export var inventory_category: String
+@export_enum("Consumable", "Weapon", "Armor", "Key", "Potion") var inventory_category: String
 @export_multiline var description: String
 @export_range(0, 1000, 1, "or_greater") var mass: int
 @export var value: int
