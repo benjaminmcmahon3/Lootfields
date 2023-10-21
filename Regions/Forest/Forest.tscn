@@ -5275,7 +5275,13 @@ pattern_0 = SubResource("TileMapPattern_vvnnb")
 [sub_resource type="Resource" id="Resource_lxiui"]
 script = ExtResource("8_rkdg3")
 speed = 100
-health = 80
+max_speed = 0.0
+health = 100.0
+max_health = 0.0
+health_regen_step = 1
+mana = 100.0
+max_mana = 1000.0
+mana_regen_step = 2.0
 is_alive = true
 global_position = Vector2(0, 0)
 
@@ -5287,21 +5293,39 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(-16, -8, 936, -8, 936, 
 [sub_resource type="Resource" id="Resource_6yrp2"]
 script = ExtResource("8_rkdg3")
 speed = 100
-health = 80
+max_speed = 0.0
+health = 100.0
+max_health = 0.0
+health_regen_step = 1
+mana = 100.0
+max_mana = 1000.0
+mana_regen_step = 2.0
 is_alive = true
 global_position = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_wa37c"]
 script = ExtResource("8_rkdg3")
 speed = 100
-health = 80
+max_speed = 0.0
+health = 100.0
+max_health = 0.0
+health_regen_step = 1
+mana = 100.0
+max_mana = 1000.0
+mana_regen_step = 2.0
 is_alive = true
 global_position = Vector2(0, 0)
 
 [sub_resource type="Resource" id="Resource_il0vt"]
 script = ExtResource("8_rkdg3")
 speed = 100
-health = 80
+max_speed = 0.0
+health = 100.0
+max_health = 0.0
+health_regen_step = 1
+mana = 100.0
+max_mana = 1000.0
+mana_regen_step = 2.0
 is_alive = true
 global_position = Vector2(0, 0)
 

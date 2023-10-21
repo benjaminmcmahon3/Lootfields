@@ -76,7 +76,7 @@ func _on_projectile_shape_entered(projectile: ProjectileStats):
 func take_damage(damage: int):
 	stats.take_damage(damage)
 	ui_health.value = stats.health
-	if (stats.health == 0):
+	if (stats.health <= 0):
 		death()
 
 func death():

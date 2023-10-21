@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://qc04levxu3he"]
+[gd_scene load_steps=52 format=3 uid="uid://qc04levxu3he"]
 
 [ext_resource type="Script" path="res://Characters/Player/PlayerCharacter.gd" id="1_eobtk"]
 [ext_resource type="Resource" uid="uid://g668rkqhbseg" path="res://Resources/PlayerStats.tres" id="2_7isqj"]
@@ -6,7 +6,9 @@
 [ext_resource type="Resource" uid="uid://dugipbii8sj8l" path="res://Resources/ShootLogic.tres" id="4_am0tl"]
 [ext_resource type="Texture2D" uid="uid://cscmrnc6i03im" path="res://Assets/CharAni-Full-NoWeps.png" id="4_syeur"]
 [ext_resource type="Script" path="res://PlayerHUD.gd" id="6_tg1mm"]
+[ext_resource type="Script" path="res://Characters/Player/HealthRegen.gd" id="6_xlvfb"]
 [ext_resource type="Script" path="res://Characters/Player/YouDied.gd" id="7_e6cs4"]
+[ext_resource type="Script" path="res://Characters/Player/ManaRegen.gd" id="7_tmrua"]
 [ext_resource type="Theme" uid="uid://boiua8vmjfi7w" path="res://Interface/theme/default.tres" id="8_pa6nk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ec3xk"]
@@ -293,11 +295,22 @@ animations = [{
 "speed": 12.0
 }]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dyhuj"]
-bg_color = Color(0.243137, 0.243137, 0.243137, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ktw18"]
+bg_color = Color(0.701961, 0.145098, 0.207843, 0.117647)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vvye0"]
-bg_color = Color(0.658824, 0, 0, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yrwlx"]
+bg_color = Color(0.764706, 0, 0.188235, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.207843, 0.145098, 0.207843, 1)
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_vjefd"]
 font_color = Color(0.854902, 0, 0.121569, 1)
@@ -318,45 +331,83 @@ shape = SubResource("CapsuleShape2D_ec3xk")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(6, 6)
-position_smoothing_speed = 1.0
+position_smoothing_enabled = true
+position_smoothing_speed = 20.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -5)
 sprite_frames = SubResource("SpriteFrames_2jkd5")
 animation = &"idle"
 
+[node name="HealthRegen" type="Timer" parent="."]
+script = ExtResource("6_xlvfb")
+
+[node name="RegenDelay" type="Timer" parent="HealthRegen"]
+wait_time = 5.0
+one_shot = true
+
+[node name="ManaRegen" type="Timer" parent="."]
+wait_time = 0.3
+script = ExtResource("7_tmrua")
+
+[node name="RegenDelay" type="Timer" parent="ManaRegen"]
+wait_time = 3.0
+one_shot = true
+
 [node name="PlayerHUD" type="CanvasLayer" parent="."]
 script = ExtResource("6_tg1mm")
 stats = ExtResource("2_7isqj")
 
 [node name="Health" type="ProgressBar" parent="PlayerHUD"]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 19.0
-offset_top = -67.0
-offset_right = 196.0
-offset_bottom = -40.0
-grow_vertical = 0
+offset_left = 196.0
+offset_top = 19.0
+offset_right = 503.0
+offset_bottom = 35.0
 scale = Vector2(2, 2)
-theme_override_styles/background = SubResource("StyleBoxFlat_dyhuj")
-theme_override_styles/fill = SubResource("StyleBoxFlat_vvye0")
+size_flags_horizontal = 0
+theme = ExtResource("8_pa6nk")
+theme_override_styles/background = SubResource("StyleBoxFlat_ktw18")
+theme_override_styles/fill = SubResource("StyleBoxFlat_yrwlx")
 value = 100.0
 rounded = true
 show_percentage = false
 
-[node name="Label" type="Label" parent="PlayerHUD"]
-anchors_preset = 2
-anchor_top = 1.0
-anchor_bottom = 1.0
-offset_left = 22.0
-offset_top = -110.0
-offset_right = 74.0
-offset_bottom = -84.0
-grow_vertical = 0
+[node name="HealthLabel" type="Label" parent="PlayerHUD"]
+offset_left = 100.0
+offset_top = 17.0
+offset_right = 147.0
+offset_bottom = 34.0
 scale = Vector2(2, 2)
+theme = ExtResource("8_pa6nk")
+theme_override_font_sizes/font_size = 14
 text = "Health
 "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Mana" type="ProgressBar" parent="PlayerHUD"]
+offset_left = 196.0
+offset_top = 60.0
+offset_right = 503.0
+offset_bottom = 76.0
+scale = Vector2(2, 2)
+size_flags_horizontal = 0
+theme = ExtResource("8_pa6nk")
+value = 50.0
+rounded = true
+show_percentage = false
+
+[node name="ManaLabel" type="Label" parent="PlayerHUD"]
+offset_left = 100.0
+offset_top = 61.0
+offset_right = 139.0
+offset_bottom = 78.0
+scale = Vector2(2, 2)
+theme = ExtResource("8_pa6nk")
+theme_override_font_sizes/font_size = 14
+text = "Mana"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="DeathScreen" type="CanvasLayer" parent="."]
 visible = false
@@ -396,3 +447,7 @@ vertical_alignment = 1
 uppercase = true
 
 [connection signal="player_death" from="." to="DeathScreen" method="make_visible"]
+[connection signal="timeout" from="HealthRegen" to="." method="_on_health_regen_timeout"]
+[connection signal="timeout" from="HealthRegen/RegenDelay" to="HealthRegen" method="_on_regen_delay_timeout"]
+[connection signal="timeout" from="ManaRegen" to="." method="_on_mana_regen_timeout"]
+[connection signal="timeout" from="ManaRegen/RegenDelay" to="ManaRegen" method="_on_regen_delay_timeout"]

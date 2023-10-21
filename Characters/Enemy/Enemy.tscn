@@ -6,9 +6,16 @@
 [ext_resource type="Resource" uid="uid://dugipbii8sj8l" path="res://Resources/ShootLogic.tres" id="3_7g1ru"]
 
 [sub_resource type="Resource" id="Resource_1pwpg"]
+resource_local_to_scene = true
 script = ExtResource("2_a8vwj")
 speed = 100
-health = 80
+max_speed = 100.0
+health = 100.0
+max_health = 100.0
+health_regen_step = 1
+mana = 100.0
+max_mana = 1000.0
+mana_regen_step = 2.0
 is_alive = true
 global_position = Vector2(0, 0)
 

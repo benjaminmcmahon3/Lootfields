@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=4 format=3 uid="uid://boiua8vmjfi7w"]
+[gd_resource type="Theme" load_steps=6 format=3 uid="uid://boiua8vmjfi7w"]
 
 [ext_resource type="FontFile" uid="uid://doy6xlslyi18a" path="res://Interface/fonts/MinimalPixel v2.ttf" id="1_k8i1k"]
 
@@ -26,6 +26,24 @@ corner_radius_top_right = 4
 corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ap15r"]
+bg_color = Color(0.0313726, 0.117647, 0.960784, 0.117647)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c57gl"]
+bg_color = Color(0, 0.121569, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.0313726, 0.117647, 0.219608, 1)
+border_blend = true
+corner_radius_top_left = 1
+corner_radius_top_right = 1
+corner_radius_bottom_right = 1
+corner_radius_bottom_left = 1
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
 [resource]
 default_font = ExtResource("1_k8i1k")
 default_font_size = 40
@@ -37,3 +55,5 @@ MarginContainer/constants/margin_right = 20
 MarginContainer/constants/margin_top = 20
 Panel/styles/panel = SubResource("StyleBoxFlat_3u2cf")
 PanelContainer/styles/panel = SubResource("StyleBoxFlat_o0ord")
+ProgressBar/styles/background = SubResource("StyleBoxFlat_ap15r")
+ProgressBar/styles/fill = SubResource("StyleBoxFlat_c57gl")

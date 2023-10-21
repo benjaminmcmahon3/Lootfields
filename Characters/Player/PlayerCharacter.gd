@@ -10,11 +10,17 @@ signal player_death
 @export var shoot_logic: ShootLogic
 
 @onready var ui_sprite := $AnimatedSprite2D
+@onready var health_regen := $HealthRegen
+@onready var mana_regen := $ManaRegen
 
 const fireball_scene: Resource = preload("res://Shootables/Fireball.tscn")
 
 func _ready():
 	stats.global_position = global_position
+	call_deferred("prin")
+
+func prin():
+	print(stats.health)
 
 func _physics_process(delta):
 	stats.global_position = global_position
@@ -61,7 +67,12 @@ func _enter_tree():
 
 func take_damage(damage: int):
 	stats.take_damage(damage)
+	
+	health_regen.start_regen()
+	
 	if stats.health == 0:
+		health_regen.stop_regen()
+		mana_regen.stop_regen()
 		death()
 
 func death():
@@ -75,6 +86,12 @@ func death_tween_callback():
 	process_mode = Node.PROCESS_MODE_DISABLED
 
 func shoot():
+	# temp mana cost
+	var mana_cost = 8
+	
+	if stats.mana < mana_cost:
+		return
+	
 	var offset = Vector2(0, -5.0)
 	
 	shoot_logic.spawn(
@@ -84,6 +101,23 @@ func shoot():
 		self.position + offset,
 		(get_global_mouse_position() - self.position).normalized()
 	)
+	
+	stats.use_mana(4)
+	mana_regen.start_regen()
 
 func _on_projectile_shape_entered(projectile: ProjectileStats):
 	take_damage(projectile.damage)
+
+func _on_health_regen_timeout():
+	stats.set_health(clamp(stats.health + stats.health_regen_step, 0, stats.max_health))
+	
+	if stats.health == stats.max_health:
+		health_regen.stop_regen()
+#	stats.add_health(stats.health_regen_step)
+
+func _on_mana_regen_timeout():
+	stats.set_mana(clamp(stats.mana + stats.mana_regen_step, 0, stats.max_mana))
+	
+	if stats.mana == stats.max_mana:
+		mana_regen.stop_regen()
+#	stats.add_mana(stats.mana_regen_step)
