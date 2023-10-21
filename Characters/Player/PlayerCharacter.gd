@@ -17,10 +17,6 @@ const fireball_scene: Resource = preload("res://Shootables/Fireball.tscn")
 
 func _ready():
 	stats.global_position = global_position
-	call_deferred("prin")
-
-func prin():
-	print(stats.health)
 
 func _physics_process(delta):
 	stats.global_position = global_position
@@ -109,15 +105,14 @@ func _on_projectile_shape_entered(projectile: ProjectileStats):
 	take_damage(projectile.damage)
 
 func _on_health_regen_timeout():
-	stats.set_health(clamp(stats.health + stats.health_regen_step, 0, stats.max_health))
+	stats.add_health(stats.health_regen_step)
 	
 	if stats.health == stats.max_health:
 		health_regen.stop_regen()
-#	stats.add_health(stats.health_regen_step)
 
 func _on_mana_regen_timeout():
-	stats.set_mana(clamp(stats.mana + stats.mana_regen_step, 0, stats.max_mana))
+	stats.add_mana(stats.mana_regen_step)
 	
 	if stats.mana == stats.max_mana:
 		mana_regen.stop_regen()
-#	stats.add_mana(stats.mana_regen_step)
+	

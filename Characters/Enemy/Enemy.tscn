@@ -8,7 +8,7 @@
 [sub_resource type="Resource" id="Resource_1pwpg"]
 resource_local_to_scene = true
 script = ExtResource("2_a8vwj")
-speed = 100
+speed = 400.0
 max_speed = 100.0
 health = 100.0
 max_health = 100.0
