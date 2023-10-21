@@ -12,5 +12,4 @@ func stop_regen():
 	regen_delay.stop()
 
 func _on_regen_delay_timeout():
-	print("regen delay finished")
 	start()
